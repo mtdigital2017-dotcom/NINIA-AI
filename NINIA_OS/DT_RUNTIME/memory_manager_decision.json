@@ -1,0 +1,11 @@
+{
+  "id": "DT-MM-001",
+  "title": "Integrar Memory Manager v1",
+  "status": "approved_for_validation",
+  "date": "2026-07-11",
+  "decision": "Construir el contexto operativo únicamente desde fuentes oficiales de NINIA_OS.",
+  "constraints": [
+    "No usar el historial del chat como fuente oficial.",
+    "No sobrescribir decisiones existentes."
+  ]
+}

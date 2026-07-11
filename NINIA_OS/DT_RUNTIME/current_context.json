@@ -1,67 +1,115 @@
 {
-  "generated_at": "2026-07-11T20:44:59.474457+00:00",
-  "project": "NINIA-AI",
-  "version": "v1.1.0",
-  "active_focus": "instalar, probar y versionar DT Runtime v1",
-  "open_issues": [
-    {
-      "id": "ISSUE-001",
-      "title": "Método definitivo de autenticación de Drive no consolidado",
-      "status": "REQUIERE_DECISION",
-      "evidence": "Los documentos existentes contienen propuestas de cuenta de servicio y OAuth.",
-      "rule": "No automatizar ni documentar como definitivo hasta resolver la contradicción."
+  "schema_version": "1.0",
+  "generated_at": "2026-07-11T22:12:30.089521+00:00",
+  "source_of_truth": "NINIA_OS",
+  "project_state": {
+    "schema_version": "1.0",
+    "project": "NINIA-AI",
+    "project_type": "plataforma avanzada en desarrollo",
+    "current_version": "v1.1.0",
+    "source_of_truth": "repositorio GitHub NINIA-AI",
+    "last_verified": "2026-07-11",
+    "confirmed_components": [
+      "api/main.py",
+      "engine/ninia_engine.py",
+      "engine/evidence_admission.py",
+      "tests/test_evidence_admission.py",
+      "tests/test_existing_document_processing.py",
+      "docs/API_EVIDENCE_ADMISSION.md",
+      "NINIA_OS"
+    ],
+    "confirmed_capabilities": [
+      "procesamiento documental existente",
+      "admisión de evidencia",
+      "cuarentena",
+      "hash SHA-256",
+      "detección de duplicados",
+      "trazabilidad",
+      "revisión humana",
+      "pruebas automatizadas"
+    ],
+    "qa": {
+      "last_result": "4 passed, 2 warnings before DT Runtime integration",
+      "blocking_failures": 0
     },
-    {
-      "id": "ISSUE-002",
-      "title": "datetime.utcnow() está deprecado",
-      "status": "DEUDA_TECNICA",
-      "evidence": "QA_RESULT.txt reporta dos advertencias.",
-      "blocking": false
+    "active_focus": "instalar, probar y versionar DT Runtime v1",
+    "open_issues": [
+      {
+        "id": "ISSUE-001",
+        "title": "Método definitivo de autenticación de Drive no consolidado",
+        "status": "REQUIERE_DECISION",
+        "evidence": "Los documentos existentes contienen propuestas de cuenta de servicio y OAuth.",
+        "rule": "No automatizar ni documentar como definitivo hasta resolver la contradicción."
+      },
+      {
+        "id": "ISSUE-002",
+        "title": "datetime.utcnow() está deprecado",
+        "status": "DEUDA_TECNICA",
+        "evidence": "QA_RESULT.txt reporta dos advertencias.",
+        "blocking": false
+      }
+    ]
+  },
+  "active_decisions": [],
+  "decision_count": 5,
+  "active_decision_count": 0,
+  "learning_profile": {
+    "schema_version": "1.0",
+    "user_profile": {
+      "level": "principiante",
+      "interaction_rule": "una acción por vez cuando exista intervención manual"
+    },
+    "confirmed_preferences": [
+      "No repetir decisiones superadas.",
+      "No proponer trabajo sin verificar primero lo existente.",
+      "Explicar términos nuevos sin extenderse en conceptos ya comprendidos.",
+      "Automatizar tareas repetitivas.",
+      "Solicitar intervención humana solo cuando sea inevitable por seguridad o autorización."
+    ],
+    "known_tools": [
+      "GitHub Desktop",
+      "Finder"
+    ],
+    "do_not_assume_mastery": [
+      "Terminal",
+      "OAuth",
+      "GitHub Actions",
+      "Google Cloud",
+      "Python packaging"
+    ]
+  },
+  "runtime_rules": {
+    "schema_version": "1.0",
+    "pre_response_checks": [
+      "load_project_state",
+      "load_decisions",
+      "load_modules",
+      "load_learning_profile",
+      "detect_duplicate_proposal",
+      "detect_conflict",
+      "validate_new_value"
+    ],
+    "response_policy": {
+      "repeat_approved_decisions": false,
+      "invent_missing_facts": false,
+      "max_support_agents": 2,
+      "one_primary_agent": true,
+      "manual_steps": "one_at_a_time",
+      "stop_on_unresolved_conflict": true
     }
-  ],
-  "approved_decisions": [
-    {
-      "id": "DT-001",
-      "status": "APROBADA",
-      "decision": "NINIA_OS es la memoria operativa versionada del proyecto.",
-      "source": "NINIA_OS/DECISIONS_LOG.md"
-    },
-    {
-      "id": "DT-002",
-      "status": "APROBADA",
-      "decision": "GitHub es la fuente oficial; Drive será respaldo automático verificado.",
-      "source": "NINIA_OS/DECISIONS_LOG.md"
-    },
-    {
-      "id": "DT-003",
-      "status": "APROBADA",
-      "decision": "La operación normal debe reducirse a git push; pruebas y respaldo deben automatizarse.",
-      "source": "NINIA_OS/DECISIONS_LOG.md"
-    },
-    {
-      "id": "DT-010",
-      "status": "APROBADA",
-      "decision": "Crear DT Runtime y agentes internos para reconstruir contexto y evitar repetición.",
-      "source": "conversación aprobada por el propietario, 2026-07-11"
-    },
-    {
-      "id": "DT-011",
-      "status": "APROBADA",
-      "decision": "Los agentes son componentes internos del repositorio, no GPTs separados.",
-      "source": "CORE_SKILL_ORCHESTRATOR y decisión del propietario"
-    }
-  ],
-  "existing_modules": [
-    "api/main.py",
-    "engine/ninia_engine.py",
-    "engine/evidence_admission.py",
-    "tests/test_evidence_admission.py",
-    "tests/test_existing_document_processing.py"
-  ],
-  "user_level": "principiante",
-  "interaction_rule": "una acción por vez cuando exista intervención manual",
+  },
+  "current_sprint": "# Sprint actual — DT Runtime Agents v1\n\n## Objetivo\nEvitar que el DT repita decisiones, invente estado o proponga trabajo ya superado.\n\n## Entregables\n- [x] Memoria estructurada.\n- [x] Memory Curator.\n- [x] Context Builder.\n- [x] DT Guardian.\n- [x] QA Architect.\n- [x] Learning Advisor.\n- [x] Orquestador.\n- [x] CLI.\n- [x] Pruebas.\n- [ ] Integración y commit en el repositorio oficial.\n\n## Criterio de cierre\nTodas las pruebas pasan y `python3 scripts/ninia_dt.py refresh` genera un contexto válido.",
+  "roadmap": "# Roadmap técnico\n\n## Fase actual — Gobierno y continuidad\n\n- [x] Crear memoria operativa.\n- [x] Crear scripts de respaldo.\n- [x] Crear workflow de GitHub Actions.\n- [x] Añadir verificación de integridad.\n- [ ] Configurar Google Cloud y GitHub Secrets.\n- [ ] Ejecutar primer respaldo real.\n- [ ] Confirmar archivo y manifiesto en Drive.\n\n## Puerta de salida\n\nEsta fase termina únicamente cuando el workflow `NINIA verified backup` aparezca en verde y el ZIP exista en Drive.\n\n## Después\n\nReanudar desarrollo funcional con auditoría técnica y definición del siguiente sprint.",
   "qa": {
-    "valid": true,
-    "errors": []
-  }
+    "duplicate_decision_ids": [],
+    "passed": true
+  },
+  "sources": [
+    "NINIA_OS/DT_RUNTIME/project_state.json",
+    "NINIA_OS/DT_RUNTIME/decision_registry.json",
+    "NINIA_OS/DT_RUNTIME/learning_profile.json",
+    "NINIA_OS/DT_RUNTIME/runtime_rules.json",
+    "NINIA_OS/CURRENT_SPRINT.md",
+    "NINIA_OS/ROADMAP.md"
+  ]
 }
