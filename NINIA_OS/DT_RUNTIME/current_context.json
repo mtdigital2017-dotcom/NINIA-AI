@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-11T20:44:59.474457+00:00",
+  "project": "NINIA-AI",
+  "version": "v1.1.0",
+  "active_focus": "instalar, probar y versionar DT Runtime v1",
+  "open_issues": [
+    {
+      "id": "ISSUE-001",
+      "title": "Método definitivo de autenticación de Drive no consolidado",
+      "status": "REQUIERE_DECISION",
+      "evidence": "Los documentos existentes contienen propuestas de cuenta de servicio y OAuth.",
+      "rule": "No automatizar ni documentar como definitivo hasta resolver la contradicción."
+    },
+    {
+      "id": "ISSUE-002",
+      "title": "datetime.utcnow() está deprecado",
+      "status": "DEUDA_TECNICA",
+      "evidence": "QA_RESULT.txt reporta dos advertencias.",
+      "blocking": false
+    }
+  ],
+  "approved_decisions": [
+    {
+      "id": "DT-001",
+      "status": "APROBADA",
+      "decision": "NINIA_OS es la memoria operativa versionada del proyecto.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-002",
+      "status": "APROBADA",
+      "decision": "GitHub es la fuente oficial; Drive será respaldo automático verificado.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-003",
+      "status": "APROBADA",
+      "decision": "La operación normal debe reducirse a git push; pruebas y respaldo deben automatizarse.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-010",
+      "status": "APROBADA",
+      "decision": "Crear DT Runtime y agentes internos para reconstruir contexto y evitar repetición.",
+      "source": "conversación aprobada por el propietario, 2026-07-11"
+    },
+    {
+      "id": "DT-011",
+      "status": "APROBADA",
+      "decision": "Los agentes son componentes internos del repositorio, no GPTs separados.",
+      "source": "CORE_SKILL_ORCHESTRATOR y decisión del propietario"
+    }
+  ],
+  "existing_modules": [
+    "api/main.py",
+    "engine/ninia_engine.py",
+    "engine/evidence_admission.py",
+    "tests/test_evidence_admission.py",
+    "tests/test_existing_document_processing.py"
+  ],
+  "user_level": "principiante",
+  "interaction_rule": "una acción por vez cuando exista intervención manual",
+  "qa": {
+    "valid": true,
+    "errors": []
+  }
+}

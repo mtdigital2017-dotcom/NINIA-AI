@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "project": "NINIA-AI",
+  "project_type": "plataforma avanzada en desarrollo",
+  "current_version": "v1.1.0",
+  "source_of_truth": "repositorio GitHub NINIA-AI",
+  "last_verified": "2026-07-11",
+  "confirmed_components": [
+    "api/main.py",
+    "engine/ninia_engine.py",
+    "engine/evidence_admission.py",
+    "tests/test_evidence_admission.py",
+    "tests/test_existing_document_processing.py",
+    "docs/API_EVIDENCE_ADMISSION.md",
+    "NINIA_OS"
+  ],
+  "confirmed_capabilities": [
+    "procesamiento documental existente",
+    "admisión de evidencia",
+    "cuarentena",
+    "hash SHA-256",
+    "detección de duplicados",
+    "trazabilidad",
+    "revisión humana",
+    "pruebas automatizadas"
+  ],
+  "qa": {
+    "last_result": "4 passed, 2 warnings before DT Runtime integration",
+    "blocking_failures": 0
+  },
+  "active_focus": "instalar, probar y versionar DT Runtime v1",
+  "open_issues": [
+    {
+      "id": "ISSUE-001",
+      "title": "Método definitivo de autenticación de Drive no consolidado",
+      "status": "REQUIERE_DECISION",
+      "evidence": "Los documentos existentes contienen propuestas de cuenta de servicio y OAuth.",
+      "rule": "No automatizar ni documentar como definitivo hasta resolver la contradicción."
+    },
+    {
+      "id": "ISSUE-002",
+      "title": "datetime.utcnow() está deprecado",
+      "status": "DEUDA_TECNICA",
+      "evidence": "QA_RESULT.txt reporta dos advertencias.",
+      "blocking": false
+    }
+  ]
+}

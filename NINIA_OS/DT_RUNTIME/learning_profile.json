@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "user_profile": {
+    "level": "principiante",
+    "interaction_rule": "una acción por vez cuando exista intervención manual"
+  },
+  "confirmed_preferences": [
+    "No repetir decisiones superadas.",
+    "No proponer trabajo sin verificar primero lo existente.",
+    "Explicar términos nuevos sin extenderse en conceptos ya comprendidos.",
+    "Automatizar tareas repetitivas.",
+    "Solicitar intervención humana solo cuando sea inevitable por seguridad o autorización."
+  ],
+  "known_tools": [
+    "GitHub Desktop",
+    "Finder"
+  ],
+  "do_not_assume_mastery": [
+    "Terminal",
+    "OAuth",
+    "GitHub Actions",
+    "Google Cloud",
+    "Python packaging"
+  ]
+}

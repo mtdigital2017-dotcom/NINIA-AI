@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "modules": [
+    {
+      "path": "api/main.py",
+      "status": "EXISTS",
+      "sha256": "1567521fdf983a2fd42425928b97be759bb4f4fd3f82d5437c045dbdb885085d"
+    },
+    {
+      "path": "engine/ninia_engine.py",
+      "status": "EXISTS",
+      "sha256": "354578d852683e4f5f8f9174ce703e8d3ae7f9b01900fa2655a267f8a0e063af"
+    },
+    {
+      "path": "engine/evidence_admission.py",
+      "status": "EXISTS",
+      "sha256": "502a6ef380eebe67f868250208624c0ba0aa6d8538a2518ad60c573a4cb8dfa5"
+    },
+    {
+      "path": "tests/test_evidence_admission.py",
+      "status": "EXISTS",
+      "sha256": "1ee0f6e311f9315cde31e5659fd0d5d29f21b9b778d8ac65d04bba44aa782c1b"
+    },
+    {
+      "path": "tests/test_existing_document_processing.py",
+      "status": "EXISTS",
+      "sha256": "ae81005d939e6e329bba5a2a851fd367580430e94db2aeb97af525bd281054f9"
+    }
+  ]
+}

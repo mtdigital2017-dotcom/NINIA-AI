@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "decisions": [
+    {
+      "id": "DT-001",
+      "status": "APROBADA",
+      "decision": "NINIA_OS es la memoria operativa versionada del proyecto.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-002",
+      "status": "APROBADA",
+      "decision": "GitHub es la fuente oficial; Drive será respaldo automático verificado.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-003",
+      "status": "APROBADA",
+      "decision": "La operación normal debe reducirse a git push; pruebas y respaldo deben automatizarse.",
+      "source": "NINIA_OS/DECISIONS_LOG.md"
+    },
+    {
+      "id": "DT-010",
+      "status": "APROBADA",
+      "decision": "Crear DT Runtime y agentes internos para reconstruir contexto y evitar repetición.",
+      "source": "conversación aprobada por el propietario, 2026-07-11"
+    },
+    {
+      "id": "DT-011",
+      "status": "APROBADA",
+      "decision": "Los agentes son componentes internos del repositorio, no GPTs separados.",
+      "source": "CORE_SKILL_ORCHESTRATOR y decisión del propietario"
+    }
+  ]
+}

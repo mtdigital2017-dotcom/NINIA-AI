@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "pre_response_checks": [
+    "load_project_state",
+    "load_decisions",
+    "load_modules",
+    "load_learning_profile",
+    "detect_duplicate_proposal",
+    "detect_conflict",
+    "validate_new_value"
+  ],
+  "response_policy": {
+    "repeat_approved_decisions": false,
+    "invent_missing_facts": false,
+    "max_support_agents": 2,
+    "one_primary_agent": true,
+    "manual_steps": "one_at_a_time",
+    "stop_on_unresolved_conflict": true
+  }
+}
