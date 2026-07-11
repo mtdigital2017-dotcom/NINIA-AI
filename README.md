@@ -1,35 +1,19 @@
-# NINIA-AI
+# NINIA-AI v1.0.3
 
-Motor inteligente de NINIA v1.0.
+Esta versión conserva el procesamiento documental existente y agrega la API de admisión de evidencia.
 
-## Propósito
-
-Procesar documentos, construir objetos de conocimiento, exponerlos vía API y preparar la integración con NINIA-FRONTEND.
-
-## Estructura
-
-```text
-NINIA-AI/
-├── api/
-├── engine/
-├── knowledge/
-├── pipelines/
-├── tests/
-├── docs/
-├── scripts/
-├── data/
-└── requirements.txt
-```
-
-## Ejecutar API
-
-```bash
-pip install -r requirements.txt
-uvicorn api.main:app --reload
-```
-
-## Endpoints iniciales
+## Endpoints existentes conservados
 
 - `GET /health`
-- `GET /knowledge?status=proposed`
+- `GET /knowledge`
 - `POST /documents/process`
+
+## Nuevas capacidades
+
+- Cuarentena obligatoria.
+- Hash SHA-256.
+- Detección de duplicados.
+- Índice preliminar de confianza.
+- Especialidades de investigación.
+- Trazabilidad.
+- Revisión humana.
