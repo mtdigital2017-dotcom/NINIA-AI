@@ -1,0 +1,13 @@
+{
+  "id": "DT-BM-002",
+  "title": "Endurecer exclusiones y validación del Backup Manager v1.1",
+  "status": "approved_for_validation",
+  "date": "2026-07-11",
+  "decision": "Rechazar cualquier respaldo que contenga .git, .venv, cachés, archivos .pyc o credenciales conocidas, y verificar que el manifiesto coincida exactamente con el ZIP.",
+  "constraints": [
+    "No depender de Google Cloud Billing.",
+    "No almacenar credenciales en Git.",
+    "Verificar cada backup con SHA-256.",
+    "Excluir .git, .venv y cachés."
+  ]
+}
