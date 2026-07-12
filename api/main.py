@@ -115,6 +115,7 @@ def dt_plan(payload: DTRequest):
             "memory_loaded": result.memory_loaded,
             "memory_qa_passed": result.memory_qa_passed,
             "decision_plan": result.decision_plan,
+            "execution_plan": result.execution_plan,
             "trace_path": result.trace_path,
         }
     except Exception as exc:

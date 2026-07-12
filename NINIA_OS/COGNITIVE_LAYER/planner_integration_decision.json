@@ -1,0 +1,19 @@
+{
+  "id": "CL-PL-002",
+  "title": "Conectar Planner con Executive Controller y API",
+  "status": "approved_for_validation",
+  "date": "2026-07-11",
+  "decision": "Toda solicitud procesada por Executive Controller generará automáticamente un DecisionPlan y un Plan ejecutable.",
+  "flow": [
+    "Memory Manager",
+    "Decision Engine",
+    "Planner",
+    "Executive trace",
+    "API response"
+  ],
+  "constraints": [
+    "Planner no ejecuta tareas.",
+    "No se crea un segundo orquestador.",
+    "La evidencia bloqueada permanece sujeta a validación humana."
+  ]
+}
