@@ -1,0 +1,14 @@
+{
+  "id": "CL-PL-001",
+  "title": "Integrar Planner v1",
+  "status": "approved_for_validation",
+  "date": "2026-07-12",
+  "decision": "El Planner convierte el resultado del Decision Engine en tareas ordenadas, dependencias y criterios de cierre.",
+  "non_duplication": "Decision Engine selecciona especialistas y bloqueos; Planner estructura la ejecución. No reemplaza al Orchestrator.",
+  "constraints": [
+    "No ejecutar tareas.",
+    "No modificar decisiones.",
+    "No aprobar evidencia.",
+    "Máximo dos especialistas de apoyo."
+  ]
+}
