@@ -1,0 +1,12 @@
+{
+  "id": "KN-CONTRACT-001",
+  "title": "Adoptar contrato único de conocimiento v1",
+  "status": "approved_for_validation",
+  "decision": "Unificar objetos históricos y actuales mediante normalización, sin copiar directamente knowledge_object.py histórico.",
+  "constraints": [
+    "No aprobar evidencia automáticamente.",
+    "Conservar provenance y SHA-256.",
+    "Permitir campos adicionales para no perder información.",
+    "Validar antes de indexar o buscar."
+  ]
+}

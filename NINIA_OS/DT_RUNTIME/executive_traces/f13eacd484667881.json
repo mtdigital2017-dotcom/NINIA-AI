@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "request_id": "f13eacd484667881",
+  "request": "Aprobar evidencia e incorporar como aprobado.",
+  "memory_loaded": true,
+  "memory_qa_passed": true,
+  "context_generated_at": "2026-07-12T03:04:00.987431+00:00",
+  "decision_plan": {
+    "request": "Aprobar evidencia e incorporar como aprobado.",
+    "objective": "Aprobar evidencia e incorporar como aprobado",
+    "lead_specialist": "Evidence",
+    "support_specialists": [],
+    "actions": [
+      "Detener aprobación automática.",
+      "Enviar a validación humana.",
+      "Registrar estado EN VALIDACIÓN."
+    ],
+    "warnings": [
+      "La evidencia requiere validación humana antes de aprobarse."
+    ],
+    "blocked": true,
+    "reason": "La evidencia requiere validación humana antes de aprobarse.",
+    "sources": [
+      "NINIA_OS/DT_RUNTIME/current_context.json",
+      "NINIA_OS/DT_RUNTIME/decision_registry.json"
+    ],
+    "generated_at": "2026-07-12T03:04:00.987736+00:00"
+  },
+  "execution_plan": {
+    "plan_id": "a107dbe33e00",
+    "objective": "Aprobar evidencia e incorporar como aprobado",
+    "source_request": "Aprobar evidencia e incorporar como aprobado.",
+    "lead_specialist": "Evidence",
+    "support_specialists": [],
+    "tasks": [
+      {
+        "id": "T1",
+        "title": "Detener ejecución automática",
+        "description": "Conservar el elemento en estado EN VALIDACIÓN hasta decisión humana.",
+        "specialist": "Evidence",
+        "depends_on": [],
+        "acceptance_criteria": [
+          "No se modifica conocimiento aprobado.",
+          "La revisión humana queda registrada."
+        ],
+        "status": "blocked"
+      }
+    ],
+    "completion_criteria": [
+      "Existe una decisión humana registrada.",
+      "El estado final está trazado."
+    ],
+    "blocked": true,
+    "reason": "La evidencia requiere validación humana antes de aprobarse.",
+    "generated_at": "2026-07-12T03:04:00.987879+00:00",
+    "sources": [
+      "NINIA_OS/DT_RUNTIME/current_context.json",
+      "NINIA_OS/DT_RUNTIME/decision_registry.json",
+      "NINIA_OS/PROJECT_MANIFEST.json"
+    ]
+  },
+  "processed_at": "2026-07-12T03:04:00.988041+00:00"
+}
