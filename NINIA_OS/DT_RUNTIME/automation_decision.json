@@ -1,0 +1,20 @@
+{
+  "id": "DT-AUTO-001",
+  "title": "Activar memoria y decisiones automáticas en NINIA-AI",
+  "status": "approved_for_validation",
+  "date": "2026-07-11",
+  "decision": "Toda solicitud API debe ejecutar RuntimeBootstrap antes de ser procesada. El arranque reconstruye memoria, genera el manifiesto, valida QA y actualiza documentación automática.",
+  "components": [
+    "RuntimeBootstrap",
+    "ProjectManifest",
+    "DocumentationManager",
+    "ExecutiveController",
+    "DecisionEngine"
+  ],
+  "constraints": [
+    "No procesar solicitudes si falla la memoria.",
+    "No procesar solicitudes si falla QA.",
+    "No aprobar evidencia automáticamente.",
+    "Generar trazabilidad por solicitud."
+  ]
+}

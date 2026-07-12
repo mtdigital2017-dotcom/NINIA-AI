@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Optional
 import shutil
 import tempfile
 
@@ -12,9 +13,12 @@ from fastapi import (
     Form,
 )
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from engine.ninia_engine import NiniaEngine
+from dt_runtime.bootstrap import RuntimeBootstrap
+from dt_runtime.executive_controller import ExecutiveController
 from engine.evidence_admission import (
     DuplicateEvidenceError,
     EvidenceAdmissionEngine,
@@ -25,6 +29,8 @@ from engine.evidence_admission import (
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 UPLOAD_DIR = BASE_DIR / "data" / "uploads"
+runtime_bootstrap = RuntimeBootstrap(BASE_DIR)
+executive_controller = ExecutiveController(BASE_DIR)
 
 app = FastAPI(
     title="NINIA-AI API",
@@ -46,12 +52,76 @@ admission_engine = EvidenceAdmissionEngine(
 )
 
 
+
+@app.on_event("startup")
+def startup_runtime():
+    """Carga memoria, manifiesto y QA antes de aceptar solicitudes."""
+    app.state.runtime_status = runtime_bootstrap.run()
+
+
+@app.middleware("http")
+async def enforce_runtime_bootstrap(request, call_next):
+    """Impide procesar solicitudes si el Runtime no está listo."""
+    if request.url.path in {
+        "/docs",
+        "/openapi.json",
+        "/redoc",
+    }:
+        return await call_next(request)
+
+    try:
+        app.state.runtime_status = runtime_bootstrap.run()
+    except Exception as exc:
+        return JSONResponse(
+            status_code=503,
+            content={
+                "status": "blocked",
+                "reason": "DT Runtime no disponible",
+                "detail": str(exc),
+            },
+        )
+
+    return await call_next(request)
+
+
+
+class DTRequest(BaseModel):
+    request: str
+
+
 class StatusUpdate(BaseModel):
     status: str
     reviewer_name: str
     reviewer_email: str
     review_notes: str
-    evidence_level: str | None = None
+    evidence_level: Optional[str] = None
+
+
+
+@app.get("/dt/health")
+def dt_health():
+    return {
+        "runtime": runtime_bootstrap.run(),
+        "executive": executive_controller.health(),
+    }
+
+
+@app.post("/dt/plan")
+def dt_plan(payload: DTRequest):
+    try:
+        result = executive_controller.process(payload.request)
+        return {
+            "request_id": result.request_id,
+            "memory_loaded": result.memory_loaded,
+            "memory_qa_passed": result.memory_qa_passed,
+            "decision_plan": result.decision_plan,
+            "trace_path": result.trace_path,
+        }
+    except Exception as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc),
+        ) from exc
 
 
 @app.get("/")
@@ -243,8 +313,8 @@ async def create_evidence_request(
 
 @app.get("/evidence/requests")
 def list_evidence_requests(
-    status: str | None = None,
-    specialty: str | None = None,
+    status: Optional[str] = None,
+    specialty: Optional[str] = None,
 ):
     items = admission_engine.list_requests(
         status=status,
