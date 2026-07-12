@@ -52,3 +52,13 @@ backups/
 # NINIA DT Runtime
 NINIA_OS/DT_RUNTIME/*.tmp
 *.local.json
+
+# NINIA Runtime local state (generated, never versioned)
+NINIA_OS/DT_RUNTIME/executive_traces/*.json
+NINIA_OS/PLANS/*.json
+NINIA_OS/DT_RUNTIME/AUTOMATION_STATUS.json
+NINIA_OS/DT_RUNTIME/current_context.json
+NINIA_OS/DT_RUNTIME/GUARDIAN_REPORT.json
+NINIA_OS/DT_RUNTIME/last_decision_plan.json
+NINIA_OS/PROJECT_MANIFEST.json
+NINIA_OS/MASTER_MEMORY_MERGE_AUDIT.md

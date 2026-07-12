@@ -1,6 +1,6 @@
 # NINIA_MASTER_MEMORY.md
 
-**Versión:** 2.3  
+**Versión:** 2.4  
 **Estado:** DOCUMENTO RECTOR VIVO  
 **Responsable:** Director Técnico (DT)  
 **Ubicación oficial:** `NINIA_OS/NINIA_MASTER_MEMORY.md`  
@@ -803,6 +803,11 @@ El adaptador de Biblioteca validado en Colab se integra como archivo independien
 
 ---
 
+## DT-025
+Los estados operativos, planes automáticos, trazas y manifiestos regenerables del Runtime se conservan localmente y quedan fuera de Git. Git versiona código, reglas estables, decisiones aprobadas, documentación y memoria oficial.
+
+---
+
 # 26. BITÁCORA VIVA
 
 ## Plantilla obligatoria por sesión
@@ -924,6 +929,51 @@ El Sprint solo cambiará a `INTEGRADO` cuando:
 ## Siguiente paso
 
 Aplicar el paquete oficial de integración, revisar `Changes` en ambos repositorios y realizar commits limpios separados.
+
+
+# 30. POLÍTICA DEL RUNTIME FRENTE A GIT
+
+**Fecha:** 2026-07-12  
+**Estado:** VALIDADA_EN_COLAB — PENDIENTE_DE_COMMIT
+
+## Regla permanente
+
+Git conserva:
+
+- código;
+- reglas y configuraciones estables;
+- decisiones aprobadas;
+- documentación;
+- pruebas;
+- `NINIA_MASTER_MEMORY.md`.
+
+El Runtime conserva localmente y fuera de Git:
+
+- `NINIA_OS/DT_RUNTIME/executive_traces/*.json`;
+- `NINIA_OS/PLANS/*.json`;
+- `NINIA_OS/DT_RUNTIME/AUTOMATION_STATUS.json`;
+- `NINIA_OS/DT_RUNTIME/current_context.json`;
+- `NINIA_OS/DT_RUNTIME/GUARDIAN_REPORT.json`;
+- `NINIA_OS/DT_RUNTIME/last_decision_plan.json`;
+- `NINIA_OS/PROJECT_MANIFEST.json`;
+- `NINIA_OS/MASTER_MEMORY_MERGE_AUDIT.md`.
+
+## Justificación
+
+Estos archivos cambian por ejecución, contienen timestamps o estados locales y pueden regenerarse. No representan decisiones institucionales ni capacidades aprobadas. Mantenerlos versionados genera ruido y dificulta distinguir avances reales.
+
+## Implementación segura
+
+- se crea respaldo completo antes del cambio;
+- se actualiza `.gitignore`;
+- los archivos se retiran del índice de Git;
+- los archivos locales no se borran;
+- no se ejecuta el Runtime;
+- no se hace commit ni push automáticamente.
+
+## Criterio de cierre
+
+La política quedará `INTEGRADA` cuando se revise el diff, se haga un commit independiente y se complete el push.
 
 
 # 28. REGLA FINAL
