@@ -1,0 +1,12 @@
+{
+  "id": "DT-RG-001",
+  "title": "Integrar Runtime Guardian v1",
+  "status": "approved_for_validation",
+  "date": "2026-07-12",
+  "decision": "Bloquear el Runtime ante corrupción crítica.",
+  "constraints": [
+    "No modificar conocimiento aprobado.",
+    "No restaurar sin backup verificado.",
+    "Generar reporte trazable."
+  ]
+}
