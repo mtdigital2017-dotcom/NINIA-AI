@@ -1,6 +1,6 @@
 # NINIA_MASTER_MEMORY.md
 
-**Versión:** 2.2  
+**Versión:** 2.3  
 **Estado:** DOCUMENTO RECTOR VIVO  
 **Responsable:** Director Técnico (DT)  
 **Ubicación oficial:** `NINIA_OS/NINIA_MASTER_MEMORY.md`  
@@ -798,6 +798,11 @@ Google Colab se establece como centro de entrenamiento, experimentación y valid
 
 ---
 
+## DT-024
+El adaptador de Biblioteca validado en Colab se integra como archivo independiente en el frontend. No se modifica el backend ni se crea otro motor Knowledge. El intento local anterior no aprobado se restaura antes de aplicar el candidato oficial.
+
+---
+
 # 26. BITÁCORA VIVA
 
 ## Plantilla obligatoria por sesión
@@ -845,6 +850,81 @@ Commit:
 Integrar este archivo en `NINIA_OS/NINIA_MASTER_MEMORY.md`, ejecutar validación y hacer commit.
 
 ---
+
+
+
+---
+
+# 29. SPRINT 1 — ADAPTADOR DE BIBLIOTECA KNOWLEDGE
+
+**Fecha:** 2026-07-12  
+**Producto:** Knowledge  
+**Estado:** VALIDADO_EN_COLAB — PENDIENTE_DE_INTEGRACIÓN_LOCAL
+
+## Objetivo
+
+Cerrar el primer flujo visible reutilizando el backend aprobado:
+
+```text
+Documento
+→ POST /documents/process
+→ Knowledge Object PROPUESTO
+→ GET /knowledge
+→ Adaptador de Biblioteca
+→ Frontend
+```
+
+## Resultado validado en Colab
+
+- El Knowledge Contract v1 es compatible con el frontend.
+- La Biblioteca consume `GET /knowledge`.
+- Se reutiliza `POST /documents/process`.
+- El backend no requiere cambios.
+- Los documentos nuevos permanecen en estado `PROPUESTO`.
+- No existe aprobación automática.
+- Se preservan fuente, idioma original, nivel de evidencia, estado y procedencia.
+- El adaptador incluye búsqueda, manejo de errores y estado vacío verificable.
+- La sintaxis JavaScript fue aprobada en Colab.
+
+## Archivos candidatos aprobados
+
+### NINIA-FRONTEND
+
+- `index.html`
+- `styles.css`
+- `ninia-knowledge-adapter.js`
+- `app.js` se restaura a la base auditada para retirar el intento local anterior no aprobado.
+
+### NINIA-AI
+
+- `NINIA_OS/NINIA_MASTER_MEMORY.md`
+
+El backend se reutiliza sin modificaciones.
+
+## Brechas no bloqueantes
+
+- detección automática del idioma original;
+- extracción de autores;
+- entidades NLP con spaCy;
+- citas y páginas;
+- URL HTTPS pública de FastAPI para Vercel;
+- búsqueda semántica y RAG.
+
+## Criterio de cierre
+
+El Sprint solo cambiará a `INTEGRADO` cuando:
+
+1. los archivos aprobados se apliquen a los repositorios locales;
+2. la validación local del paquete sea aprobada;
+3. se revisen los cambios en GitHub Desktop;
+4. se realicen commits separados en frontend y memoria;
+5. se haga push;
+6. se compruebe la Biblioteca contra un backend accesible.
+
+## Siguiente paso
+
+Aplicar el paquete oficial de integración, revisar `Changes` en ambos repositorios y realizar commits limpios separados.
+
 
 # 28. REGLA FINAL
 
