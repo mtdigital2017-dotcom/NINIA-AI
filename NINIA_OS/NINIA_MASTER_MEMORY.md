@@ -1028,3 +1028,31 @@ No existirán memorias maestras paralelas.
 - detección de idioma heurística;
 - extracción básica de autores, año y DOI;
 - revisión humana obligatoria.
+
+---
+
+## Unified Evidence Intake v1
+
+Se unificaron los flujos previamente paralelos:
+
+```text
+EvidenceAdmissionEngine
+→ deduplicación
+→ cuarentena
+→ NiniaEngine
+→ Knowledge Contract
+→ Knowledge Object PROPUESTO
+→ revisión
+→ sincronización de estado
+```
+
+Reglas:
+
+- no se creó otro DocumentProcessor;
+- no se creó otro motor de admisión;
+- no se creó otro corpus;
+- CUARENTENA y PROPUESTO permanecen separados;
+- la aprobación humana sincroniza el Knowledge Object;
+- no existe aprobación automática.
+
+QA: todas las pruebas aprobadas.

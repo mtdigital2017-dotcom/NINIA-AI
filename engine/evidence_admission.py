@@ -8,6 +8,8 @@ import re
 import shutil
 import uuid
 
+from engine.ninia_engine import NiniaEngine
+
 
 class EvidenceAdmissionError(Exception):
     """Error controlado del proceso de admisión."""
@@ -71,11 +73,18 @@ class EvidenceAdmissionEngine:
         "ONG": 70,
     }
 
-    def __init__(self, base_dir: Path | str | None = None):
+    def __init__(
+        self,
+        base_dir: Path | str | None = None,
+        ninia_engine: NiniaEngine | None = None,
+    ):
         self.base_dir = (
             Path(base_dir)
             if base_dir
             else Path(__file__).resolve().parent.parent
+        )
+        self.ninia_engine = ninia_engine or NiniaEngine(
+            base_dir=self.base_dir
         )
         self.files_dir = self.base_dir / "data" / "quarantine"
         self.quarantine_dir = self.base_dir / "knowledge" / "quarantine"
@@ -319,6 +328,130 @@ class EvidenceAdmissionEngine:
 
         return record
 
+    def _persist_record(self, record: dict) -> Path:
+        if record["status"] == "APROBADO":
+            directory = self.approved_dir
+        elif record["status"] == "RECHAZADO":
+            directory = self.rejected_dir
+        else:
+            directory = self.quarantine_dir
+
+        target = directory / f"{record['id']}.json"
+        target.write_text(
+            json.dumps(record, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        return target
+
+    def admit_and_process(self, **request_data) -> dict:
+        """Unifica admisión, deduplicación y procesamiento documental.
+
+        La solicitud permanece en CUARENTENA y el Knowledge Object queda
+        en PROPUESTO. Ningún documento se aprueba automáticamente.
+        """
+
+        record = self.create_request(**request_data)
+        stored_path = Path(record["stored_file"])
+
+        try:
+            result = self.ninia_engine.process_document(
+                stored_path,
+                metadata={
+                    "title": record["title"],
+                    "year": record["year"],
+                    "authors": [record["author"]],
+                    "source_entity": record["source"],
+                    "source_url_or_doi": record["source_url_or_doi"],
+                    "document_type": record["document_type"],
+                    "relation_to_ninia": record["relation_to_ninia"],
+                    "specialty": record["specialty"],
+                    "evidence_level": record["evidence_level"],
+                    "status": "PROPUESTO",
+                },
+            )
+        except Exception as exc:
+            record["processing_status"] = "ERROR"
+            record["processing_error"] = (
+                f"{type(exc).__name__}: {exc}"
+            )
+            record["updated_at"] = self._now()
+            record["history"].append(
+                {
+                    "timestamp": record["updated_at"],
+                    "from_status": "CUARENTENA",
+                    "to_status": "CUARENTENA",
+                    "actor": "ninia_engine",
+                    "notes": record["processing_error"],
+                }
+            )
+            self._persist_record(record)
+            raise
+
+        normalized = result["normalized_knowledge_object"]
+        record["processing_status"] = "PROCESADO"
+        record["knowledge_id"] = normalized["knowledge_id"]
+        record["knowledge_object_path"] = result["saved_to"]
+        record["knowledge_status"] = normalized["evidence_status"]
+        record["processing_qa"] = result["qa"]
+        record["updated_at"] = self._now()
+        record["history"].append(
+            {
+                "timestamp": record["updated_at"],
+                "from_status": "CUARENTENA",
+                "to_status": "CUARENTENA",
+                "actor": "ninia_engine",
+                "notes": (
+                    "Documento procesado y Knowledge Object "
+                    "creado en estado PROPUESTO."
+                ),
+            }
+        )
+        self._persist_record(record)
+
+        return {
+            "admission_record": record,
+            "processing_result": result,
+        }
+
+    def _sync_knowledge_status(
+        self,
+        record: dict,
+        new_status: str,
+    ) -> None:
+        knowledge_id = record.get("knowledge_id")
+        current_path_value = record.get("knowledge_object_path")
+
+        if not knowledge_id or not current_path_value:
+            return
+
+        current_path = Path(current_path_value)
+        if not current_path.exists():
+            return
+
+        knowledge_object = json.loads(
+            current_path.read_text(encoding="utf-8")
+        )
+        status_map = {
+            "CUARENTENA": "PROPUESTO",
+            "CORRECCION_SOLICITADA": "PROPUESTO",
+            "EN_VALIDACION": "EN_VALIDACION",
+            "APROBADO": "APROBADO",
+            "RECHAZADO": "RECHAZADO",
+        }
+        knowledge_status = status_map[new_status]
+        knowledge_object["evidence_status"] = knowledge_status
+        knowledge_object["updated_at"] = self._now()
+
+        new_path = self.ninia_engine.save_knowledge_object(
+            knowledge_object
+        )
+
+        if new_path != current_path and current_path.exists():
+            current_path.unlink()
+
+        record["knowledge_status"] = knowledge_status
+        record["knowledge_object_path"] = str(new_path)
+
     def list_requests(
         self,
         status: str | None = None,
@@ -397,6 +530,8 @@ class EvidenceAdmissionEngine:
 
         if evidence_level:
             record["evidence_level"] = evidence_level
+
+        self._sync_knowledge_status(record, new_status)
 
         record["history"].append(
             {
