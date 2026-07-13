@@ -263,7 +263,7 @@ async def create_evidence_request(
             )
             temp_path = Path(temp.name)
 
-        record = admission_engine.create_request(
+        unified = admission_engine.admit_and_process(
             uploaded_file_path=temp_path,
             original_filename=(
                 file.filename or "documento"
@@ -284,12 +284,17 @@ async def create_evidence_request(
             declaration_accepted=declaration_accepted,
         )
 
+        admission = unified["admission_record"]
+        processing = unified["processing_result"]
+
         return {
             "ok": True,
             "message": (
-                "Solicitud enviada a cuarentena."
+                "Solicitud enviada a cuarentena y documento procesado."
             ),
-            "request": record,
+            "request": admission,
+            "knowledge": processing["normalized_knowledge_object"],
+            "saved_to": processing["saved_to"],
         }
 
     except DuplicateEvidenceError as exc:
@@ -316,11 +321,21 @@ async def create_evidence_request(
 def list_evidence_requests(
     status: Optional[str] = None,
     specialty: Optional[str] = None,
+    researcher_email: Optional[str] = None,
 ):
     items = admission_engine.list_requests(
         status=status,
         specialty=specialty,
     )
+
+    if researcher_email:
+        normalized_email = researcher_email.strip().lower()
+        items = [
+            item
+            for item in items
+            if str(item.get("researcher", {}).get("email", "")).lower()
+            == normalized_email
+        ]
 
     return {
         "total": len(items),

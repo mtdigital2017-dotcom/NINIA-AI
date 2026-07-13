@@ -1081,3 +1081,30 @@ Reglas:
 - no se creó otra biblioteca, corpus o procesador.
 
 QA: todas las pruebas aprobadas.
+
+---
+
+## Sprint 2.4 — Integración Operativa Backend ↔ Frontend
+
+Estado: VALIDADO_EN_COLAB
+
+Resultado:
+
+- FastAPI reutilizado; no se creó otro backend.
+- Frontend existente conectado a `/health`, `/knowledge`,
+  `/researcher/specialties` y `/evidence/requests`.
+- La admisión de investigadores reutiliza `admit_and_process`.
+- Los documentos ingresan en `CUARENTENA`.
+- El Knowledge Object se genera en `PROPUESTO`.
+- La Biblioteca pública continúa mostrando conocimiento aprobado.
+- El panel del investigador consulta sus solicitudes por correo institucional.
+- Sin aprobación automática.
+- QA backend: 57 pruebas aprobadas.
+- QA frontend: JavaScript validado sin errores de sintaxis.
+
+Limitación conocida:
+
+- El filtro por correo institucional es una protección funcional del PMV,
+  no sustituye autenticación robusta. La autenticación se implementará
+  cuando corresponda en el roadmap aprobado.
+
