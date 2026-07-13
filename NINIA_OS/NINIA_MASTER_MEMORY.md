@@ -1108,3 +1108,23 @@ Limitación conocida:
   no sustituye autenticación robusta. La autenticación se implementará
   cuando corresponda en el roadmap aprobado.
 
+---
+
+## Sprint 2.5 — Corpus Oficial Piloto
+
+Estado: VALIDADO_EN_COLAB
+
+Se ejecutó el primer ciclo automático de adquisición de evidencia
+oficial usando la arquitectura existente.
+
+Resultados:
+
+- documentos descargados: 13;
+- documentos procesados: 13;
+- Knowledge Objects en PROPUESTO;
+- Evidence Layer generada;
+- dominios oficiales verificados;
+- SHA-256 y trazabilidad preservados;
+- sin aprobación automática;
+- QA completo aprobado.
+
