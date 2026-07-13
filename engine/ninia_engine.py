@@ -9,6 +9,7 @@ import re
 from engine.services.hash_service import HashService
 from engine.services.knowledge_adapter import KnowledgeContractAdapter
 from engine.services.metadata_extractor import MetadataExtractor
+from engine.services.evidence_layer import EvidenceLayerService
 
 
 class NiniaEngine:
@@ -53,6 +54,7 @@ class NiniaEngine:
         self.metadata_extractor = MetadataExtractor()
         self.hash_service = HashService()
         self.knowledge_adapter = KnowledgeContractAdapter()
+        self.evidence_layer = EvidenceLayerService()
         self.ensure_directories()
 
     def ensure_directories(self) -> None:
@@ -220,6 +222,17 @@ class NiniaEngine:
             raise ValueError("El documento no contiene texto extraíble.")
 
         raw_object = self.build_knowledge_object(path, text, metadata)
+        evidence_layer = self.evidence_layer.build(
+            text=text,
+            knowledge_id=raw_object["id"],
+            source_path=str(path),
+            language=raw_object.get("language"),
+            topics=raw_object.get("topics"),
+            digital_risks=raw_object.get("digital_risks"),
+            relation_to_ninia=raw_object.get("relation_to_ninia"),
+        )
+        raw_object.update(evidence_layer)
+
         normalized_object = self.knowledge_adapter.build(
             raw_object,
             source_path=path,

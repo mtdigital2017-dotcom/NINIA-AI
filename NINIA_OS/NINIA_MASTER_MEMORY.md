@@ -1056,3 +1056,28 @@ Reglas:
 - no existe aprobación automática.
 
 QA: todas las pruebas aprobadas.
+
+---
+
+## Evidence Layer v1
+
+Clasificación: `EXTENSIÓN`
+
+Se amplió el Knowledge Object existente con:
+
+- `evidence_fragments`;
+- `typed_relations`;
+- `source_locator`;
+- `confidence`;
+- `validation_status`.
+
+Reglas:
+
+- compatibilidad hacia atrás;
+- `schema_version` permanece en `1.0`;
+- objetos heredados reciben listas vacías;
+- fragmentos y relaciones nacen en `PROPUESTO`;
+- no existe aprobación automática;
+- no se creó otra biblioteca, corpus o procesador.
+
+QA: todas las pruebas aprobadas.

@@ -100,6 +100,14 @@ def normalize_knowledge_object(
     provenance.setdefault("sha256", sha256)
     provenance.setdefault("ingestion_method", "normalized")
 
+    evidence_fragments = result.get("evidence_fragments") or []
+    if not isinstance(evidence_fragments, list):
+        evidence_fragments = []
+
+    typed_relations = result.get("typed_relations") or []
+    if not isinstance(typed_relations, list):
+        typed_relations = []
+
     normalized = {
         "schema_version": "1.0",
         "knowledge_id": str(knowledge_id),
@@ -120,6 +128,8 @@ def normalize_knowledge_object(
         ),
         "relation_to_ninia": result.get("relation_to_ninia") or result.get("relation"),
         "specialty": result.get("specialty"),
+        "evidence_fragments": evidence_fragments,
+        "typed_relations": typed_relations,
         "provenance": provenance,
         "created_at": str(result.get("created_at") or _now()),
         "updated_at": result.get("updated_at"),
@@ -169,6 +179,105 @@ def validate_knowledge_object(data: dict[str, Any]) -> None:
     digest = str(provenance.get("sha256", ""))
     if len(digest) != 64:
         raise KnowledgeContractError("provenance.sha256 debe tener 64 caracteres.")
+
+    _validate_evidence_layer(data)
+
+
+def _validate_evidence_layer(data: dict[str, Any]) -> None:
+    fragments = data.get("evidence_fragments", [])
+    relations = data.get("typed_relations", [])
+
+    if not isinstance(fragments, list):
+        raise KnowledgeContractError("evidence_fragments debe ser una lista.")
+
+    fragment_ids: set[str] = set()
+    for item in fragments:
+        if not isinstance(item, dict):
+            raise KnowledgeContractError(
+                "Cada evidence_fragment debe ser un objeto."
+            )
+        required = {
+            "fragment_id",
+            "text",
+            "evidence_type",
+            "source_locator",
+            "confidence",
+            "validation_status",
+        }
+        missing = required - set(item)
+        if missing:
+            raise KnowledgeContractError(
+                "Evidence fragment incompleto: " + ", ".join(sorted(missing))
+            )
+        fragment_id = str(item["fragment_id"]).strip()
+        if not fragment_id or fragment_id in fragment_ids:
+            raise KnowledgeContractError(
+                "fragment_id vacío o duplicado."
+            )
+        fragment_ids.add(fragment_id)
+        if not str(item["text"]).strip():
+            raise KnowledgeContractError(
+                "El texto del fragmento no puede estar vacío."
+            )
+        confidence = float(item["confidence"])
+        if not 0.0 <= confidence <= 1.0:
+            raise KnowledgeContractError(
+                "La confianza del fragmento debe estar entre 0 y 1."
+            )
+        if item["validation_status"] not in ALLOWED_STATUSES:
+            raise KnowledgeContractError(
+                "validation_status inválido en evidence_fragment."
+            )
+        if not isinstance(item["source_locator"], dict):
+            raise KnowledgeContractError(
+                "source_locator debe ser un objeto."
+            )
+
+    if not isinstance(relations, list):
+        raise KnowledgeContractError("typed_relations debe ser una lista.")
+
+    relation_ids: set[str] = set()
+    for item in relations:
+        if not isinstance(item, dict):
+            raise KnowledgeContractError(
+                "Cada typed_relation debe ser un objeto."
+            )
+        required = {
+            "relation_id",
+            "relation_type",
+            "target",
+            "source_fragment_ids",
+            "confidence",
+            "validation_status",
+        }
+        missing = required - set(item)
+        if missing:
+            raise KnowledgeContractError(
+                "Typed relation incompleta: " + ", ".join(sorted(missing))
+            )
+        relation_id = str(item["relation_id"]).strip()
+        if not relation_id or relation_id in relation_ids:
+            raise KnowledgeContractError(
+                "relation_id vacío o duplicado."
+            )
+        relation_ids.add(relation_id)
+        if not isinstance(item["target"], dict):
+            raise KnowledgeContractError("target debe ser un objeto.")
+        unknown = set(item["source_fragment_ids"]) - fragment_ids
+        if unknown:
+            raise KnowledgeContractError(
+                "La relación referencia fragmentos inexistentes: "
+                + ", ".join(sorted(unknown))
+            )
+        confidence = float(item["confidence"])
+        if not 0.0 <= confidence <= 1.0:
+            raise KnowledgeContractError(
+                "La confianza de la relación debe estar entre 0 y 1."
+            )
+        if item["validation_status"] not in ALLOWED_STATUSES:
+            raise KnowledgeContractError(
+                "validation_status inválido en typed_relation."
+            )
 
 
 def load_and_normalize(path: Path) -> dict[str, Any]:
