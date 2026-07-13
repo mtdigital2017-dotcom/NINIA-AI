@@ -1,14 +1,18 @@
 from __future__ import annotations
 
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import uuid
 import re
 
+from engine.services.hash_service import HashService
+from engine.services.knowledge_adapter import KnowledgeContractAdapter
+from engine.services.metadata_extractor import MetadataExtractor
+
 
 class NiniaEngine:
-    """Motor principal de procesamiento documental de NINIA-AI v1.0."""
+    """Motor principal de procesamiento documental de NINIA-AI v1.1."""
 
     STATUS_FOLDERS = {
         "PROPUESTO": "proposed",
@@ -19,39 +23,22 @@ class NiniaEngine:
 
     RISK_KEYWORDS = {
         "desinformación": [
-            "desinformación",
-            "misinformation",
-            "disinformation",
-            "fake news",
+            "desinformación", "misinformation", "disinformation", "fake news",
         ],
         "privacidad infantil": [
-            "privacidad",
-            "privacy",
-            "datos personales",
-            "personal data",
+            "privacidad", "privacy", "datos personales", "personal data",
         ],
         "publicidad dirigida": [
-            "publicidad",
-            "advertising",
-            "targeted ads",
-            "marketing",
+            "publicidad", "advertising", "targeted ads", "marketing",
         ],
         "plataformas digitales": [
-            "plataforma",
-            "platform",
-            "redes sociales",
-            "social media",
+            "plataforma", "platform", "redes sociales", "social media",
         ],
         "ia generativa": [
-            "ia generativa",
-            "generative ai",
-            "deepfake",
-            "chatbot",
+            "ia generativa", "generative ai", "deepfake", "chatbot",
         ],
         "ciberacoso": [
-            "ciberacoso",
-            "cyberbullying",
-            "bullying",
+            "ciberacoso", "cyberbullying", "bullying",
         ],
     }
 
@@ -63,6 +50,9 @@ class NiniaEngine:
         )
         self.knowledge_dir = self.base_dir / "knowledge"
         self.upload_dir = self.base_dir / "data" / "uploads"
+        self.metadata_extractor = MetadataExtractor()
+        self.hash_service = HashService()
+        self.knowledge_adapter = KnowledgeContractAdapter()
         self.ensure_directories()
 
     def ensure_directories(self) -> None:
@@ -82,7 +72,6 @@ class NiniaEngine:
 
         if suffix == ".pdf":
             import pdfplumber
-
             text_parts = []
             with pdfplumber.open(str(path)) as pdf:
                 for page in pdf.pages:
@@ -91,47 +80,35 @@ class NiniaEngine:
 
         if suffix == ".docx":
             from docx import Document
-
             doc = Document(str(path))
-            return "\n".join(p.text for p in doc.paragraphs)
+            return "\n".join(paragraph.text for paragraph in doc.paragraphs)
 
         raise ValueError("Formato no soportado. Usa PDF, DOCX o TXT.")
 
     def detect_digital_risks(self, text: str) -> list[str]:
         text_lower = text.lower()
-        risks = []
-
-        for risk, keywords in self.RISK_KEYWORDS.items():
-            if any(keyword.lower() in text_lower for keyword in keywords):
-                risks.append(risk)
-
+        risks = [
+            risk
+            for risk, keywords in self.RISK_KEYWORDS.items()
+            if any(keyword.lower() in text_lower for keyword in keywords)
+        ]
         return sorted(set(risks)) if risks else ["NO_CLASIFICADO"]
 
     def infer_source_entity(self, file_name: str, text: str) -> str:
         candidates = [
-            "UNESCO",
-            "UNICEF",
-            "ITU",
-            "OECD",
-            "OCDE",
-            "ONU",
-            "CRC",
-            "EU",
-            "DSA",
-            "AI ACT",
+            "UNESCO", "UNICEF", "ITU", "OECD", "OCDE",
+            "ONU", "CRC", "EU", "DSA", "AI ACT",
         ]
         combined = f"{file_name} {text[:2000]}".upper()
-
-        for candidate in candidates:
-            if candidate in combined:
-                return candidate
-
-        return "NO_IDENTIFICADO"
+        return next(
+            (candidate for candidate in candidates if candidate in combined),
+            "NO_IDENTIFICADO",
+        )
 
     def infer_year(self, file_name: str, text: str) -> int:
         combined = f"{file_name} {text[:2000]}"
         match = re.search(r"\b(20[0-9]{2})\b", combined)
-        return int(match.group(1)) if match else datetime.utcnow().year
+        return int(match.group(1)) if match else datetime.now(timezone.utc).year
 
     def build_knowledge_object(
         self,
@@ -141,6 +118,11 @@ class NiniaEngine:
     ) -> dict:
         metadata = metadata or {}
         path = Path(file_path)
+        extracted = self.metadata_extractor.extract(path, text)
+        source_url_or_doi = (
+            metadata.get("source_url_or_doi")
+            or extracted["doi"]
+        )
 
         return {
             "id": str(uuid.uuid4()),
@@ -148,23 +130,39 @@ class NiniaEngine:
                 metadata.get("title")
                 or path.stem.replace("_", " ").replace("-", " ")
             ),
+            "content": text,
+            "summary": text[:1200].strip(),
+            "source": (
+                metadata.get("source_entity")
+                or self.infer_source_entity(path.name, text)
+            ),
             "source_entity": (
                 metadata.get("source_entity")
                 or self.infer_source_entity(path.name, text)
             ),
             "year": (
                 metadata.get("year")
+                or extracted["publication_year"]
+                or self.infer_year(path.name, text)
+            ),
+            "publication_year": (
+                metadata.get("year")
+                or extracted["publication_year"]
                 or self.infer_year(path.name, text)
             ),
             "document_type": (
                 metadata.get("document_type")
                 or path.suffix.lower().replace(".", "").upper()
             ),
-            "source_url_or_doi": metadata.get("source_url_or_doi", ""),
+            "source_url_or_doi": source_url_or_doi,
+            "authors": metadata.get("authors") or extracted["authors"],
+            "language": metadata.get("language") or extracted["language"],
             "main_topic": (
                 metadata.get("main_topic")
                 or "Protección integral de niñas, niños y adolescentes en entornos digitales"
             ),
+            "topics": metadata.get("topics") or [],
+            "entities": metadata.get("entities") or [],
             "relation_to_ninia": (
                 metadata.get("relation_to_ninia")
                 or "Documento procesado por NINIA para análisis y construcción de conocimiento."
@@ -179,28 +177,34 @@ class NiniaEngine:
                 or "NO_CLASIFICADO"
             ),
             "status": metadata.get("status") or "PROPUESTO",
-            "summary": text[:1200].strip(),
             "word_count": len(text.split()),
             "source_file": str(path),
-            "created_at": datetime.utcnow().isoformat(),
+            "file_sha256": self.hash_service.sha256_file(path),
+            "created_at": datetime.now(timezone.utc).isoformat(),
         }
 
     def save_knowledge_object(self, knowledge_object: dict) -> Path:
-        status = knowledge_object.get("status", "PROPUESTO")
+        status = (
+            knowledge_object.get("evidence_status")
+            or knowledge_object.get("status")
+            or "PROPUESTO"
+        )
         folder = self.STATUS_FOLDERS.get(status)
-
         if not folder:
             raise ValueError(f"Estado no válido: {status}")
 
+        identifier = (
+            knowledge_object.get("knowledge_id")
+            or knowledge_object.get("id")
+        )
+        if not identifier:
+            raise ValueError("El objeto no tiene identificador.")
+
         target = self.knowledge_dir / folder
         target.mkdir(parents=True, exist_ok=True)
-        output = target / f"{knowledge_object['id']}.json"
+        output = target / f"{identifier}.json"
         output.write_text(
-            json.dumps(
-                knowledge_object,
-                ensure_ascii=False,
-                indent=2,
-            ),
+            json.dumps(knowledge_object, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
         return output
@@ -210,46 +214,44 @@ class NiniaEngine:
         file_path: Path | str,
         metadata: dict | None = None,
     ) -> dict:
-        text = self.read_document(file_path)
-
+        path = Path(file_path)
+        text = self.read_document(path)
         if not text.strip():
             raise ValueError("El documento no contiene texto extraíble.")
 
-        knowledge_object = self.build_knowledge_object(
-            file_path,
-            text,
-            metadata,
+        raw_object = self.build_knowledge_object(path, text, metadata)
+        normalized_object = self.knowledge_adapter.build(
+            raw_object,
+            source_path=path,
+            source_bytes=path.read_bytes(),
         )
-        saved_to = self.save_knowledge_object(knowledge_object)
+        saved_to = self.save_knowledge_object(normalized_object)
 
         return {
             "ok": True,
-            "message": "Documento procesado correctamente.",
-            "knowledge_object": knowledge_object,
+            "message": "Documento procesado y validado contra Knowledge Contract v1.",
+            "knowledge_object": raw_object,
+            "normalized_knowledge_object": normalized_object,
             "saved_to": str(saved_to),
+            "qa": {
+                "contract_version": normalized_object["schema_version"],
+                "evidence_status": normalized_object["evidence_status"],
+                "sha256": normalized_object["provenance"]["sha256"],
+                "language": normalized_object.get("language"),
+            },
         }
 
-    def list_knowledge(
-        self,
-        status: str = "proposed",
-    ) -> list[dict]:
+    def list_knowledge(self, status: str = "proposed") -> list[dict]:
         allowed = set(self.STATUS_FOLDERS.values())
-
         if status not in allowed:
             raise ValueError(f"Estado no válido: {status}")
 
         folder = self.knowledge_dir / status
         folder.mkdir(parents=True, exist_ok=True)
         items = []
-
         for path in folder.glob("*.json"):
             try:
-                items.append(
-                    json.loads(
-                        path.read_text(encoding="utf-8")
-                    )
-                )
+                items.append(json.loads(path.read_text(encoding="utf-8")))
             except Exception:
                 continue
-
         return items

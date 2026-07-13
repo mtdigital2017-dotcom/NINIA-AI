@@ -989,3 +989,42 @@ Antes de cualquier desarrollo:
 7. versionar en Git.
 
 No existirán memorias maestras paralelas.
+
+---
+
+# SPRINT 2.1 — EVIDENCE CELL V1
+
+**Estado:** VALIDADO_EN_COLAB — INTEGRACIÓN_LOCAL_APLICADA
+
+## Resultado
+
+- Se reutilizó `NiniaEngine`; no se creó otro `DocumentProcessor`.
+- `NiniaEngine` evoluciona a v1.1.
+- Se integró el `Knowledge Contract v1` en el flujo real.
+- Se añadieron servicios reutilizables:
+  - Language Detector;
+  - Hash Service SHA-256;
+  - DOI Extractor;
+  - Metadata Extractor;
+  - Knowledge Contract Adapter.
+- Los objetos normalizados se guardan en `knowledge/proposed`.
+- La validación humana continúa siendo obligatoria.
+- No existe aprobación automática.
+- QA en Colab: 48 pruebas aprobadas.
+
+## Archivos funcionales integrados
+
+- `engine/ninia_engine.py`
+- `engine/services/__init__.py`
+- `engine/services/language_detector.py`
+- `engine/services/hash_service.py`
+- `engine/services/doi_extractor.py`
+- `engine/services/metadata_extractor.py`
+- `engine/services/knowledge_adapter.py`
+- `tests/test_evidence_cell_v1.py`
+
+## Limitaciones aceptadas en v1
+
+- detección de idioma heurística;
+- extracción básica de autores, año y DOI;
+- revisión humana obligatoria.
