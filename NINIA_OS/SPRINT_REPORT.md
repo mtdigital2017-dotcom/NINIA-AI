@@ -1,31 +1,34 @@
-# NINIA Sprint 2.9 — Evidence Dataset Platform v1
+# NINIA Sprint 3.0 — AI Trainer MVP v1
 
-**Fecha:** 2026-07-14T03:13:50.712046+00:00
+**Fecha:** 2026-07-14T03:37:23.027995+00:00
 **Estado:** VALIDADO_EN_COLAB
 
 ## Objetivo
 
-Transformar exclusivamente conocimiento APROBADO en datasets
-reproducibles, versionados y trazables para IA.
+Entrenar el primer modelo reproducible de NINIA usando
+exclusivamente datasets generados por EvidenceDatasetService.
 
 ## Implementación
 
-- EvidenceDatasetService.
-- División determinística train/validation/test.
-- Dataset RAG.
-- Dataset benchmark.
-- Estadísticas.
-- Manifiesto.
-- Evaluación automática de preparación para entrenamiento.
+- AITrainerService.
+- Clasificador Multinomial Naive Bayes.
+- Carga de train, validation y test.
+- Validación obligatoria del dataset.
+- Accuracy, macro precision, macro recall y macro F1.
+- Matriz de confusión.
+- Model Registry.
+- Manifiesto de entrenamiento.
+- Modelo persistido en JSON.
 
 ## Gobernanza
 
-- No usa objetos PROPUESTOS.
-- No modifica conocimiento.
-- No cambia estados.
+- No lee documentos originales.
+- No lee Knowledge Objects.
+- Solo acepta APPROVED_KNOWLEDGE_ONLY.
 - No existe aprobación automática.
-- Conserva knowledge_id, fragment_id y SHA-256.
+- No entrena cuando el dataset no está listo.
+- Entrenamiento reproducible.
 
 ## Próximo sprint
 
-Sprint 3.0 — AI Trainer MVP.
+Sprint 3.1 — Model Evaluation and Frontend Metrics.

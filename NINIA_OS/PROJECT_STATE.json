@@ -1,12 +1,14 @@
 {
-  "updated_at": "2026-07-14T03:13:50.712046+00:00",
+  "updated_at": "2026-07-14T03:37:23.027995+00:00",
   "current_phase": "FASE_IA",
-  "last_completed_sprint": "2.9",
-  "last_completed_component": "Evidence Dataset Platform v1",
-  "next_sprint": "3.0",
-  "next_component": "AI Trainer MVP",
+  "last_completed_sprint": "3.0",
+  "last_completed_component": "AI Trainer MVP v1",
+  "next_sprint": "3.1",
+  "next_component": "Model Evaluation and Frontend Metrics",
   "governance": {
-    "approved_knowledge_only": true,
+    "approved_dataset_only": true,
+    "source_documents_read_by_trainer": false,
+    "knowledge_objects_read_by_trainer": false,
     "automatic_approval": false,
     "memory_update_required_every_sprint": true,
     "zero_reprocessing_policy": true
@@ -14,6 +16,6 @@
   "qa": {
     "status": "PASSED",
     "pytest_return_code": 0,
-    "summary": "67 passed in 28.99s"
+    "summary": "70 passed in 29.08s"
   }
 }

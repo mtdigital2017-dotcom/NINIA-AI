@@ -1256,3 +1256,43 @@ roadmap, changelog, QA y reporte del sprint.
 
 QA: 67 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Sprint 3.0 — AI Trainer MVP v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Se añadió el primer entrenador reproducible de NINIA.
+
+Entrada única:
+
+- datasets generados por EvidenceDatasetService;
+- train.jsonl;
+- validation.jsonl;
+- test.jsonl;
+- manifest.json.
+
+Reglas:
+
+- el entrenador no lee documentos originales;
+- el entrenador no lee Knowledge Objects;
+- solo consume datasets con política APPROVED_KNOWLEDGE_ONLY;
+- se detiene si el dataset no está listo;
+- entrenamiento reproducible;
+- mismo dataset y configuración producen el mismo model_id;
+- métricas de accuracy, macro precision, macro recall y macro F1;
+- matriz de confusión;
+- registro versionado del modelo;
+- sin aprobación automática;
+- sin pipeline paralelo.
+
+Modelo MVP:
+
+- clasificador Multinomial Naive Bayes;
+- implementación con Python estándar;
+- sin nuevas dependencias externas.
+
+QA: 70 pruebas aprobadas, 2 advertencias, 0 fallos.
+

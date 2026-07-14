@@ -27,3 +27,9 @@
 - Evidence Dataset Platform v1.
 - Dataset reproducible desde conocimiento APROBADO.
 - Actualización automática de memoria y estado.
+
+## 2026-07-14 — Sprint 3.0
+- AI Trainer MVP v1.
+- Clasificador reproducible desde Evidence Dataset.
+- Métricas y registro del modelo.
+- Actualización automática de memoria y estado.
