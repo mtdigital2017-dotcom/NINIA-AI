@@ -1296,3 +1296,29 @@ Modelo MVP:
 
 QA: 70 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Baseline real del modelo v0.1
+
+Estado: INTEGRADO
+
+Fecha: 2026-07-14T04:37:38.043744+00:00
+
+Resultados:
+
+- model_version: 0.1.0-real;
+- dataset_version: 0.1.0-real;
+- Knowledge Objects aprobados en la ejecución: 13;
+- ejemplos del dataset: 520;
+- etiquetas: 8;
+- accuracy estándar de validación: 0.6154;
+- macro-F1 estándar de validación: 0.6014;
+- accuracy estricta por documento: 0.2731;
+- macro-F1 estricta por documento: 0.1257.
+
+Decisión DT:
+
+La evaluación estricta por documento es la referencia principal.
+El baseline v0.1 no es modelo de producción.
+Se utilizará para medir mejoras futuras del corpus, etiquetas y algoritmo.
+

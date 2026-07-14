@@ -33,3 +33,9 @@
 - Clasificador reproducible desde Evidence Dataset.
 - Métricas y registro del modelo.
 - Actualización automática de memoria y estado.
+
+## 2026-07-14 — Training Baseline v0.1
+- Validación humana del lote inicial.
+- Dataset real versionado.
+- Primer modelo entrenado.
+- Métricas estándar y estrictas registradas.

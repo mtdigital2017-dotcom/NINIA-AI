@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T03:37:23.027995+00:00",
+  "updated_at": "2026-07-14T04:37:38.043744+00:00",
   "current_phase": "FASE_IA",
   "last_completed_sprint": "3.0",
   "last_completed_component": "AI Trainer MVP v1",
@@ -17,5 +17,15 @@
     "status": "PASSED",
     "pytest_return_code": 0,
     "summary": "70 passed in 29.08s"
-  }
+  },
+  "last_completed_milestone": "Training Baseline v0.1",
+  "baseline_model_version": "0.1.0-real",
+  "baseline_dataset_version": "0.1.0-real",
+  "baseline_metrics": {
+    "standard_validation_accuracy": 0.6153846153846154,
+    "standard_validation_macro_f1": 0.6013824495315367,
+    "strict_document_accuracy": 0.27307692307692305,
+    "strict_document_macro_f1": 0.1257236227824463
+  },
+  "next_objective": "Expandir corpus aprobado y mejorar métricas estrictas mediante ciclos controlados."
 }

@@ -1,0 +1,33 @@
+{
+  "labels": {
+    "AMI": 160,
+    "DSA": 40,
+    "bienestar digital": 40,
+    "política pública": 80,
+    "protección infantil digital": 80,
+    "riesgos digitales": 40,
+    "safety by design": 40,
+    "salud mental": 40
+  },
+  "records": 520,
+  "sources": {
+    "EUROPEAN_UNION": 40,
+    "ITU": 120,
+    "OECD": 160,
+    "UNESCO": 160,
+    "WHO": 40
+  },
+  "splits": {
+    "test": 52,
+    "train": 416,
+    "validation": 52
+  },
+  "training_readiness": {
+    "actual_examples": 520,
+    "actual_labels": 8,
+    "minimum_examples": 20,
+    "minimum_labels": 2,
+    "ready": true,
+    "reasons": []
+  }
+}

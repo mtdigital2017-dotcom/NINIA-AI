@@ -1,7 +1,7 @@
 # Current Sprint
 
-- Sprint completado: 3.0
-- Nombre: AI Trainer MVP v1
-- Estado: VALIDADO_EN_COLAB
-- Fecha: 2026-07-14T03:37:23.027995+00:00
-- Próximo sprint: 3.1 — Model Evaluation and Frontend Metrics
+- Último hito completado: Training Baseline v0.1
+- Estado: INTEGRADO
+- Fecha: 2026-07-14T04:37:38.043744+00:00
+- Próximo objetivo: expansión controlada del corpus aprobado
+  y mejora de métricas estrictas.

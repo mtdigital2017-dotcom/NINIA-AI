@@ -1,0 +1,3265 @@
+{
+  "evaluation_type": "LEAVE_ONE_KNOWLEDGE_OBJECT_OUT",
+  "description": "Cada documento completo se excluye del entrenamiento y se usa como prueba. Esta métrica reduce la fuga de información entre fragmentos del mismo documento.",
+  "records_evaluated": 520,
+  "knowledge_objects_evaluated": 13,
+  "skipped_folds": [],
+  "accuracy": 0.27307692307692305,
+  "macro_precision": 0.12431506849315069,
+  "macro_recall": 0.13125,
+  "macro_f1": 0.1257236227824463,
+  "per_label": {
+    "AMI": {
+      "precision": 0.7945205479452054,
+      "recall": 0.725,
+      "f1": 0.7581699346405228,
+      "support": 160
+    },
+    "DSA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 40
+    },
+    "bienestar digital": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 40
+    },
+    "política pública": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 80
+    },
+    "protección infantil digital": {
+      "precision": 0.2,
+      "recall": 0.325,
+      "f1": 0.24761904761904763,
+      "support": 80
+    },
+    "riesgos digitales": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 40
+    },
+    "safety by design": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 40
+    },
+    "salud mental": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 40
+    }
+  },
+  "confusion_matrix": {
+    "AMI": {
+      "AMI": 116,
+      "DSA": 4,
+      "bienestar digital": 3,
+      "política pública": 11,
+      "protección infantil digital": 19,
+      "riesgos digitales": 2,
+      "safety by design": 0,
+      "salud mental": 5
+    },
+    "DSA": {
+      "AMI": 3,
+      "DSA": 0,
+      "bienestar digital": 1,
+      "política pública": 2,
+      "protección infantil digital": 27,
+      "riesgos digitales": 0,
+      "safety by design": 2,
+      "salud mental": 5
+    },
+    "bienestar digital": {
+      "AMI": 2,
+      "DSA": 0,
+      "bienestar digital": 0,
+      "política pública": 27,
+      "protección infantil digital": 2,
+      "riesgos digitales": 1,
+      "safety by design": 5,
+      "salud mental": 3
+    },
+    "política pública": {
+      "AMI": 7,
+      "DSA": 0,
+      "bienestar digital": 5,
+      "política pública": 0,
+      "protección infantil digital": 45,
+      "riesgos digitales": 15,
+      "safety by design": 8,
+      "salud mental": 0
+    },
+    "protección infantil digital": {
+      "AMI": 6,
+      "DSA": 1,
+      "bienestar digital": 0,
+      "política pública": 46,
+      "protección infantil digital": 26,
+      "riesgos digitales": 0,
+      "safety by design": 0,
+      "salud mental": 1
+    },
+    "riesgos digitales": {
+      "AMI": 0,
+      "DSA": 5,
+      "bienestar digital": 0,
+      "política pública": 29,
+      "protección infantil digital": 5,
+      "riesgos digitales": 0,
+      "safety by design": 0,
+      "salud mental": 1
+    },
+    "safety by design": {
+      "AMI": 1,
+      "DSA": 5,
+      "bienestar digital": 0,
+      "política pública": 30,
+      "protección infantil digital": 2,
+      "riesgos digitales": 1,
+      "safety by design": 0,
+      "salud mental": 1
+    },
+    "salud mental": {
+      "AMI": 11,
+      "DSA": 11,
+      "bienestar digital": 8,
+      "política pública": 5,
+      "protección infantil digital": 4,
+      "riesgos digitales": 1,
+      "safety by design": 0,
+      "salud mental": 0
+    }
+  },
+  "predictions": [
+    {
+      "record_id": "087e8efce80ddbc854818a20",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "0bb04279d7e191755d15c6cc",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "0cea41481767c3c217ed1fb9",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "0d533a5d4c1645d784742719",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "0de37ed87b0c133ba200af18",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "164111ce10e79c5530b15829",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "179e7398870444423c47fcfc",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1dc373e8d9e3efa7b8dfe5a4",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "21bfa17b0c9f3b82d449ecd8",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "25bef4c90d6456933bd253d3",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "2ce575becce48a18b7fd155f",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "3405c9af4bd61baabe417993",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "35fcf73ec4a7b78e1a688764",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "45209efd5b884997e11e3043",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "57a47a58aa81b4110eb13a8f",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "6d79c28e0299dc6b47af7aa7",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "79df1ddec76e21f989d2c746",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "7c450a9a2315fe2494644332",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "7d1ff0f9defb60e4cc088355",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "7d34d863b7661fd169d8ea78",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "871f855da5ee44a65c2fe725",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "9a21f0fd54b778cda0a475fa",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "a2154265cd6d0a72bc45ecf6",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "a476dc6a432f6194abdb76f1",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "a4b6b62b284049082055abc1",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "a54e7b66b3835aa890c5fca2",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ada3f1f54cf71026ce250b89",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ae1e63883f4fcb591f86602d",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "b1dac1708df84fd1f79dde0d",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ba10ded3b13b9dee1c2d6330",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ba146e8e44b6338228b96d9d",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "dccb68e53e1ccc7c3e818d62",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "df35fc17a42bbf04a7b15d0f",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "e0bea4366e05ecfa3619e840",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "e43fa2f5c5aec7862d1a4e15",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "ec8c35a15553d911d474e56b",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ee18f854a274d2f18625f406",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "f22eaf2128ce232321f4b9b4",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "fb64f490bfe6d15e1d444288",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "fc8395a168a616006302f551",
+      "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+      "actual": "DSA",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "027b5d002ece6cf7d786a662",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "046c53ad12532b4616aae4aa",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "16c2696dedfb0983a11e5dd7",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "18d712a102851bc402890ec4",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "1ed2edd396260d2130ab78cf",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "2e5102d4e702aae93ada2be4",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "3523aff7e2a0aed99d164a32",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "3553aa2a026fa849b2f77f2f",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "45ec848c726766ba11bde1e7",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "4af4486c7d1e8327230dcd46",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "509b8a1b3a5356f3336fe167",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "520e99d52a783dda92edf021",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "5435ad62e334ee67062826a5",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "551a906edd1c411007c4e04d",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "583cbf742a9ff0c7867e88ca",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "58dc4597eb5e31563c7bb1b9",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "5dc966f6615fcc3a7a745e1b",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "5dd0973dc58498b7895b86fb",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "608762516fdd971cb4725a9e",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "61d9110e2ab2692e40944be9",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "6c1894ac7b2dbe215e3e09f0",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "74838ff81fa42dd3b6ddeaeb",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "7f27eca046850f4b91b41d55",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "7fbb2c5f8bebd26f21323bb1",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "94c2b2472524b9301e19b4d9",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9aa95978ed97eb88e2754125",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9b6dce1a0540093f4388a22d",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a24d8cae6cac63b78a81c3f9",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "ac37b8dada15b81dea1838b4",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b1c5b0ff8e006f8d911a08bc",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b241d7631c3d0ebeec916ee8",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c5ef210e448abf455e525788",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c728fba7226c38256d1e9047",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d6d46ad232fdfedf5034dca8",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "d7deaa609c1804d8fb5f28df",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "da76cf9e72763d666099bb5a",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e4883774b8fda941a4f21515",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ee499800e19f98944d0d2383",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "f186420313e9021070d0eea6",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ff6fc7f403f1d99bdf5ec37e",
+      "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "0da0553576201c91279ec225",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "0fb4df89282a21ee5507290d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "10f9073afa21cac494b46d2d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "137e6d26d9a1455dad6ef2f5",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "1723a5d81ebe4181290aaba2",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "177230911f1e48b85ea6794b",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "31d178a80e80f37d59845cbb",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "336ff26f10430e347012d358",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "47f35c50f9e8d399c486cdc5",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "4e68dc14755cc0105b5fc51f",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "5264ab992bb9fad1bb0ca745",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "5a37c58c2247f168261360a5",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "73bb0979fc53f4493ce1714d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "74c7e6e3063bf3119cb879b1",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "7557c294a6ccf0a17101d0d5",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "790df0c033a4a56d8586f819",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "8c2492baf7a41ae0dff41b0e",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "8c2de2ecf4b7cdb3a28b8352",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "8daa0cc92bdb0b2fb5f616ed",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "945a3c1201193a896d6d0880",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a52441b169f71233867a4371",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a7df2278b84c914526ef7cfd",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ae4ee3e4265741c8319a7b6b",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "afece9984c702f1af6265724",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b28bf9ca4efad8e4a3a541fb",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b668d4545ddd8a9a30bb2592",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "b6a702d95265250993e7e20d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "bcc73b890ad34683f8bd8b99",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "bd3c34e3eea7e5d3d599eff2",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "bfc56663ef9c9501a0bf4051",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "c1b3baab3586cf7cf3d72dd8",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c59f9ddb66cb95cfd185250d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ca1a032f244c7276125a110d",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "d24e04e6907d3617a9848c15",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "d4e96af761d94dbfc6e10425",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "d8a203a648123820933149fc",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "dc27378596a727db1831c09f",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e29118e4143156b1e0f0477f",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ed30ce9b9304bce9b74d59a5",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "fb1ecd1683a1a58efc402242",
+      "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "13b8bd050995c5914f4e6ba2",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1a6ba438516106d5230a9fc5",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "24c8590598f75c348f2dc627",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "24cbea1f9d0258dfba99b7a0",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "29c7e159d814775a2c87c5b5",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "52d504867f4fbea5f869a733",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "5a2dd4b7d41e180ed0524807",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "60583ccbd004296316d61cfa",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "6f86e26ccd95bdc3ee6371e3",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "750f777c42b4ed89c3c53a1e",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "77ba2a21e98967a1fcb83f33",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "7b18f5f04766b55c5952e5f0",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "7de4b899bafa048951f33c09",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "8128541f37c725e7a7eb592e",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "82e75c7379f244d089935a44",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "8ca04db1bbbebe8d30c26075",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "8e14408e0b0fd3b7d636d547",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "91c74d021d1810a41e89e783",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "922e32c91c666d90e7206e41",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "a0f8cb1e74b2a391e8319bd9",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "abd21da3c6139f336a467f3e",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "ae77691d8f7fcc9e4b24687d",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b1d2a620cf67089982d6f718",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c2263378835cdd30c0e3dc37",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "c798bbaa9770a43ca7679373",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "c99f7f384dc039600670c2cf",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "ccafd34747e545e753e852c7",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d0129e2c1f0bd513205ca2bb",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d3aff5b1e883c17c6dce1d6a",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "d45626f0fd26a9659b682a63",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d486cd893a6311c020260003",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "d7b2674aee593d00a85fadd5",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "dbc3287d1067d3c1891a5f93",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "e4d35ad61ead8cbe4950216e",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e6de1b55ecf0adbf0b0c8ac8",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "e9d01c8015643a7505061922",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "eaef8069357f18b515860f50",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f0e1312aef011cd2131d5055",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f800fc36f9c6d1cb69e2a9ee",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "fc22deb8532379ca2eeafa0e",
+      "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "02a0cf2a2f8bd5e67d3a0122",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "036aae362adb8842b5ea234b",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "05c9ff492da8ea5f0487824a",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "08df627bce0133c65dbcd51d",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "0cca5c32e15f61eaffe10ff6",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "0d9b1a6a6065d31fc169e661",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "0f4cedfbc33d98470c0981ee",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "193473f3f1c40b11b4da16a9",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "271427688a03b88db4fe7a64",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "2ab78cc33800d0519e70cd48",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "2c91dd41b9aa683ecc69fa5b",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "353bcf00d4a3d379e46b35e6",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "361205bc412980800701869a",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "39a098bcbc0dd63136180cde",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "43edd61d224471055fdf2835",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "4b321ba0e16eb342682bdd6c",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "6052ceb55471ae91e63fcb8d",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "6a715f00dda3dd4574184f49",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "6b1aeceec00318812aa9ddae",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "75c8db7c556cc50acc2f5bed",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "7b784a1590f6276476c56d2d",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "7cf6f3fa33e9c846fec02c3f",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "80f698de4f5253a72dce1aea",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "880571b5682323ed4280cfbf",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "93500fd88ee37f7f01b427d8",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "96c362c157eee0083ed0813c",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "988c0e5405f4f35e1b00a501",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "98d83932e0719e78dbcd6876",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9d493969d603bbe0e47ee8d3",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a2a24ed18070d0c6039b2bbf",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ab1ef603d8f4f475bc6c8df6",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "af52dbc573257288d2c302ab",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b3d18830f6a026fca4d07c39",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "cf716f18b1f72ed657327dc7",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "dfc6a4cbe3ec17d7ec649b10",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e1c7c1a6a88da60d63e8dd1f",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e4d4bd42fa5de2f23bc4b69e",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e8347c81ce74942bc9668c91",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "fc4a8755231695c12638902a",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "fcbcc6aaf9a5fa850c82560d",
+      "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "0ba1b5909449a8c455ab14b4",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "0cd4fcec68c3727b4fa2c001",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "15b9ce537d8e03a024ca1eb7",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "1c0e18e8e32e2bf8c8457fec",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "229f53d8e0f9c2227bbe0429",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "26039f33b72b74f76ebb5539",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "2a710f1970863134de603139",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "2e847af67d1a9f692261b213",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "2eb452c791fa17ffea2f0c07",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "34a899c54133f5fcb5d32dea",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "4b2c0c04b25b82c6f2484ebd",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "4dd617f0cd38f1e73de9140d",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "514a683b6e2106c35a58940b",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "5afe403da7e632906084d3b1",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "5ccca54937ccbc4687f75a81",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "5f283b19e2d653439ab5d7ac",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "882fcb285c0334f240d83c0e",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "9020335cb962cf155f3d1bae",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "90a9c93d182fba8a825b6a16",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "a7926e825bb9349729536595",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "a9ca693ac589167b0d9c7c96",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "b12b97e5aa16197109b14a6f",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "b917427e55197dbc43a02901",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ba76e55badcfd33e9877b39d",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "becdbda4c1b2464d7015858c",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "bed00dfd9910809d2ab492e3",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "c2fab4fef094856ccd5475c4",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "c6254c82a89cc692c7706997",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ca2343ad35538cc563737d6e",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "db99174fd32826c6a093a69a",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "e2cbf76680ff8eb34d664ecb",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "eeadb5f6bd384abc4e5af540",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f0e0fd0ddef85dc3acfa8f4f",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f496cd37a78956d608ef2285",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f5f1de5906b8e55584ae4857",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f869ee6ee70b07b1e9db2e44",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f8e97a749d7f394b1516d7ff",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "f92e10a29c519a7ceb8aa45e",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ff551e81f4350facda2e6099",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ffac17c1e5c565aeaeeb609c",
+      "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "01b103c6b255e3ca82008a9f",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "0a2e93b07e80a76efb22bd04",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "0c9f4d04137a14c73d31f1e9",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1280357cdff4e4c4a275249a",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "129aee4805b80a24845e2dd9",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "14c201c25e26e1f113ec8357",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "32c2c3fa2cc48caa2dc0fa2e",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "36305e7d5ea460a35a50e2b6",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "37d64df13c003e7a42487402",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "456f983049329fffeebc29a3",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "471706fcae61886af6e0a041",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "4f142263e992e60674e22442",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "500b995399173decec86e767",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "523ea9679e84a50c82163f23",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "549db66eb295faddde97541c",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "5745db3cd0ce5ac4c826088d",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "7324500a92a597d7a9b05513",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "7e03676eaf23c3d489f86f78",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "833a94e6bb6e2206382eeafc",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "8477d99083cf56431e157935",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "8cdc1fcb4147972e8640ec29",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9697a157e02aaca51a46453d",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "978e7412d12e4229344254ca",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "97dbe2b0274d410250c60094",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9c11a8d227fe930ed8cb7095",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "9e054aa0e3c0fd6353fa7409",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "a264e0a1be90d17cab5a62da",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "ada3746d5e24188484700aea",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "afd4ea43e2e2484b1262fa51",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b1a0e4527180b93aab65e06c",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b65aa56b2246412468a8553d",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "b76215c88cd3c685cf129927",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c5dea910aa5058ef1d38d331",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "d0b011e3656038c986088b6d",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "e12169f025fe30ebab509f86",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e7aa3e4876b1bc70bf05a571",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "eb08ba9eb438e06f51216e88",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "f2e8d61c30d0dcc37ab3cd14",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "f68c29dfff0dc510318d89bc",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "fb02ff0066d107cf21d2cdd1",
+      "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+      "actual": "salud mental",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "0010d52a0e30859d160ee924",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "112c31d690b1bd00b4980a9d",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "13e8e2da473a1d968ad87b46",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "188b9ddc6fce69b40801f7fc",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "192f0ef7bafc1407ae217a50",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "27bc61fade4827f63ffaa3e3",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "2a414f41552af69ff9d424dc",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "34cf4e2ca324c4c88f008cd4",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "364a0afb3eb0f62338039847",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "3a98b954628bfd54bcd28729",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "44446fc89df4e5cf1be3f21c",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "4de1653029102aa48bbd3aa8",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "50002cab0305c2258d273803",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "52aef3f65984746bbba02382",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "693f4eb77034009f2870a4b1",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "6aa675b12d42fd8631f29f18",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "7351e0536b1e7201bd636b77",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "775c91ae413a4c84a899ad3e",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "7889da8fbaade8cd9ba74762",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "7c5a4d5c7bc009ae4bc15352",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "809e1c9aeb3bd99b2f431986",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "85d4e54df309d58401f4ec66",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "9b215a159d1a0d4fc2c90d3c",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "a884ae67f71d962b25b89e7a",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "b0796b9573c5e4b67f2d4e5f",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b1650b4f80909ef495f92f7c",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "cb363cf6f0591023b08068a4",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "d1a811c1b0c7d1563c1ac7df",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d4cb43b936f086b3a6b0caba",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d8addc6389f7dcbd1bef6120",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d8e1cb185276dcf70a8a897e",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d934a760d9c11cf6f1e2e667",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "d97904f3340882c169a942d4",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "d9f93ad9a9b7cacf97176d9b",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "eb81c0737ff64111ef4db662",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "ec9559451b6478e2cc008151",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "ec97e29e6056a95a0f8742bb",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f2d8bd52969c388955079c26",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f2f499f98221a31f42e2be90",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "fac387924be576eda374e087",
+      "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+      "actual": "safety by design",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "02f0bd75cea7bd139dca9bfa",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "03aaecf63b23fc37db2c1868",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "05d276c78eb1ada74cc5cfeb",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "06fc386f0bfc61d8a864e375",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "1b91d42e8bddb18de39d7f6b",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "1c294c914ecb894a8b7b95d0",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "23896920bfd061719f1296d0",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "25f5dcd41ee4f0ad1ad40d0f",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "27c1546f87a3dd6b15da4e6d",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "2a5222ee9af61554cc96278d",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "3087a0d7cc035f6dd27432d1",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "309be3819d258b5766db9038",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "34ed18f3fa479729c7c6a8f0",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "3dbb9e164b3ab4e75ceb3443",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "4776bcefc950dfe51a2deded",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "542cadc30a5f45a1ffdc6215",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "581806201856c4a162374ece",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "59e9ae3ec50b4f6221cbb966",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "6a6501dd083481a008803a1c",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "73424aad1fe5aec36a64d4e5",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "7519a49f85d35567509279c0",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "88776f8f8a3ee3bc5f557785",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "8acf8cdc8c2899333b75ab2b",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "8c1233b0d5492c38f1ee6b12",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "92081b1f50519c2712fabfb7",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "95f9cc7ba34f1119c2470b2f",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "a4f740e5002caf1a8d3ada21",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a7b0ce0122fe4ab42c4271a3",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "b21bfd08e8c6fada66017e95",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "b8457d4ab4ec20c8a822cc3a",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "c7759a16fa4f4a4dbc50eafc",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "daa1e9e4e9d41c7bad0d05bb",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "dbd8791394d09490d3942f87",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "dd647bbfd0df92221d617b39",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "dd8207c8ad52f49ef7c10f35",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e360cb03ce75f232e734c8c6",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "e852120f3ae88e6e49fd54d8",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ed7a623532114b4db9045e8f",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "ef9d70ddbbfa3780ce0a59b6",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "f5ed768272adc6db18096520",
+      "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+      "actual": "política pública",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "00cd333b044aaba7e21128a4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "05729d74fc33cb5fd4ce72b8",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "06a259c7324c806bd08004f4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "0af46e0e5fb25f48d1ad9931",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1488b164f6af343ddb0ffa8e",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1871bf25161f76e1099c3313",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "1b5c7fb6c8d7a42cd96aaca2",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1c035895a4e0d7e2671f6970",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1f7950d1e5602148117a81b4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "220f1645024d79d22b2374e1",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "22c51508fd460d805cd5a2bb",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "2fc6731039cd8f983f864cbe",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "390e8450fd121d65ad02d79b",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "3c34deba0fc6be4fe71f8c0e",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "4baafc75c5ae4466c2aea36c",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "532f2b9270c542b9c68414bd",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "57fb78334218f676b33d9da2",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "5ee4c21eb67d8c53f47d0bf8",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "680fa151b0d612a1db43e77b",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "684aa2e4f19cf92603595475",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "6fb8b62c6dbcadb18b1e8d72",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "83a59ad51da108e5c3749b9a",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "841243613e54b593e6dbe4d2",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "87ee2177544337d68664ddb4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "8b8f77f316c12cbac9ac3957",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "904221e85b41be4f3f72ad3e",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "908f7976a603b23e02892d04",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "90e17dc077cea8dc85ea2bf4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "925bb9cbe381dd7bdafb085e",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "99d1f1e180d4a219f6932427",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "9eaaa1212fb7faafd3a702b4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "9ede8b446f0683b3729a1136",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a5545e7130f4f39cac6b260b",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b0cf4038e576349a14bb8414",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "bienestar digital"
+    },
+    {
+      "record_id": "bda0fb663e4029903e78fd8c",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c670f78c4d7f05718700b6c0",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "c9b653ed8f78be143ca628c4",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "d1c8136cbad8364d2d19e73e",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "d63c86c89c5c90ad0f967b18",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "e2db6856911e4266a290487a",
+      "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+      "actual": "AMI",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "07155b63ec30fd180fb690b0",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "100ca3472dcdc6b8cdb4d646",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "116dc81da5fa663b08a946ee",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "1be89e53198573703552c576",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1ca009af8d23163e08c6da5b",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "1ef8e97a49169eebacc5d46b",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "30711147220d9dd4d5167613",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "30b9888fb6fb6012f5ea888c",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "39ede33a2bf43260dccb9015",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "3d2ebacb2389620fe7b62e8e",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "3e4ddc986e3699fbbb7f34a3",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "4a08c772285ecb4a931afddf",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "4ae40e7c70367ab5aa22e320",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "4f9a82bbf93a9353421a6c86",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "5a223128e9dfeba866e5e4da",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "5b69e537b473b41b2200e00a",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "613fbeee28bb29ad86ba5682",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "61405000029f1bbc56574255",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "6bb9f0a5ac1c883f1b280105",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "7152fdc984583c5c8e9062ef",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "7a22502948b053a9132cea3c",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "80bff320de88dd5731821d90",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "8728c20762704b86f0113ba8",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "8a9bed3ac667468a8c22ef81",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "90baa9f656a2e051f64d602e",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "a8a024ebac8fbb475ee11603",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "abc498a1886fa1b47f276a1f",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "bc47fc13110974a2b4b08c31",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "bc979d856c37da035b5bb629",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c243969fdba9b7c11f21e1e6",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "c6d28fbec599f1f25d36a256",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d2ebfada1ad6f5c7a145e4c3",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e0f1584175d95700f16659e1",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "e1ce07f7f3608d27df468e09",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e1e3ec51802e7737896ba7e1",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e2945c2d01fa21987ecaf028",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e4fdd916bee55bf92c8fd108",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "ec6c1374485e9f65e65f183e",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f0e5263b3d80f690ef727ec3",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f8f365aac8c4303a5c098ce4",
+      "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+      "actual": "riesgos digitales",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "00510cce06c81da58ab4ae64",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "00c8986cb00836b44a51a93c",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "08a0a0c76046c923a93e3135",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "0a7baa5a1a450c21e5ae7fec",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "125b0d1f1f428371cb13bb06",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1e549bb4336317c763ec37e4",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1e6d9c1c8ac4a6041335b76f",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1ea98f453c422e59ef578053",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "2d0d032ad8fc92e058738c2c",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "37fa599c628a42a8282626fe",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "57dcda013ab552fa8f8cf9c5",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "5a1d8753b64803691dbc180a",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "5b8779df7eadac13a2689fb0",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "5cd116ae37a4932c986fb956",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "66e47992a098122b71ce7b23",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "6935d566e14981060b8b9cec",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "80bae5d1250faf501502da2a",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "868bf5c20630abcf27c6ef36",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "894e834e2a75422801324c83",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "8f88559f5808dfcf01bda501",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "90fa657ce78e64bed0c2b59c",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "962052177e1a89fe5f2f5fe0",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "9633cae40e064811cd5ce685",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b6ae80fdef878fe6ae11df1d",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "b91848179e3d369130879555",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c060bf6b496a40a23678761e",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c4efe77111b1fd3d05086baa",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c54cccfd64b6cf5fc23ce8ec",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "riesgos digitales"
+    },
+    {
+      "record_id": "c55697bbb8287b7abf6ffebb",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c7169697e3df60e2a3508a20",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c7a9d9bc903c72d0472efa03",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "cad4bfff3ae87ce9398e9600",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "cd2d27e07e82450959bcfa43",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "daf8fb514e6e698a2fc3b354",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "safety by design"
+    },
+    {
+      "record_id": "dd3981e723c31809820f78a7",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "dd4fe09f8188792d27c4044b",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "eecf23d59dbed06a6a134962",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f3123e1ff0fa8373d248ad91",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "salud mental"
+    },
+    {
+      "record_id": "f9d0e52edb3023953f60e25d",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "faeea015e6dc39f43f89c6c7",
+      "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+      "actual": "bienestar digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "0c4ebb5bff1a046c488400a0",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "1b9ad72444671242257301a8",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "1ca72dfd704dd513b2608419",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "3153617560c4f18276622118",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "DSA"
+    },
+    {
+      "record_id": "3408d875e95760da14178ed7",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "3452578efd7abe85bde37818",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "3baa2729844259481ab7d3ba",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "55885763d7081f5ab7674c81",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "58f5e68e704ffe93ff833403",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "5a11016d96d72dbd1c1d3375",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "6ebfd85043941964673f8003",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "77dc2e293aa7d16c3e110a41",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "7d565485c683cc54ae7f4ef5",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "83d1b4a3d7464f336d7cdeec",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "9060f9ced8feef064f268256",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "911e3f4f5fa54cd81f5f40bc",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "a8fd72ba3d9a19a9df1d164b",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ab21027415e00f3862234645",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b163505d44b10079dd52ca81",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "b1a25cb69ce9e74796cf4989",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b6052ffdbd7b343499333636",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "b81ac247b46b7dbde1b78ed2",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b896686ba273c063a84c2921",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "b9d878441c519e6817687937",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "ba0220f033dac84e604695a7",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "bb8c30d54ca25a138eafd37f",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c0865d5c08aadf673ac3e4cf",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "c58ed5bab67ef778493f9c5e",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "cf40330ac1155d127941a9b6",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "d0f351cc5fdd69c0572830b2",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "d156c0e0faf745ea8bd6c304",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    },
+    {
+      "record_id": "d62873cbb77c5891404cbf13",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e3ef4d79e917b9fe88e3a39d",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "e646b8814e829e1de2d1a503",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "ea1f224e0a948d6a8310ecee",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f24ed1e8492eb6e4eac56554",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "f830d31b51fd5baa874cdc3e",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "fd982acbfcaf152314c3faea",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "política pública"
+    },
+    {
+      "record_id": "fee8c2bd55bb82ee0601212a",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "AMI"
+    },
+    {
+      "record_id": "ff2ae5eeafd5b9870d21c694",
+      "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+      "actual": "protección infantil digital",
+      "predicted": "protección infantil digital"
+    }
+  ]
+}

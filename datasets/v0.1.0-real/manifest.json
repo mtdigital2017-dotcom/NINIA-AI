@@ -1,0 +1,63 @@
+{
+  "checksums": {
+    "benchmark.jsonl": "ee51e88cfa86a2f6c29c4c3ebb072d85d605e77ba945bd8178c0273c411f59e1",
+    "rag_chunks.jsonl": "fed0f4d4b175ccd58a87999aa17829f4c89e6705c010b142cf92cc6092e56932",
+    "test.jsonl": "ee51e88cfa86a2f6c29c4c3ebb072d85d605e77ba945bd8178c0273c411f59e1",
+    "train.jsonl": "328d35bf81a6c849a372e1b286f5dfa4872e0592cb9977dc9baf830f08d93d12",
+    "validation.jsonl": "0436efae5446c95ec54b623916b98d06b34b3015f56dd40d11c3f6b2a373071a"
+  },
+  "dataset_id": "6532e3b69c63d8eee4dd1516",
+  "dataset_schema_version": "1.0",
+  "dataset_version": "0.1.0-real",
+  "generated_at": "2026-07-14T04:21:47.014150+00:00",
+  "governance": {
+    "automatic_approval": false,
+    "knowledge_objects_modified": false,
+    "traceability_required": true
+  },
+  "ratios": {
+    "test": 0.1,
+    "train": 0.8,
+    "validation": 0.1
+  },
+  "seed": 42,
+  "source_policy": "APPROVED_KNOWLEDGE_ONLY",
+  "source_signature": "6397ba466aca62969924558610a06e0414c358678ea9ae484080303d79e44b12",
+  "statistics": {
+    "labels": {
+      "AMI": 160,
+      "DSA": 40,
+      "bienestar digital": 40,
+      "política pública": 80,
+      "protección infantil digital": 80,
+      "riesgos digitales": 40,
+      "safety by design": 40,
+      "salud mental": 40
+    },
+    "records": 520,
+    "sources": {
+      "EUROPEAN_UNION": 40,
+      "ITU": 120,
+      "OECD": 160,
+      "UNESCO": 160,
+      "WHO": 40
+    },
+    "splits": {
+      "test": 52,
+      "train": 416,
+      "validation": 52
+    },
+    "training_readiness": {
+      "actual_examples": 520,
+      "actual_labels": 8,
+      "minimum_examples": 20,
+      "minimum_labels": 2,
+      "ready": true,
+      "reasons": []
+    }
+  },
+  "validation": {
+    "errors": [],
+    "valid": true
+  }
+}

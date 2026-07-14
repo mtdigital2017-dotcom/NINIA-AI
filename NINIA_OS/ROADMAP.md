@@ -20,3 +20,6 @@ Reanudar desarrollo funcional con auditoría técnica y definición del siguient
 
 - ✅ Sprint 2.9 — Evidence Dataset Platform
 - ⏭ Sprint 3.0 — AI Trainer MVP
+
+- ✅ Training Baseline v0.1
+- ⏭ Expansión del corpus aprobado y mejora del modelo

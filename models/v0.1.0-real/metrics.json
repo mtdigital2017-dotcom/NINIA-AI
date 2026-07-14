@@ -1,0 +1,804 @@
+{
+  "test": {
+    "accuracy": 0.6923076923076923,
+    "confusion_matrix": {
+      "AMI": {
+        "AMI": 15,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 0,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "DSA": {
+        "AMI": 0,
+        "DSA": 3,
+        "bienestar digital": 0,
+        "política pública": 1,
+        "protección infantil digital": 1,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "bienestar digital": {
+        "AMI": 1,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 1,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "política pública": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 4,
+        "protección infantil digital": 3,
+        "riesgos digitales": 1,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "protección infantil digital": {
+        "AMI": 1,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 1,
+        "protección infantil digital": 8,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "riesgos digitales": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 3,
+        "protección infantil digital": 1,
+        "riesgos digitales": 2,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "safety by design": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 2,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 1,
+        "salud mental": 0
+      },
+      "salud mental": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 0,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 3
+      }
+    },
+    "examples": 52,
+    "macro_f1": 0.590949577294686,
+    "macro_precision": 0.6872171945701357,
+    "macro_recall": 0.5708333333333333,
+    "per_label": {
+      "AMI": {
+        "f1": 0.9375,
+        "precision": 0.8823529411764706,
+        "recall": 1.0,
+        "support": 15
+      },
+      "DSA": {
+        "f1": 0.7499999999999999,
+        "precision": 1.0,
+        "recall": 0.6,
+        "support": 5
+      },
+      "bienestar digital": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 2
+      },
+      "política pública": {
+        "f1": 0.4,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "support": 8
+      },
+      "protección infantil digital": {
+        "f1": 0.6956521739130435,
+        "precision": 0.6153846153846154,
+        "recall": 0.8,
+        "support": 10
+      },
+      "riesgos digitales": {
+        "f1": 0.4444444444444444,
+        "precision": 0.6666666666666666,
+        "recall": 0.3333333333333333,
+        "support": 6
+      },
+      "safety by design": {
+        "f1": 0.5,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "support": 3
+      },
+      "salud mental": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 3
+      }
+    },
+    "predictions": [
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "d1c8136cbad8364d2d19e73e"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "DSA",
+        "record_id": "45209efd5b884997e11e3043"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "a24d8cae6cac63b78a81c3f9"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "5a11016d96d72dbd1c1d3375"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "daa1e9e4e9d41c7bad0d05bb"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "política pública",
+        "record_id": "5b8779df7eadac13a2689fb0"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "política pública",
+        "record_id": "164111ce10e79c5530b15829"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "protección infantil digital",
+        "record_id": "61405000029f1bbc56574255"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "fb1ecd1683a1a58efc402242"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "177230911f1e48b85ea6794b"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "583cbf742a9ff0c7867e88ca"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "c6254c82a89cc692c7706997"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "3408d875e95760da14178ed7"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "22c51508fd460d805cd5a2bb"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "política pública",
+        "record_id": "f2f499f98221a31f42e2be90"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "58f5e68e704ffe93ff833403"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "74838ff81fa42dd3b6ddeaeb"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "b76215c88cd3c685cf129927"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "24c8590598f75c348f2dc627"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "safety by design",
+        "record_id": "d1a811c1b0c7d1563c1ac7df"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "c5dea910aa5058ef1d38d331"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "00cd333b044aaba7e21128a4"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "dfc6a4cbe3ec17d7ec649b10"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "d24e04e6907d3617a9848c15"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "fd982acbfcaf152314c3faea"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "9b6dce1a0540093f4388a22d"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "7b18f5f04766b55c5952e5f0"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "34a899c54133f5fcb5d32dea"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "política pública",
+        "record_id": "7351e0536b1e7201bd636b77"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "AMI",
+        "record_id": "90fa657ce78e64bed0c2b59c"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "b8457d4ab4ec20c8a822cc3a"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "protección infantil digital",
+        "record_id": "ae1e63883f4fcb591f86602d"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "DSA",
+        "record_id": "ba146e8e44b6338228b96d9d"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "política pública",
+        "record_id": "30711147220d9dd4d5167613"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "94c2b2472524b9301e19b4d9"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "05d276c78eb1ada74cc5cfeb"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "DSA",
+        "record_id": "a2154265cd6d0a72bc45ecf6"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "882fcb285c0334f240d83c0e"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "361205bc412980800701869a"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "3452578efd7abe85bde37818"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "14c201c25e26e1f113ec8357"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "riesgos digitales",
+        "record_id": "06fc386f0bfc61d8a864e375"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "riesgos digitales",
+        "record_id": "07155b63ec30fd180fb690b0"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "da76cf9e72763d666099bb5a"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "política pública",
+        "record_id": "29c7e159d814775a2c87c5b5"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "política pública",
+        "record_id": "30b9888fb6fb6012f5ea888c"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "riesgos digitales",
+        "record_id": "4ae40e7c70367ab5aa22e320"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "política pública",
+        "record_id": "7a22502948b053a9132cea3c"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "841243613e54b593e6dbe4d2"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "91c74d021d1810a41e89e783"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "AMI",
+        "record_id": "0c4ebb5bff1a046c488400a0"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "34ed18f3fa479729c7c6a8f0"
+      }
+    ]
+  },
+  "validation": {
+    "accuracy": 0.6153846153846154,
+    "confusion_matrix": {
+      "AMI": {
+        "AMI": 12,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 1,
+        "protección infantil digital": 1,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "DSA": {
+        "AMI": 0,
+        "DSA": 2,
+        "bienestar digital": 0,
+        "política pública": 0,
+        "protección infantil digital": 2,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "bienestar digital": {
+        "AMI": 1,
+        "DSA": 0,
+        "bienestar digital": 1,
+        "política pública": 3,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "política pública": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 3,
+        "protección infantil digital": 3,
+        "riesgos digitales": 1,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "protección infantil digital": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 1,
+        "protección infantil digital": 5,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "riesgos digitales": {
+        "AMI": 0,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 2,
+        "protección infantil digital": 0,
+        "riesgos digitales": 2,
+        "safety by design": 0,
+        "salud mental": 0
+      },
+      "safety by design": {
+        "AMI": 1,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 3,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 4,
+        "salud mental": 0
+      },
+      "salud mental": {
+        "AMI": 1,
+        "DSA": 0,
+        "bienestar digital": 0,
+        "política pública": 0,
+        "protección infantil digital": 0,
+        "riesgos digitales": 0,
+        "safety by design": 0,
+        "salud mental": 3
+      }
+    },
+    "examples": 52,
+    "macro_f1": 0.6013824495315367,
+    "macro_precision": 0.768997668997669,
+    "macro_recall": 0.5711309523809524,
+    "per_label": {
+      "AMI": {
+        "f1": 0.8275862068965518,
+        "precision": 0.8,
+        "recall": 0.8571428571428571,
+        "support": 14
+      },
+      "DSA": {
+        "f1": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.5,
+        "support": 4
+      },
+      "bienestar digital": {
+        "f1": 0.33333333333333337,
+        "precision": 1.0,
+        "recall": 0.2,
+        "support": 5
+      },
+      "política pública": {
+        "f1": 0.3,
+        "precision": 0.23076923076923078,
+        "recall": 0.42857142857142855,
+        "support": 7
+      },
+      "protección infantil digital": {
+        "f1": 0.5882352941176471,
+        "precision": 0.45454545454545453,
+        "recall": 0.8333333333333334,
+        "support": 6
+      },
+      "riesgos digitales": {
+        "f1": 0.5714285714285715,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "support": 4
+      },
+      "safety by design": {
+        "f1": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.5,
+        "support": 8
+      },
+      "salud mental": {
+        "f1": 0.8571428571428571,
+        "precision": 1.0,
+        "recall": 0.75,
+        "support": 4
+      }
+    },
+    "predictions": [
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "7d565485c683cc54ae7f4ef5"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "política pública",
+        "record_id": "eb81c0737ff64111ef4db662"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "39a098bcbc0dd63136180cde"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "e8347c81ce74942bc9668c91"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "904221e85b41be4f3f72ad3e"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "política pública",
+        "record_id": "27bc61fade4827f63ffaa3e3"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "dbc3287d1067d3c1891a5f93"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "a2a24ed18070d0c6039b2bbf"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "riesgos digitales",
+        "record_id": "100ca3472dcdc6b8cdb4d646"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "protección infantil digital",
+        "record_id": "ada3f1f54cf71026ce250b89"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "b241d7631c3d0ebeec916ee8"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "f800fc36f9c6d1cb69e2a9ee"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "456f983049329fffeebc29a3"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "b1a0e4527180b93aab65e06c"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "salud mental",
+        "record_id": "32c2c3fa2cc48caa2dc0fa2e"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "5afe403da7e632906084d3b1"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "5f283b19e2d653439ab5d7ac"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "protección infantil digital",
+        "record_id": "25bef4c90d6456933bd253d3"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "5dc966f6615fcc3a7a745e1b"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "safety by design",
+        "record_id": "d8addc6389f7dcbd1bef6120"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "ab1ef603d8f4f475bc6c8df6"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "safety by design",
+        "record_id": "7c5a4d5c7bc009ae4bc15352"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "AMI",
+        "record_id": "eecf23d59dbed06a6a134962"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "safety by design",
+        "record_id": "ec9559451b6478e2cc008151"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "política pública",
+        "record_id": "1723a5d81ebe4181290aaba2"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "política pública",
+        "record_id": "faeea015e6dc39f43f89c6c7"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "dbd8791394d09490d3942f87"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "e4d4bd42fa5de2f23bc4b69e"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "política pública",
+        "record_id": "4de1653029102aa48bbd3aa8"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "c7759a16fa4f4a4dbc50eafc"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "353bcf00d4a3d379e46b35e6"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "AMI",
+        "record_id": "b0796b9573c5e4b67f2d4e5f"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "riesgos digitales",
+        "record_id": "0ba1b5909449a8c455ab14b4"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "0fb4df89282a21ee5507290d"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "política pública",
+        "record_id": "b896686ba273c063a84c2921"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "protección infantil digital",
+        "record_id": "2e847af67d1a9f692261b213"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "protección infantil digital",
+        "record_id": "988c0e5405f4f35e1b00a501"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "política pública",
+        "record_id": "5cd116ae37a4932c986fb956"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "política pública",
+        "record_id": "dd4fe09f8188792d27c4044b"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "política pública",
+        "record_id": "e2945c2d01fa21987ecaf028"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "DSA",
+        "record_id": "a54e7b66b3835aa890c5fca2"
+      },
+      {
+        "actual": "safety by design",
+        "predicted": "safety by design",
+        "record_id": "a884ae67f71d962b25b89e7a"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "d7b2674aee593d00a85fadd5"
+      },
+      {
+        "actual": "salud mental",
+        "predicted": "AMI",
+        "record_id": "4f142263e992e60674e22442"
+      },
+      {
+        "actual": "política pública",
+        "predicted": "política pública",
+        "record_id": "92081b1f50519c2712fabfb7"
+      },
+      {
+        "actual": "bienestar digital",
+        "predicted": "bienestar digital",
+        "record_id": "125b0d1f1f428371cb13bb06"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "riesgos digitales",
+        "record_id": "613fbeee28bb29ad86ba5682"
+      },
+      {
+        "actual": "riesgos digitales",
+        "predicted": "política pública",
+        "record_id": "1be89e53198573703552c576"
+      },
+      {
+        "actual": "protección infantil digital",
+        "predicted": "protección infantil digital",
+        "record_id": "9060f9ced8feef064f268256"
+      },
+      {
+        "actual": "DSA",
+        "predicted": "DSA",
+        "record_id": "7d34d863b7661fd169d8ea78"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "bda0fb663e4029903e78fd8c"
+      },
+      {
+        "actual": "AMI",
+        "predicted": "AMI",
+        "record_id": "0af46e0e5fb25f48d1ad9931"
+      }
+    ]
+  }
+}

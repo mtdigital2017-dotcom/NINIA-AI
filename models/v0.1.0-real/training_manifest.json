@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "alpha": 1.0,
+    "min_token_length": 2
+  },
+  "dataset_id": "6532e3b69c63d8eee4dd1516",
+  "dataset_seed": 42,
+  "dataset_source_policy": "APPROVED_KNOWLEDGE_ONLY",
+  "dataset_version": "0.1.0-real",
+  "generated_at": "2026-07-14T04:21:47.063700+00:00",
+  "governance": {
+    "approved_dataset_only": true,
+    "automatic_approval": false,
+    "knowledge_objects_read": false,
+    "source_documents_read": false
+  },
+  "metrics": {
+    "test_accuracy": 0.6923076923076923,
+    "test_macro_f1": 0.590949577294686,
+    "validation_accuracy": 0.6153846153846154,
+    "validation_macro_f1": 0.6013824495315367
+  },
+  "model_id": "6d56f6d437ba3eedec2e54ca",
+  "model_type": "multinomial_naive_bayes",
+  "model_version": "0.1.0-real",
+  "training_id": "f78a9fcbb4c75a133419cf33",
+  "training_schema_version": "1.0"
+}
