@@ -1,22 +1,22 @@
-# NINIA Sprint 3.2 — Operational Knowledge Factory v1
+# NINIA Sprint 3.3 — Operational Center & Adaptive Media Center
 
-**Fecha:** 2026-07-14T16:00:15.253962+00:00
+**Fecha:** 2026-07-14T19:36:38.770519+00:00
 **Estado:** VALIDADO_EN_COLAB
 
-## Capacidad operativa
+## Resultado
 
-NINIA puede ejecutar desde una única operación:
+El frontend permite:
 
-1. descubrimiento y adquisición controlada;
-2. admisión en cuarentena;
-3. creación de Knowledge Objects propuestos;
-4. preevaluación científica;
-5. auditoría estricta del corpus;
-6. generación de dataset si el corpus cumple mínimos;
-7. entrenamiento si el training gate está abierto;
-8. publicación del estado para el frontend.
+- consultar el estado operativo en tiempo real;
+- ejecutar una misión controlada;
+- observar corpus y Training Gate;
+- consultar métricas estrictas del modelo oficial;
+- convertir conocimiento APROBADO en productos informativos;
+- adaptar esos productos a distintos públicos;
+- aplicar publicación proporcional al riesgo.
 
 ## Gobernanza
 
-No existe aprobación automática.
-El entrenamiento queda bloqueado si el corpus aprobado no cumple mínimos.
+No se publica desde conocimiento PROPUESTO.
+No existe otro CMS.
+No se duplica el backend.

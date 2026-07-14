@@ -50,3 +50,9 @@
 ## 2026-07-14 — Sprint 3.2
 - Flujo operativo end-to-end.
 - API de estado y ejecución.
+
+
+## 2026-07-14 — Sprint 3.3
+- Centro de Operaciones conectado al backend.
+- Centro de Medios adaptativo desde conocimiento aprobado.
+- Backend y frontend evolucionan juntos.

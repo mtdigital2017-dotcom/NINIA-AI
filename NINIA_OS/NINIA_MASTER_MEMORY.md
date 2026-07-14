@@ -1400,3 +1400,58 @@ Gobernanza:
 
 QA local previo: 73 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Sprint 3.3 — Operational Center & Adaptive Media Center v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN END-TO-END
+
+Objetivo:
+
+Hacer visible y utilizable desde el frontend el flujo operativo
+implementado en Sprint 3.2, sin crear otro backend ni otro repositorio
+de contenidos.
+
+Capacidades frontend:
+
+- Centro de Operaciones conectado a:
+  - GET /operations/status
+  - POST /operations/run
+- actualización automática cada 5 segundos;
+- visualización de:
+  - estado del backend;
+  - Knowledge Objects propuestos y aprobados;
+  - Corpus Score;
+  - adquisición;
+  - Training Gate;
+  - modelo oficial y métricas estrictas;
+- ejecución de una misión controlada desde el frontend;
+- Centro de Medios generado desde Knowledge Objects APROBADOS;
+- adaptación por público:
+  - familias;
+  - docentes;
+  - niñas, niños y adolescentes;
+  - reguladores;
+  - investigadores;
+  - público general.
+
+Gobernanza editorial adaptativa:
+
+- fuente Nivel A + síntesis informativa fiel:
+  publicación automática con auditoría posterior;
+- contenido comparativo, interpretativo o de fuente no Nivel A:
+  revisión editorial proporcional al riesgo;
+- ninguna noticia se construye desde conocimiento PROPUESTO;
+- cada producto conserva knowledge_id, fuente, año y trazabilidad;
+- no existe un CMS ni una base de contenidos paralela.
+
+Regla permanente:
+
+Toda capacidad nueva debe quedar disponible de extremo a extremo:
+backend + API + frontend + QA + Master Memory.
+
+El Centro de Medios es una salida del conocimiento aprobado,
+no un sistema independiente.
+
