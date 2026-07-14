@@ -26,3 +26,5 @@ Reanudar desarrollo funcional con auditoría técnica y definición del siguient
 
 - ✅ Sprint 3.1 — Strict Corpus Audit & Batch Review
 - ⏭ Sprint 3.2 — Controlled Corpus Expansion & Learning Curve
+
+- ✅ Sprint 3.2 — Operational Knowledge Factory v1

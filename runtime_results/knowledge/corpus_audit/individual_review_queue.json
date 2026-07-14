@@ -1,0 +1,60 @@
+[
+  {
+    "knowledge_id": "3cb1596d-a03f-4ac1-834c-a5b5ebb81814",
+    "title": "Media Literacy and New Humanism",
+    "source": "UNESCO",
+    "publication_year": 2010,
+    "language": "en",
+    "topics": [
+      "AMI",
+      "educación digital"
+    ],
+    "overall_score": 87.6,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 40
+    },
+    "recommendation": "INDIVIDUAL_HUMAN_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Documento histórico; verificar vigencia.",
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_2/repo/NINIA-AI/knowledge/proposed/3cb1596d-a03f-4ac1-834c-a5b5ebb81814.json"
+  },
+  {
+    "knowledge_id": "cbe59aef-ea56-4046-9d1d-84943d9778d1",
+    "title": "Pedagogies of Media and Information Literacies",
+    "source": "UNESCO",
+    "publication_year": 2012,
+    "language": "en",
+    "topics": [
+      "AMI",
+      "educación"
+    ],
+    "overall_score": 87.6,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 40
+    },
+    "recommendation": "INDIVIDUAL_HUMAN_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Documento histórico; verificar vigencia.",
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_2/repo/NINIA-AI/knowledge/proposed/cbe59aef-ea56-4046-9d1d-84943d9778d1.json"
+  }
+]

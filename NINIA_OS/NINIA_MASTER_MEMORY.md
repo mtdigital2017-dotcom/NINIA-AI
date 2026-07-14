@@ -1357,3 +1357,46 @@ sin un entrenamiento reproducible y una evaluación estricta independiente.
 
 QA: 75 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Sprint 3.2 — Operational Knowledge Factory v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN OPERATIVA
+
+Se añadió una única orquestación sobre los componentes existentes:
+
+Trusted official sources
+→ GlobalEvidenceAcquisitionService
+→ EvidenceAdmissionEngine
+→ ScientificValidationService
+→ CorpusAuditService
+→ EvidenceDatasetService
+→ AITrainerService
+
+Capacidades:
+
+- búsqueda y adquisición controlada desde el catálogo oficial existente;
+- documentos nuevos permanecen en CUARENTENA;
+- Knowledge Objects nuevos permanecen en PROPUESTO;
+- preevaluación científica automática;
+- auditoría estricta del corpus;
+- generación de dataset únicamente si el corpus aprobado cumple mínimos;
+- entrenamiento únicamente cuando el training gate está abierto;
+- persistencia de manifiesto por ejecución;
+- estado operativo consultable por API;
+- endpoints:
+  - GET /operations/status
+  - POST /operations/run
+
+Gobernanza:
+
+- no existe aprobación automática;
+- la revisión humana sigue siendo obligatoria;
+- el entrenador no lee documentos ni Knowledge Objects;
+- no se creó otro backend, corpus, dataset builder o trainer;
+- el frontend puede consultar evolución mediante polling de /operations/status.
+
+QA local previo: 73 pruebas aprobadas, 2 advertencias, 0 fallos.
+

@@ -1,7 +1,7 @@
 # Current Sprint
 
-- Sprint completado: 3.1
-- Nombre: Strict Corpus Audit & Batch Review v1
+- Sprint completado: 3.2
+- Nombre: Operational Knowledge Factory v1
 - Estado: VALIDADO_EN_COLAB
-- Fecha: 2026-07-14T13:32:05.666314+00:00
-- Próximo sprint: 3.2 — Controlled Corpus Expansion & Learning Curve
+- Fecha: 2026-07-14T16:00:15.253962+00:00
+- Próximo objetivo: adquisición real y expansión controlada del corpus.

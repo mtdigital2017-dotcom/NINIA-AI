@@ -45,3 +45,8 @@
 - Cola de revisión por lote.
 - Detección de duplicados y brechas.
 - Bloqueo de entrenamiento sin mínimos verificables.
+
+
+## 2026-07-14 — Sprint 3.2
+- Flujo operativo end-to-end.
+- API de estado y ejecución.

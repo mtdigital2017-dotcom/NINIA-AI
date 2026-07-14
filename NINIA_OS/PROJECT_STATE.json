@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-14T13:32:05.666314+00:00",
-  "current_phase": "OPTIMIZACION_CIENTIFICA_DEL_MODELO",
-  "last_completed_sprint": "3.1",
-  "last_completed_component": "Strict Corpus Audit & Batch Review v1",
+  "updated_at": "2026-07-14T16:00:15.253962+00:00",
+  "current_phase": "OPERACION_END_TO_END",
+  "last_completed_sprint": "3.2",
+  "last_completed_component": "Operational Knowledge Factory v1",
   "next_sprint": "3.2",
   "next_component": "Controlled Corpus Expansion & Learning Curve",
   "governance": {
@@ -13,12 +13,13 @@
     "memory_update_required_every_sprint": true,
     "zero_reprocessing_policy": true,
     "human_review_required": true,
-    "strict_metric_audit_required": true
+    "strict_metric_audit_required": true,
+    "official_training_requires_corpus_gate": true
   },
   "qa": {
     "status": "PASSED",
     "pytest_return_code": 0,
-    "summary": "75 passed in 34.08s"
+    "summary": "78 passed in 32.14s"
   },
   "last_completed_milestone": "Training Baseline v0.1",
   "baseline_model_version": "0.1.0-real",
@@ -29,7 +30,7 @@
     "strict_document_accuracy": 0.27307692307692305,
     "strict_document_macro_f1": 0.1257236227824463
   },
-  "next_objective": "Expandir corpus aprobado y mejorar métricas estrictas mediante ciclos controlados.",
+  "next_objective": "Ejecutar adquisición real, revisar lotes propuestos y aumentar el corpus aprobado antes del reentrenamiento v0.2.",
   "corpus_audit": {
     "proposed": 13,
     "approved": 13,
@@ -39,5 +40,9 @@
     "possible_duplicates": 0,
     "corpus_score": 71.77,
     "ready_for_next_official_training": false
-  }
+  },
+  "operational_endpoints": [
+    "GET /operations/status",
+    "POST /operations/run"
+  ]
 }

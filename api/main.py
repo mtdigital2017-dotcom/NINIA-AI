@@ -23,6 +23,9 @@ from engine.services.scientific_validation import (
     ScientificValidationError,
     ScientificValidationService,
 )
+from engine.services.operational_knowledge_factory import (
+    OperationalKnowledgeFactory,
+)
 from engine.evidence_admission import (
     DuplicateEvidenceError,
     EvidenceAdmissionEngine,
@@ -57,6 +60,9 @@ admission_engine = EvidenceAdmissionEngine(
 scientific_validation_service = ScientificValidationService(
     base_dir=BASE_DIR,
     admission_engine=admission_engine,
+)
+operational_knowledge_factory = OperationalKnowledgeFactory(
+    base_dir=BASE_DIR,
 )
 
 
@@ -103,6 +109,13 @@ class StatusUpdate(BaseModel):
     reviewer_email: str
     review_notes: str
     evidence_level: Optional[str] = None
+
+
+class OperationalRunRequest(BaseModel):
+    source_ids: list[str] = []
+    max_documents_per_source: int = 3
+    max_total_documents: int = 10
+    train_if_ready: bool = True
 
 
 
@@ -420,3 +433,42 @@ def get_scientific_validation(request_id: str):
 def list_scientific_validation_reports():
     items = scientific_validation_service.list_reports()
     return {"total": len(items), "items": items}
+
+@app.get("/operations/status")
+def operational_status():
+    """Estado operativo consumible por frontend."""
+    try:
+        return operational_knowledge_factory.status()
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+
+@app.post("/operations/run")
+def run_operational_pipeline(payload: OperationalRunRequest):
+    """Ejecuta el flujo completo usando únicamente servicios existentes."""
+    if payload.max_documents_per_source < 1:
+        raise HTTPException(
+            status_code=400,
+            detail="max_documents_per_source debe ser mayor que cero.",
+        )
+    if payload.max_total_documents < 1:
+        raise HTTPException(
+            status_code=400,
+            detail="max_total_documents debe ser mayor que cero.",
+        )
+    if payload.max_total_documents > 100:
+        raise HTTPException(
+            status_code=400,
+            detail="El PMV limita cada ejecución a 100 documentos.",
+        )
+
+    try:
+        return operational_knowledge_factory.run(
+            source_ids=payload.source_ids or None,
+            max_documents_per_source=payload.max_documents_per_source,
+            max_total_documents=payload.max_total_documents,
+            train_if_ready=payload.train_if_ready,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+

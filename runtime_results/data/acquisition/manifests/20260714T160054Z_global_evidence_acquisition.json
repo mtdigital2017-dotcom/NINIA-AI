@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-14T16:00:54.151385+00:00",
+  "sources_checked": 5,
+  "documents_discovered": 1,
+  "documents_acquired": 0,
+  "documents_rejected": 1,
+  "acquired": [],
+  "rejected": [
+    {
+      "source_id": "unicef_global",
+      "url": "https://www.unicef.org/media/182076/file/Free%20and%20safe%20to%20protest-Policing%20assemblies%20involving%20children%20-TH-low%20res%20web%20version.pdf.pdf",
+      "reason": "HTTPStatusError",
+      "detail": "Client error '403 Forbidden' for url 'https://www.unicef.org/media/182076/file/Free%20and%20safe%20to%20protest-Policing%20assemblies%20involving%20children%20-TH-low%20res%20web%20version.pdf.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    }
+  ],
+  "governance": {
+    "official_domains_only": true,
+    "request_status": "CUARENTENA",
+    "knowledge_status": "PROPUESTO",
+    "automatic_approval": false
+  }
+}
