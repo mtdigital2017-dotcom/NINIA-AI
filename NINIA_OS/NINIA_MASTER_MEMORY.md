@@ -1182,3 +1182,38 @@ Corrección aplicada:
 
 QA: 61 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Sprint 2.8 — Knowledge Graph Foundation v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Se añadió una vista derivada del conocimiento aprobado:
+
+Knowledge Object APROBADO
+→ nodos
+→ relaciones
+→ trazabilidad
+→ persistencia en knowledge/graph
+
+Reglas:
+
+- solo usa objetos con estado APROBADO;
+- no modifica Knowledge Objects;
+- no cambia estados;
+- no aprueba evidencia;
+- conserva knowledge_id, SHA-256 y fragmentos de evidencia;
+- valida nodos huérfanos, aristas inválidas y duplicados;
+- no crea una biblioteca paralela.
+
+Archivos generados:
+
+- knowledge_graph.json;
+- graph_nodes.json;
+- graph_edges.json;
+- graph_index.json.
+
+QA: 65 pruebas aprobadas, 2 advertencias, 0 fallos.
+
