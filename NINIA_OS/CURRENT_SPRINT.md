@@ -1,7 +1,7 @@
 # Current Sprint
 
-- Último hito completado: Training Baseline v0.1
-- Estado: INTEGRADO
-- Fecha: 2026-07-14T04:37:38.043744+00:00
-- Próximo objetivo: expansión controlada del corpus aprobado
-  y mejora de métricas estrictas.
+- Sprint completado: 3.1
+- Nombre: Strict Corpus Audit & Batch Review v1
+- Estado: VALIDADO_EN_COLAB
+- Fecha: 2026-07-14T13:32:05.666314+00:00
+- Próximo sprint: 3.2 — Controlled Corpus Expansion & Learning Curve

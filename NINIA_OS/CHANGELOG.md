@@ -39,3 +39,9 @@
 - Dataset real versionado.
 - Primer modelo entrenado.
 - Métricas estándar y estrictas registradas.
+
+## 2026-07-14 — Sprint 3.1
+- Auditoría estricta del corpus.
+- Cola de revisión por lote.
+- Detección de duplicados y brechas.
+- Bloqueo de entrenamiento sin mínimos verificables.

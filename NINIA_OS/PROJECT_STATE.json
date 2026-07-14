@@ -1,22 +1,24 @@
 {
-  "updated_at": "2026-07-14T04:37:38.043744+00:00",
-  "current_phase": "FASE_IA",
-  "last_completed_sprint": "3.0",
-  "last_completed_component": "AI Trainer MVP v1",
-  "next_sprint": "3.1",
-  "next_component": "Model Evaluation and Frontend Metrics",
+  "updated_at": "2026-07-14T13:32:05.666314+00:00",
+  "current_phase": "OPTIMIZACION_CIENTIFICA_DEL_MODELO",
+  "last_completed_sprint": "3.1",
+  "last_completed_component": "Strict Corpus Audit & Batch Review v1",
+  "next_sprint": "3.2",
+  "next_component": "Controlled Corpus Expansion & Learning Curve",
   "governance": {
     "approved_dataset_only": true,
     "source_documents_read_by_trainer": false,
     "knowledge_objects_read_by_trainer": false,
     "automatic_approval": false,
     "memory_update_required_every_sprint": true,
-    "zero_reprocessing_policy": true
+    "zero_reprocessing_policy": true,
+    "human_review_required": true,
+    "strict_metric_audit_required": true
   },
   "qa": {
     "status": "PASSED",
     "pytest_return_code": 0,
-    "summary": "70 passed in 29.08s"
+    "summary": "75 passed in 34.08s"
   },
   "last_completed_milestone": "Training Baseline v0.1",
   "baseline_model_version": "0.1.0-real",
@@ -27,5 +29,15 @@
     "strict_document_accuracy": 0.27307692307692305,
     "strict_document_macro_f1": 0.1257236227824463
   },
-  "next_objective": "Expandir corpus aprobado y mejorar métricas estrictas mediante ciclos controlados."
+  "next_objective": "Expandir corpus aprobado y mejorar métricas estrictas mediante ciclos controlados.",
+  "corpus_audit": {
+    "proposed": 13,
+    "approved": 13,
+    "ready_for_batch_review": 11,
+    "individual_human_review": 2,
+    "remain_in_quarantine": 0,
+    "possible_duplicates": 0,
+    "corpus_score": 71.77,
+    "ready_for_next_official_training": false
+  }
 }

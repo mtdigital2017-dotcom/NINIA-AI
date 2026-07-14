@@ -1,18 +1,23 @@
-# NINIA — Training Baseline v0.1
+# NINIA Sprint 3.1 — Strict Corpus Audit & Batch Review v1
 
-**Fecha:** 2026-07-14T04:37:38.043744+00:00
-**Estado:** INTEGRADO
+**Fecha:** 2026-07-14T13:32:05.666314+00:00
+**Estado:** VALIDADO_EN_COLAB
 
-## Resultados
+## Resultados reales
 
-- Accuracy estándar de validación: 61.54%
-- Macro-F1 estándar de validación: 60.14%
-- Accuracy estricta por documento: 27.31%
-- Macro-F1 estricta por documento: 12.57%
-- Model version: 0.1.0-real
-- Dataset version: 0.1.0-real
+- Knowledge Objects propuestos: 13
+- Knowledge Objects aprobados: 13
+- Listos para revisión por lote: 11
+- Revisión humana individual: 2
+- Permanecen en cuarentena: 0
+- Posibles duplicados: 0
+- Corpus Score: 71.77 / 100
+- Listo para siguiente entrenamiento oficial:
+  False
 
-## Interpretación
+## Regla científica
 
-La evaluación estricta por documento es la métrica principal.
-Este resultado constituye la línea base v0.1 y no un modelo de producción.
+El Corpus Score no representa accuracy.
+No se registra ninguna mejora del modelo en este sprint.
+El próximo entrenamiento solo podrá compararse con el baseline v0.1
+mediante evaluación estricta por documento.

@@ -1,0 +1,315 @@
+[
+  {
+    "knowledge_id": "07e10f52-6b4c-4dab-b7bf-c558c67b8426",
+    "title": "The Digital Services Act Explained for Children",
+    "source": "EUROPEAN_UNION",
+    "publication_year": 2023,
+    "language": "en",
+    "topics": [
+      "DSA",
+      "protección de menores",
+      "plataformas digitales"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/07e10f52-6b4c-4dab-b7bf-c558c67b8426.json"
+  },
+  {
+    "knowledge_id": "3629c408-8ec4-4365-b195-743700575021",
+    "title": "Media and Information Literacy of Young People",
+    "source": "UNESCO",
+    "publication_year": 2023,
+    "language": "en",
+    "topics": [
+      "AMI",
+      "jóvenes"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/3629c408-8ec4-4365-b195-743700575021.json"
+  },
+  {
+    "knowledge_id": "5a749f1a-2fb2-4c62-9c6a-f6b543a1756f",
+    "title": "Guidelines for Parents, Guardians and Educators on Child Online Protection",
+    "source": "ITU",
+    "publication_year": 2020,
+    "language": "en",
+    "topics": [
+      "protección infantil digital",
+      "educación"
+    ],
+    "overall_score": 90.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 65
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Documento con más de cinco años.",
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/5a749f1a-2fb2-4c62-9c6a-f6b543a1756f.json"
+  },
+  {
+    "knowledge_id": "7e9764cd-1cd8-460c-95c9-7cf6ed9f5928",
+    "title": "Global Framework for Media and Information Literacy Cities",
+    "source": "UNESCO",
+    "publication_year": 2023,
+    "language": "en",
+    "topics": [
+      "AMI",
+      "ciudadanía digital"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/7e9764cd-1cd8-460c-95c9-7cf6ed9f5928.json"
+  },
+  {
+    "knowledge_id": "845bf412-47ad-4fab-9abb-0d736da86aae",
+    "title": "Guidelines for Policy Makers on Child Online Protection",
+    "source": "ITU",
+    "publication_year": 2020,
+    "language": "en",
+    "topics": [
+      "política pública",
+      "protección infantil digital"
+    ],
+    "overall_score": 90.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 65
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Documento con más de cinco años.",
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/845bf412-47ad-4fab-9abb-0d736da86aae.json"
+  },
+  {
+    "knowledge_id": "b1b787c0-42d3-4336-b964-0ddaa9b49cd6",
+    "title": "Online Mental Health Content for Young People",
+    "source": "WHO",
+    "publication_year": 2023,
+    "language": "en",
+    "topics": [
+      "salud mental",
+      "jóvenes",
+      "medios digitales"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/b1b787c0-42d3-4336-b964-0ddaa9b49cd6.json"
+  },
+  {
+    "knowledge_id": "b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9",
+    "title": "Towards Digital Safety by Design for Children",
+    "source": "OECD",
+    "publication_year": 2024,
+    "language": "en",
+    "topics": [
+      "safety by design",
+      "plataformas digitales"
+    ],
+    "overall_score": 93.6,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 100
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9.json"
+  },
+  {
+    "knowledge_id": "baf9ce7e-6035-4167-b1c9-01ab6a60eb47",
+    "title": "Companion Document to the OECD Recommendation on Children in the Digital Environment",
+    "source": "OECD",
+    "publication_year": 2022,
+    "language": "en",
+    "topics": [
+      "política pública",
+      "protección infantil digital"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/baf9ce7e-6035-4167-b1c9-01ab6a60eb47.json"
+  },
+  {
+    "knowledge_id": "d8c7aa40-581a-40ad-b085-4850a1afdaea",
+    "title": "Children in the Digital Environment: Revised Typology of Risks",
+    "source": "OECD",
+    "publication_year": 2021,
+    "language": "en",
+    "topics": [
+      "riesgos digitales",
+      "protección infantil digital"
+    ],
+    "overall_score": 92.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 85
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/d8c7aa40-581a-40ad-b085-4850a1afdaea.json"
+  },
+  {
+    "knowledge_id": "fae7b3b6-d9d7-486f-885b-c71002aab572",
+    "title": "How's Life for Children in the Digital Age?",
+    "source": "OECD",
+    "publication_year": 2025,
+    "language": "en",
+    "topics": [
+      "bienestar digital",
+      "salud mental"
+    ],
+    "overall_score": 93.6,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 100
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/fae7b3b6-d9d7-486f-885b-c71002aab572.json"
+  },
+  {
+    "knowledge_id": "fd6e9391-18ab-436f-bad3-6d2ebdfb459b",
+    "title": "Guidelines for Children on Child Online Protection",
+    "source": "ITU",
+    "publication_year": 2016,
+    "language": "en",
+    "topics": [
+      "protección infantil digital",
+      "participación infantil"
+    ],
+    "overall_score": 90.1,
+    "dimensions": {
+      "source_traceability": 100,
+      "metadata_completeness": 88,
+      "evidence_layer_quality": 100,
+      "ninia_relevance": 80,
+      "document_currency": 65
+    },
+    "recommendation": "READY_FOR_BATCH_REVIEW",
+    "conflicts": [],
+    "limitations": [
+      "Documento con más de cinco años.",
+      "Metadatos incompletos: author",
+      "No se identificaron riesgos digitales."
+    ],
+    "automatic_approval": false,
+    "human_review_required": true,
+    "source_path": "/content/ninia_sprint_3_1/repo/NINIA-AI/knowledge/proposed/fd6e9391-18ab-436f-bad3-6d2ebdfb459b.json"
+  }
+]

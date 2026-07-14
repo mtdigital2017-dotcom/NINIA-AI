@@ -1322,3 +1322,38 @@ La evaluación estricta por documento es la referencia principal.
 El baseline v0.1 no es modelo de producción.
 Se utilizará para medir mejoras futuras del corpus, etiquetas y algoritmo.
 
+---
+
+## Sprint 3.1 — Strict Corpus Audit & Batch Review v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Se añadió una auditoría estricta y reproducible del corpus.
+
+Capacidades:
+
+- prevalidación automática de Knowledge Objects PROPUESTOS;
+- clasificación en:
+  - READY_FOR_BATCH_REVIEW;
+  - INDIVIDUAL_HUMAN_REVIEW;
+  - REMAIN_IN_QUARANTINE;
+- auditoría de duplicados por SHA-256, URL/DOI y título;
+- balance por categoría;
+- cobertura por fuente, idioma y año;
+- Corpus Score transparente y recalculable;
+- umbral mínimo de 80 objetos aprobados;
+- mínimo 10 objetos aprobados por categoría;
+- bloqueo del siguiente entrenamiento oficial cuando no se cumplen mínimos;
+- ninguna aprobación automática;
+- revisión humana obligatoria.
+
+Regla científica:
+
+El Corpus Score no representa accuracy del modelo.
+Ninguna mejora de accuracy, precision, recall o F1 podrá registrarse
+sin un entrenamiento reproducible y una evaluación estricta independiente.
+
+QA: 75 pruebas aprobadas, 2 advertencias, 0 fallos.
+

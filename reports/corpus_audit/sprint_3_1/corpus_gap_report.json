@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-07-14T13:32:05.663264+00:00",
+  "training_gate": {
+    "ready_for_next_official_training": false,
+    "reasons": [
+      "Se requieren al menos 80 Knowledge Objects aprobados; existen 13.",
+      "Existen categorías con menos de 10 objetos aprobados."
+    ],
+    "approved_objects": 13,
+    "minimum_approved_objects": 80,
+    "minimum_per_label": 10,
+    "underrepresented_labels": {
+      "ami": 4,
+      "bienestar digital": 1,
+      "dsa": 1,
+      "política pública": 2,
+      "protección infantil digital": 2,
+      "riesgos digitales": 1,
+      "safety by design": 1,
+      "salud mental": 1
+    }
+  },
+  "coverage": {
+    "labels": {
+      "ami": 4,
+      "bienestar digital": 1,
+      "dsa": 1,
+      "política pública": 2,
+      "protección infantil digital": 2,
+      "riesgos digitales": 1,
+      "safety by design": 1,
+      "salud mental": 1
+    },
+    "sources": {
+      "EUROPEAN_UNION": 1,
+      "ITU": 3,
+      "OECD": 4,
+      "UNESCO": 4,
+      "WHO": 1
+    },
+    "languages": {
+      "en": 13
+    },
+    "years": {
+      "2010": 1,
+      "2012": 1,
+      "2016": 1,
+      "2020": 2,
+      "2021": 1,
+      "2022": 1,
+      "2023": 4,
+      "2024": 1,
+      "2025": 1
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": {
+      "sha256": {},
+      "source_url_or_doi": {},
+      "title": {}
+    },
+    "duplicate_knowledge_ids": [],
+    "duplicate_object_count": 0
+  }
+}

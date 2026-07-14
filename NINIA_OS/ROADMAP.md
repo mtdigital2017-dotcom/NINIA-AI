@@ -23,3 +23,6 @@ Reanudar desarrollo funcional con auditoría técnica y definición del siguient
 
 - ✅ Training Baseline v0.1
 - ⏭ Expansión del corpus aprobado y mejora del modelo
+
+- ✅ Sprint 3.1 — Strict Corpus Audit & Batch Review
+- ⏭ Sprint 3.2 — Controlled Corpus Expansion & Learning Curve
