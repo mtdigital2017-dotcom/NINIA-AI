@@ -17,3 +17,6 @@ Esta fase termina únicamente cuando el workflow `NINIA verified backup` aparezc
 ## Después
 
 Reanudar desarrollo funcional con auditoría técnica y definición del siguiente sprint.
+
+- ✅ Sprint 2.9 — Evidence Dataset Platform
+- ⏭ Sprint 3.0 — AI Trainer MVP

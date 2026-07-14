@@ -1,19 +1,7 @@
-# Sprint actual — DT Runtime Agents v1
+# Current Sprint
 
-## Objetivo
-Evitar que el DT repita decisiones, invente estado o proponga trabajo ya superado.
-
-## Entregables
-- [x] Memoria estructurada.
-- [x] Memory Curator.
-- [x] Context Builder.
-- [x] DT Guardian.
-- [x] QA Architect.
-- [x] Learning Advisor.
-- [x] Orquestador.
-- [x] CLI.
-- [x] Pruebas.
-- [ ] Integración y commit en el repositorio oficial.
-
-## Criterio de cierre
-Todas las pruebas pasan y `python3 scripts/ninia_dt.py refresh` genera un contexto válido.
+- Sprint completado: 2.9
+- Nombre: Evidence Dataset Platform v1
+- Estado: VALIDADO_EN_COLAB
+- Fecha: 2026-07-14T03:13:50.712046+00:00
+- Próximo sprint: 3.0 — AI Trainer MVP

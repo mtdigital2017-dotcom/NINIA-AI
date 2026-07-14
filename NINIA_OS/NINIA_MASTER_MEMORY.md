@@ -1217,3 +1217,42 @@ Archivos generados:
 
 QA: 65 pruebas aprobadas, 2 advertencias, 0 fallos.
 
+---
+
+## Sprint 2.9 — Evidence Dataset Platform v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Se añadió una vista derivada que convierte exclusivamente
+Knowledge Objects APROBADOS en datasets reproducibles y trazables.
+
+Salidas:
+
+- train.jsonl;
+- validation.jsonl;
+- test.jsonl;
+- rag_chunks.jsonl;
+- benchmark.jsonl;
+- statistics.json;
+- manifest.json.
+
+Reglas:
+
+- solo conocimiento APROBADO;
+- no modifica Knowledge Objects;
+- no cambia estados;
+- no aprueba evidencia;
+- división determinística con semilla registrada;
+- trazabilidad hasta knowledge_id, fragment_id y SHA-256;
+- misma entrada y semilla producen el mismo dataset;
+- no habilita entrenamiento si el corpus no cumple mínimos.
+
+Política permanente aplicada:
+
+Todo sprint actualiza automáticamente memoria, estado,
+roadmap, changelog, QA y reporte del sprint.
+
+QA: 67 pruebas aprobadas, 2 advertencias, 0 fallos.
+

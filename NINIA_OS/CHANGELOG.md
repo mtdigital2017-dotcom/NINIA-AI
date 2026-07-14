@@ -22,3 +22,8 @@
 - Agentes internos de continuidad, contexto, prevención, QA y aprendizaje.
 - CLI `scripts/ninia_dt.py`.
 - Pruebas automáticas del Runtime.
+
+## 2026-07-14 — Sprint 2.9
+- Evidence Dataset Platform v1.
+- Dataset reproducible desde conocimiento APROBADO.
+- Actualización automática de memoria y estado.
