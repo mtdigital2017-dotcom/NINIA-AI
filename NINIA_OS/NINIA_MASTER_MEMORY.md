@@ -1128,3 +1128,37 @@ Resultados:
 - sin aprobación automática;
 - QA completo aprobado.
 
+---
+
+## Sprint 2.6 — Global Evidence Acquisition Engine v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Se añadió una capa de adquisición que reutiliza el flujo existente:
+
+Fuente oficial
+→ descubrimiento
+→ descarga controlada
+→ EvidenceAdmissionEngine
+→ CUARENTENA
+→ NiniaEngine
+→ Knowledge Object PROPUESTO
+→ Evidence Layer
+
+Capacidades:
+
+- catálogo configurable de fuentes oficiales;
+- validación estricta de dominios;
+- descubrimiento desde páginas HTML y XML/sitemaps;
+- descarga limitada a PDF, DOCX y TXT;
+- SHA-256;
+- manejo de duplicados;
+- manifiestos de adquisición;
+- sin aprobación automática.
+
+No se creó otro DocumentProcessor, corpus, biblioteca ni motor de admisión.
+
+QA: 59 pruebas aprobadas.
+

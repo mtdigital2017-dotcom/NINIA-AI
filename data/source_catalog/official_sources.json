@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "source_id": "unicef_global",
+      "organization": "UNICEF",
+      "jurisdiction": "GLOBAL",
+      "domains": [
+        "unicef.org"
+      ],
+      "discovery_urls": [
+        "https://www.unicef.org/reports"
+      ],
+      "source_type": "MULTILATERAL",
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "topics": [
+        "child online protection",
+        "digital",
+        "children"
+      ],
+      "enabled": true
+    },
+    {
+      "source_id": "unesco_global",
+      "organization": "UNESCO",
+      "jurisdiction": "GLOBAL",
+      "domains": [
+        "unesco.org",
+        "unesdoc.unesco.org"
+      ],
+      "discovery_urls": [
+        "https://www.unesco.org/en/publications"
+      ],
+      "source_type": "MULTILATERAL",
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "topics": [
+        "media and information literacy",
+        "digital",
+        "children"
+      ],
+      "enabled": true
+    },
+    {
+      "source_id": "itu_global",
+      "organization": "ITU",
+      "jurisdiction": "GLOBAL",
+      "domains": [
+        "itu.int"
+      ],
+      "discovery_urls": [
+        "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/COP.aspx"
+      ],
+      "source_type": "MULTILATERAL",
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "topics": [
+        "child online protection",
+        "children",
+        "digital"
+      ],
+      "enabled": true
+    },
+    {
+      "source_id": "oecd_global",
+      "organization": "OECD",
+      "jurisdiction": "GLOBAL",
+      "domains": [
+        "oecd.org"
+      ],
+      "discovery_urls": [
+        "https://www.oecd.org/en/topics/children-and-young-people.html"
+      ],
+      "source_type": "MULTILATERAL",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "topics": [
+        "children",
+        "digital environment",
+        "online safety"
+      ],
+      "enabled": true
+    },
+    {
+      "source_id": "eu_bik",
+      "organization": "European Union",
+      "jurisdiction": "EU",
+      "domains": [
+        "better-internet-for-kids.europa.eu",
+        "europa.eu"
+      ],
+      "discovery_urls": [
+        "https://better-internet-for-kids.europa.eu/en/resources"
+      ],
+      "source_type": "REGIONAL",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "children",
+        "online safety",
+        "digital services act"
+      ],
+      "enabled": true
+    }
+  ]
+}
