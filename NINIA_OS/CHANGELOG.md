@@ -56,3 +56,10 @@
 - Centro de Operaciones conectado al backend.
 - Centro de Medios adaptativo desde conocimiento aprobado.
 - Backend y frontend evolucionan juntos.
+
+
+## 2026-07-14 — Sprint 3.4
+- Global Observatory orientado por misiones.
+- Misión piloto Regulatory Intelligence Cullen.
+- API y frontend mundial sincronizados.
+- Consolidación de decisiones DT-043 a DT-066.

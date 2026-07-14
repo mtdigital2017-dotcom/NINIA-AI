@@ -26,6 +26,10 @@ from engine.services.scientific_validation import (
 from engine.services.operational_knowledge_factory import (
     OperationalKnowledgeFactory,
 )
+from engine.services.global_observatory import (
+    GlobalObservatoryError,
+    GlobalObservatoryService,
+)
 from engine.evidence_admission import (
     DuplicateEvidenceError,
     EvidenceAdmissionEngine,
@@ -62,6 +66,9 @@ scientific_validation_service = ScientificValidationService(
     admission_engine=admission_engine,
 )
 operational_knowledge_factory = OperationalKnowledgeFactory(
+    base_dir=BASE_DIR,
+)
+global_observatory_service = GlobalObservatoryService(
     base_dir=BASE_DIR,
 )
 
@@ -116,6 +123,14 @@ class OperationalRunRequest(BaseModel):
     max_documents_per_source: int = 3
     max_total_documents: int = 10
     train_if_ready: bool = True
+
+
+class ObservatoryMissionRequest(BaseModel):
+    title: str
+    objective: str
+    domains: list[str]
+    regions: list[str] = ["GLOBAL"]
+    source_ids: list[str] = []
 
 
 
@@ -471,4 +486,59 @@ def run_operational_pipeline(payload: OperationalRunRequest):
         )
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+@app.get("/observatory/status")
+def global_observatory_status():
+    """Estado mundial y orientado por misiones para el frontend."""
+    try:
+        return global_observatory_service.status()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=str(exc),
+        ) from exc
+
+
+@app.get("/observatory/sources")
+def global_observatory_sources():
+    """Catálogo gobernado de fuentes ya usado por adquisición."""
+    try:
+        items = global_observatory_service.list_sources()
+        return {
+            "total": len(items),
+            "items": items,
+        }
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=str(exc),
+        ) from exc
+
+
+@app.get("/observatory/missions")
+def global_observatory_missions():
+    items = global_observatory_service.list_missions()
+    return {
+        "total": len(items),
+        "items": items,
+    }
+
+
+@app.post("/observatory/missions")
+def create_global_observatory_mission(
+    payload: ObservatoryMissionRequest,
+):
+    try:
+        return global_observatory_service.create_mission(
+            title=payload.title,
+            objective=payload.objective,
+            domains=payload.domains,
+            regions=payload.regions,
+            source_ids=payload.source_ids,
+        )
+    except GlobalObservatoryError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc),
+        ) from exc
 

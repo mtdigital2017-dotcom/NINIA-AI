@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-14T19:36:38.770519+00:00",
-  "current_phase": "OPERACION_VISIBLE_END_TO_END",
-  "last_completed_sprint": "3.3",
-  "last_completed_component": "Operational Center & Adaptive Media Center v1",
+  "updated_at": "2026-07-14T22:45:42.085855+00:00",
+  "current_phase": "GLOBAL_OPERATION",
+  "last_completed_sprint": "3.4",
+  "last_completed_component": "Global Observatory & Mission-Centric Platform v1",
   "next_sprint": "3.2",
   "next_component": "Controlled Corpus Expansion & Learning Curve",
   "governance": {
@@ -19,13 +19,24 @@
     "adaptive_media_publication": true,
     "level_a_informative_auto_publication": true,
     "interpretive_content_requires_review": true,
-    "end_to_end_required_for_new_capabilities": true
+    "end_to_end_required_for_new_capabilities": true,
+    "approved_knowledge_only_for_products": true,
+    "risk_proportional_review": true,
+    "global_by_design": true,
+    "mission_centric_architecture": true,
+    "end_to_end_required": true
   },
   "qa": {
     "status": "PASSED",
     "pytest_return_code": 0,
-    "summary": "78 passed in 32.75s",
-    "frontend_javascript": "PASSED"
+    "summary": "81 passed in 32.82s",
+    "frontend_javascript": "PASSED",
+    "contracts": {
+      "GET /observatory/status": true,
+      "GET /observatory/sources": true,
+      "GET /observatory/missions": true,
+      "POST /observatory/missions": true
+    }
   },
   "last_completed_milestone": "Training Baseline v0.1",
   "baseline_model_version": "0.1.0-real",
@@ -36,7 +47,7 @@
     "strict_document_accuracy": 0.27307692307692305,
     "strict_document_macro_f1": 0.1257236227824463
   },
-  "next_objective": "Ejecutar misiones reales desde el frontend, ampliar el corpus y validar productos informativos.",
+  "next_objective": "Ingerir y revisar el lote Cullen dentro de la misión piloto, generar conocimiento trazable y producir las primeras salidas Media, AMI y Action Lab desde Knowledge Objects aprobados.",
   "corpus_audit": {
     "proposed": 13,
     "approved": 13,
@@ -57,5 +68,18 @@
     "5-second operational polling",
     "Controlled mission execution",
     "Audience-adapted knowledge products"
+  ],
+  "identity": "Plataforma Mundial de Inteligencia Científica para la Protección Integral de NNA en Entornos Digitales",
+  "architecture_status": "FROZEN",
+  "mission_centric": true,
+  "pilot_mission_id": "MIS-D4DFFBEEF0DF",
+  "ecosystems": [
+    "Global Observatory",
+    "Knowledge Engine",
+    "Media Center",
+    "Centro AMI",
+    "Action Lab",
+    "Intelligence Hub",
+    "Organizational Learning"
   ]
 }

@@ -31,3 +31,7 @@ Reanudar desarrollo funcional con auditoría técnica y definición del siguient
 
 - ✅ Sprint 3.3 — Operational Center & Adaptive Media Center
 - ⏭ Operación real, crecimiento del corpus y productos informativos
+
+- ✅ Sprint 3.4 — Global Observatory & Mission-Centric Platform v1
+- ⏭ Ingestión real del dominio Regulatory Intelligence
+- ⏭ Productos Media, AMI y Action Lab trazables

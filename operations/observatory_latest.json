@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-14T22:45:42.084347+00:00",
+  "identity": "Plataforma Mundial de Inteligencia Científica para la Protección Integral de NNA en Entornos Digitales",
+  "sources": {
+    "configured": 5,
+    "active": 5,
+    "items": [
+      {
+        "source_id": "unicef_global",
+        "organization": "UNICEF",
+        "jurisdiction": "GLOBAL",
+        "domains": [
+          "unicef.org"
+        ],
+        "discovery_urls": [
+          "https://www.unicef.org/reports"
+        ],
+        "source_type": "MULTILATERAL",
+        "languages": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "topics": [
+          "child online protection",
+          "digital",
+          "children"
+        ],
+        "enabled": true,
+        "trust_level": "OFFICIAL",
+        "health": "CONFIGURED"
+      },
+      {
+        "source_id": "unesco_global",
+        "organization": "UNESCO",
+        "jurisdiction": "GLOBAL",
+        "domains": [
+          "unesco.org",
+          "unesdoc.unesco.org"
+        ],
+        "discovery_urls": [
+          "https://www.unesco.org/en/publications"
+        ],
+        "source_type": "MULTILATERAL",
+        "languages": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "topics": [
+          "media and information literacy",
+          "digital",
+          "children"
+        ],
+        "enabled": true,
+        "trust_level": "OFFICIAL",
+        "health": "CONFIGURED"
+      },
+      {
+        "source_id": "itu_global",
+        "organization": "ITU",
+        "jurisdiction": "GLOBAL",
+        "domains": [
+          "itu.int"
+        ],
+        "discovery_urls": [
+          "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/COP.aspx"
+        ],
+        "source_type": "MULTILATERAL",
+        "languages": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "topics": [
+          "child online protection",
+          "children",
+          "digital"
+        ],
+        "enabled": true,
+        "trust_level": "OFFICIAL",
+        "health": "CONFIGURED"
+      },
+      {
+        "source_id": "oecd_global",
+        "organization": "OECD",
+        "jurisdiction": "GLOBAL",
+        "domains": [
+          "oecd.org"
+        ],
+        "discovery_urls": [
+          "https://www.oecd.org/en/topics/children-and-young-people.html"
+        ],
+        "source_type": "MULTILATERAL",
+        "languages": [
+          "en",
+          "fr"
+        ],
+        "topics": [
+          "children",
+          "digital environment",
+          "online safety"
+        ],
+        "enabled": true,
+        "trust_level": "OFFICIAL",
+        "health": "CONFIGURED"
+      },
+      {
+        "source_id": "eu_bik",
+        "organization": "European Union",
+        "jurisdiction": "EU",
+        "domains": [
+          "better-internet-for-kids.europa.eu",
+          "europa.eu"
+        ],
+        "discovery_urls": [
+          "https://better-internet-for-kids.europa.eu/en/resources"
+        ],
+        "source_type": "REGIONAL",
+        "languages": [
+          "en"
+        ],
+        "topics": [
+          "children",
+          "online safety",
+          "digital services act"
+        ],
+        "enabled": true,
+        "trust_level": "SPECIALIZED",
+        "health": "CONFIGURED"
+      }
+    ]
+  },
+  "missions": {
+    "total": 1,
+    "active": 1,
+    "items": [
+      {
+        "mission_id": "MIS-D4DFFBEEF0DF",
+        "slug": "regulatory-intelligence-cullen",
+        "title": "Regulatory Intelligence Cullen",
+        "objective": "Organizar evidencia comparada sobre regulación, corregulación, autorregulación, publicidad y protección de NNA en servicios audiovisuales y plataformas digitales.",
+        "domains": [
+          "Regulatory Intelligence",
+          "Protection of Minors",
+          "Advertising",
+          "Platform Governance"
+        ],
+        "regions": [
+          "GLOBAL",
+          "EUROPE",
+          "LATIN_AMERICA"
+        ],
+        "source_ids": [],
+        "status": "PLANNED",
+        "created_at": "2026-07-14T22:45:42.039211+00:00",
+        "updated_at": "2026-07-14T22:45:42.039231+00:00",
+        "evidence_count": 0,
+        "knowledge_objects": 0,
+        "media_products": 0,
+        "ami_resources": 0,
+        "action_products": 0,
+        "lessons_learned": 0
+      }
+    ]
+  },
+  "knowledge": {
+    "proposed": 13,
+    "approved": 13,
+    "corpus_score": 71.77,
+    "training_ready": false
+  },
+  "coverage": {
+    "regions": {
+      "GLOBAL": 1,
+      "EUROPE": 1,
+      "LATIN_AMERICA": 1
+    },
+    "domains": {
+      "Regulatory Intelligence": 1,
+      "Protection of Minors": 1,
+      "Advertising": 1,
+      "Platform Governance": 1
+    },
+    "note": "La cobertura describe el corpus de NINIA; no clasifica países o regiones."
+  },
+  "ecosystems": {
+    "global_observatory": "ACTIVE",
+    "knowledge_engine": "ACTIVE",
+    "media_center": "CONNECTED",
+    "ami_center": "CONNECTED",
+    "action_lab": "FOUNDATION",
+    "organizational_learning": "FOUNDATION"
+  }
+}

@@ -1455,3 +1455,188 @@ backend + API + frontend + QA + Master Memory.
 El Centro de Medios es una salida del conocimiento aprobado,
 no un sistema independiente.
 
+---
+
+## Sprint 3.4 — Global Observatory & Mission-Centric Platform v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN VERTICAL END-TO-END
+
+### Identidad oficial
+
+NINIA es una Plataforma Mundial de Inteligencia Científica para la
+Protección Integral de Niñas, Niños y Adolescentes en Entornos
+Digitales. No es un sistema nacional ni un chatbot.
+
+### Misión mundial
+
+Monitorear, investigar, analizar y transformar evidencia mundial en:
+
+- conocimiento científico estructurado;
+- inteligencia pública y estratégica;
+- productos del Media Center;
+- formación y recursos AMI;
+- propuestas de políticas, programas y planes de acción;
+- indicadores, recomendaciones y aprendizaje organizacional.
+
+### Arquitectura congelada
+
+- Global Observatory: monitorea y organiza evidencia mundial.
+- Knowledge Engine: transforma evidencia validada en conocimiento.
+- Knowledge Graph: conecta entidades, dominios y relaciones.
+- Media Center / Publishing Engine: comunica conocimiento.
+- Centro AMI / Learning Engine: desarrolla capacidades.
+- Action Lab: propone opciones fundamentadas en evidencia.
+- Intelligence Hub: apoya análisis y toma de decisiones.
+- Organizational Learning: registra resultados y lecciones.
+
+No se crearán motores principales paralelos.
+
+### Fuente única de verdad
+
+Toda noticia, artículo, podcast, policy brief, white paper, informe,
+recurso AMI, actividad, propuesta o plan deberá derivarse de Knowledge
+Objects APROBADOS y conservar trazabilidad a la evidencia original.
+
+### Publicación y revisión proporcional al riesgo
+
+- Fuente oficial de alta confianza + síntesis informativa fiel:
+  publicación automática con auditoría posterior.
+- Contenido comparativo, interpretativo, normativo o de fuente con
+  incertidumbre:
+  revisión humana proporcional al riesgo.
+- Ningún producto se genera desde conocimiento PROPUESTO.
+
+### Centro de Medios
+
+Toda investigación pertinente podrá producir, entre otros:
+
+- noticias;
+- artículos y artículos periodísticos;
+- reportajes;
+- guiones de podcast y video;
+- boletines y newsletters;
+- infografías;
+- policy briefs;
+- white papers;
+- documentos para políticas públicas;
+- informes técnicos y resúmenes ejecutivos.
+
+### Centro AMI
+
+El Observatorio y el Knowledge Engine alimentan obligatoriamente al
+Centro AMI. El mismo conocimiento aprobado podrá producir:
+
+- guías para familias;
+- materiales para NNA;
+- recursos y actividades para docentes;
+- cursos, talleres, casos, simulaciones y evaluaciones;
+- rutas de aprendizaje;
+- materiales para investigadores y responsables de políticas.
+
+AMI nunca utilizará evidencia bruta como vía habitual; consumirá
+conocimiento estructurado y trazable.
+
+### Del conocimiento a la acción
+
+NINIA podrá proponer, sin sustituir la decisión humana:
+
+- políticas públicas;
+- estrategias;
+- campañas;
+- programas;
+- planes de acción;
+- hojas de ruta;
+- matrices de riesgo;
+- indicadores y mecanismos de seguimiento.
+
+Toda propuesta deberá indicar evidencia, jurisdicciones, nivel de
+confianza, alternativas y limitaciones.
+
+### Living Knowledge
+
+Se versionan:
+
+- Knowledge Objects;
+- corpus;
+- datasets;
+- modelos;
+- productos editoriales y educativos;
+- estrategias y recomendaciones.
+
+Cuando cambie el conocimiento, los productos derivados deberán marcarse
+para revisión o regeneración.
+
+### Aprendizaje organizacional
+
+NINIA aprenderá de evidencia externa y de sus propios resultados.
+Registrará:
+
+- qué funcionó;
+- qué no funcionó;
+- por qué;
+- condiciones de éxito o fracaso;
+- lecciones aprendidas;
+- buenas prácticas;
+- acciones futuras;
+- evidencia de impacto.
+
+Las propuestas futuras deberán apoyarse prioritariamente en lo que haya
+demostrado funcionar bajo condiciones comparables.
+
+### Arquitectura centrada en misiones
+
+La misión es la unidad operativa principal. Reúne:
+
+- objetivo;
+- dominios;
+- regiones y jurisdicciones;
+- fuentes;
+- evidencia;
+- Knowledge Objects;
+- productos Media;
+- recursos AMI;
+- propuestas del Action Lab;
+- métricas;
+- impacto;
+- lecciones aprendidas.
+
+### Misión piloto
+
+`Regulatory Intelligence Cullen` organiza el primer lote temático
+especializado sobre regulación, corregulación, autorregulación,
+publicidad, servicios audiovisuales y protección de menores.
+
+La creación de la misión no implica aprobación automática ni ingestión
+silenciosa de los PDFs.
+
+### Decisiones consolidadas
+
+- DT-043: toda investigación puede alimentar el Media Center.
+- DT-044: publicar una vez y reutilizar desde una fuente única.
+- DT-045: NINIA Knowledge Ecosystem.
+- DT-046/047: Media Center y Centro AMI como rutas públicas distintas.
+- DT-048 corregida: alcance mundial, no nacional.
+- DT-049: Living Knowledge System.
+- DT-050: Global-by-Design.
+- DT-051/052: Observatorio como proveedor de conocimiento para AMI,
+  Media, Knowledge y Action Lab.
+- DT-053/054: misión mundial y transformación del conocimiento en acción.
+- DT-055/056: cadena de valor e investigación orientada por brechas.
+- DT-057: Global Intelligence Architecture.
+- DT-058/059: Organizational Learning y aprendizaje continuo.
+- DT-060: Evidence-to-Impact Framework.
+- DT-061: doble ciclo de conocimiento e impacto.
+- DT-062: Capability First.
+- DT-063: Architecture Freeze.
+- DT-064: configuración y catálogos antes que hardcode.
+- DT-065: Mission-Centric Architecture.
+- DT-066: Global Observatory como capa sobre servicios existentes.
+
+### Regla de cierre
+
+Una capacidad solo se considera terminada cuando incluye:
+
+backend + API + frontend + QA + documentación + Master Memory.
+
