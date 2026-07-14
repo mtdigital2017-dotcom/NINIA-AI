@@ -19,6 +19,10 @@ from pydantic import BaseModel
 from engine.ninia_engine import NiniaEngine
 from dt_runtime.bootstrap import RuntimeBootstrap
 from dt_runtime.executive_controller import ExecutiveController
+from engine.services.scientific_validation import (
+    ScientificValidationError,
+    ScientificValidationService,
+)
 from engine.evidence_admission import (
     DuplicateEvidenceError,
     EvidenceAdmissionEngine,
@@ -49,6 +53,10 @@ app.add_middleware(
 engine = NiniaEngine(base_dir=BASE_DIR)
 admission_engine = EvidenceAdmissionEngine(
     base_dir=BASE_DIR
+)
+scientific_validation_service = ScientificValidationService(
+    base_dir=BASE_DIR,
+    admission_engine=admission_engine,
 )
 
 
@@ -386,3 +394,29 @@ def update_evidence_status(
             status_code=400,
             detail=str(exc),
         ) from exc
+
+
+@app.post("/evidence/requests/{request_id}/scientific-validation")
+def run_scientific_validation(request_id: str):
+    """Genera una preevaluación científica no vinculante."""
+    try:
+        return scientific_validation_service.assess_request(request_id)
+    except EvidenceNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ScientificValidationError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get("/evidence/requests/{request_id}/scientific-validation")
+def get_scientific_validation(request_id: str):
+    """Consulta el informe científico asociado a una solicitud."""
+    try:
+        return scientific_validation_service.get_report(request_id)
+    except ScientificValidationError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.get("/scientific-validation/reports")
+def list_scientific_validation_reports():
+    items = scientific_validation_service.list_reports()
+    return {"total": len(items), "items": items}

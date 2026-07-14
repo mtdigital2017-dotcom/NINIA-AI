@@ -1162,3 +1162,23 @@ No se creó otro DocumentProcessor, corpus, biblioteca ni motor de admisión.
 
 QA: 59 pruebas aprobadas.
 
+---
+
+## Sprint 2.7.1 — Scientific Validation Engine v1
+
+Estado: VALIDADO_EN_COLAB
+
+Clasificación: EXTENSIÓN
+
+Corrección aplicada:
+
+- la auditoría valida capacidades y rutas reales;
+- no depende de comentarios o cadenas documentales;
+- se reutilizan EvidenceAdmissionEngine, Evidence Layer,
+  Knowledge Contract y FastAPI;
+- no se crea un flujo paralelo;
+- no existe aprobación automática;
+- toda decisión final requiere revisión humana.
+
+QA: 61 pruebas aprobadas, 2 advertencias, 0 fallos.
+
