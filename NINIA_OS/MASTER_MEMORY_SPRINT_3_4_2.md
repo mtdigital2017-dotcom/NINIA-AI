@@ -1,35 +1,58 @@
-# MASTER MEMORY — SPRINT 3.4.2
+# MASTER MEMORY — SPRINT 3.4.2 — CIERRE DT
 
-## Estado
-APROBADO_POR_DT
+## Estado final
+APROBADO_POR_DT_Y_LISTO_PARA_GIT_LOCAL
 
 ## Objetivo
-Conectar NINIA-AI y NINIA-FRONTEND para despliegue mediante GitHub y Vercel.
+Conectar NINIA-AI y NINIA-FRONTEND y validar la integración antes de instalar cambios en los repositorios Git locales.
 
-## Validación oficial
-- Google Colab ejecutó el QA completo.
-- Backend: 81 pruebas aprobadas.
-- Frontend: validación JavaScript aprobada en Colab.
-- Contratos frontend-backend verificados.
-- ZIP de resultados revisado por NINIA CORE.
+## Validaciones oficiales
+- Backend: 81 pruebas aprobadas en Google Colab.
+- Frontend: sintaxis JavaScript aprobada.
+- Contratos frontend-backend: aprobados.
+- Integración funcional con navegador: aprobada.
+- `/health`: aprobado.
+- `/knowledge`: aprobado.
+- Errores de consola: 0.
+- Errores de página: 0.
+- Solicitudes de red fallidas: 0.
 
-## Incidente local
-El primer instalador intentó repetir la validación JavaScript con Node.js en macOS.
-El equipo local no tenía `node` disponible en el PATH.
-Esto produjo un falso fallo de QA y activó la restauración automática.
+## Decisión del DT
+El Sprint 3.4.2 queda aprobado para instalación en los repositorios Git locales.
 
-## Decisión técnica
-- Colab queda como única fuente oficial de QA.
-- El instalador local no repetirá pruebas que dependan de Node o Python.
-- El instalador local solo hará respaldo, aplicación de cambios, verificación Git, commit y push.
-- Si el push falla por autenticación, el commit local se conserva y se reporta claramente.
-- Todo cambio se aplica únicamente sobre repositorios Git locales.
+## Flujo aplicado
+Corrección → Colab QA → ZIP → revisión DT → integración funcional → revisión DT final → instalador Git local → GitHub Desktop → GitHub → Vercel.
 
-## Flujo oficial
-Corrección → Colab → QA → ZIP → revisión DT → instalador local → Git commit → Git push → GitHub → Vercel.
+## Reglas del instalador
+- Aplica únicamente archivos aprobados.
+- Crea respaldo antes de modificar.
+- Verifica integridad SHA-256.
+- No ejecuta pruebas locales.
+- No crea commits.
+- No hace push.
+- No solicita credenciales.
+- Abre GitHub Desktop al finalizar.
 
-## Estado actual
-LISTO_PARA_INSTALACION_GIT_LOCAL
+## Incidentes registrados
+1. Dependencia local de Node en instalador anterior.
+2. Solicitud de credenciales por `git push` HTTPS.
+3. Uso de Playwright síncrono dentro del bucle `asyncio` de Colab.
+4. Corrección definitiva con QA exclusivo en Colab, GitHub Desktop y Playwright asíncrono.
+
+## Archivos aprobados
+Backend:
+- api/index.py
+- vercel.json
+- runtime.txt
+
+Frontend:
+- config.js
+- index.html
+- ninia-api-bridge.js
+- ninia-knowledge-adapter.js
+- ninia-operations-media.js
+- ninia-global-observatory.js
+- ninia-researcher-upload.js
 
 ## Siguiente paso
-Ejecutar el instalador local v2.
+Instalar localmente y publicar ambos repositorios mediante GitHub Desktop. Después validar el despliegue público en Vercel.
