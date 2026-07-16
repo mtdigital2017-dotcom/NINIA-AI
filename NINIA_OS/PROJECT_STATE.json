@@ -107,5 +107,21 @@
     ],
     "manual_code_changes_allowed": false,
     "installer_before_colab_allowed": false
+  },
+  "official_backend_local_path": {
+    "platform": "macOS",
+    "path": "~/Library/Mobile Documents/com~apple~CloudDocs/Desktop/NINIA-AI 2",
+    "validated_in_colab": true,
+    "github_desktop_aligned": true,
+    "zip_detection_by_content": true,
+    "frontend_unchanged": true
+  },
+  "merge_resolution": {
+    "status": "RESOLVED_AUTOMATICALLY",
+    "sprint": "3.4.2",
+    "timestamp": "2026-07-16T18:00:20",
+    "strategy": "remote_then_local_deep_merge",
+    "force_push": false,
+    "github_desktop": true
   }
 }
