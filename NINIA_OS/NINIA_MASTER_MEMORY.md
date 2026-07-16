@@ -1640,3 +1640,71 @@ Una capacidad solo se considera terminada cuando incluye:
 
 backend + API + frontend + QA + documentación + Master Memory.
 
+---
+
+## Hotfix 3.4.1 — Frontend Navigation Stability
+
+Estado: VALIDADO_EN_COLAB  
+Clasificación: CORRECCIÓN VERTICAL CONTROLADA  
+Fecha de validación: 2026-07-15T03:11:21.196618+00:00
+
+### Incidente observado
+
+En producción, el frontend podía bloquear el navegador al navegar desde
+el Observatorio Mundial hacia Operaciones y otras vistas dinámicas.
+
+### Causa raíz confirmada
+
+Tres módulos utilizaban `MutationObserver` para volver a ejecutar
+funciones de renderizado sobre el mismo árbol DOM que estaban
+observando:
+
+- `ninia-operations-media.js`
+- `ninia-global-observatory.js`
+- `ninia-api-bridge.js`
+
+El render generaba nuevas mutaciones, el observador reaccionaba a ellas
+y reiniciaba el render de forma indefinida.
+
+### Cambio aprobado
+
+La coordinación de navegación se trasladó a:
+
+- evento `hashchange`;
+- evento `DOMContentLoaded`;
+- programación mediante `requestAnimationFrame`;
+- cancelación de activaciones pendientes antes de programar una nueva.
+
+No se modificaron contratos API, rutas backend ni estructura principal
+del frontend.
+
+### Qué funcionó
+
+- Mantener `app.js` como router principal.
+- Utilizar eventos de navegación explícitos.
+- Programar una sola activación por cuadro.
+- Conservar los endpoints existentes.
+- Validar primero en Colab antes de generar instaladores.
+
+### Qué no funcionó
+
+Utilizar `MutationObserver` como mecanismo de navegación o de
+reactivación del render sobre el mismo contenedor observado.
+
+### Lección aprendida permanente
+
+No utilizar `MutationObserver` para volver a renderizar el mismo árbol
+DOM que el observador vigila. En NINIA, la navegación por hash debe
+coordinarse mediante eventos explícitos e idempotentes.
+
+### Regla metodológica confirmada
+
+Todo cambio de frontend sigue esta ruta:
+
+Desarrollo → Colab → QA → Aprobación DT → RESULTS.zip →
+Installer Git → Commit → Vercel → Verificación de producción.
+
+### Estado de producción
+
+PENDIENTE_DE_INSTALLER_GIT_Y_VERIFICACION_EN_VERCEL
+
