@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ninia-ai
+    name: ninia-ai-mtdigital2017
     runtime: python
     plan: free
     branch: main
@@ -8,3 +8,6 @@ services:
     startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     autoDeployTrigger: commit
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
