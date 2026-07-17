@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from pathlib import Path
+import os
 from typing import Optional
 import shutil
 import tempfile
+from datetime import datetime
 
 from fastapi import (
     FastAPI,
@@ -38,7 +40,57 @@ from engine.evidence_admission import (
 )
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+SOURCE_BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def _prepare_runtime_base_dir() -> Path:
+    # Vercel permite escritura temporal únicamente en /tmp.
+    if not os.getenv("VERCEL"):
+        return SOURCE_BASE_DIR
+
+    runtime_root = Path("/tmp/ninia_runtime")
+    marker = runtime_root / ".initialized"
+
+    if marker.exists():
+        return runtime_root
+
+    runtime_root.mkdir(parents=True, exist_ok=True)
+
+    seed_directories = (
+        "NINIA_OS", "data", "knowledge", "operations",
+        "models", "config", "00_GOBIERNO_DEL_PROYECTO",
+    )
+
+    for name in seed_directories:
+        source = SOURCE_BASE_DIR / name
+        target = runtime_root / name
+        if source.is_dir():
+            shutil.copytree(
+                source, target, dirs_exist_ok=True,
+                ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".pytest_cache"),
+            )
+        elif source.is_file():
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+
+    for name in ("api", "engine", "dt_runtime", "cognitive"):
+        source = SOURCE_BASE_DIR / name
+        target = runtime_root / name
+        if source.is_dir():
+            shutil.copytree(
+                source, target, dirs_exist_ok=True,
+                ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".pytest_cache"),
+            )
+
+    for source in SOURCE_BASE_DIR.iterdir():
+        if source.is_file() and source.suffix.lower() in {".json", ".yaml", ".yml", ".md", ".txt"}:
+            shutil.copy2(source, runtime_root / source.name)
+
+    marker.write_text(datetime.now().isoformat(timespec="seconds"), encoding="utf-8")
+    return runtime_root
+
+
+BASE_DIR = _prepare_runtime_base_dir()
 UPLOAD_DIR = BASE_DIR / "data" / "uploads"
 runtime_bootstrap = RuntimeBootstrap(BASE_DIR)
 executive_controller = ExecutiveController(BASE_DIR)
