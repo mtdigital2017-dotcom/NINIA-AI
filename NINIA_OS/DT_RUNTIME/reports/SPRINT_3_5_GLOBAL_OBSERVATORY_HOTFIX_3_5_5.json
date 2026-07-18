@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "sprint": "3.5",
+  "hotfix": "3.5.5",
+  "generated_at": "2026-07-18T20:08:17.585428+00:00",
+  "status": "validated",
+  "qa": {
+    "status": "passed",
+    "result": "............................                                             [100%]\n28 passed in 0.66s",
+    "targets": [
+      "tests/test_global_observatory_catalog_bootstrap.py",
+      "tests/test_regulatory_ingestion_real_services.py",
+      "tests/test_regulatory_ingestion_service.py",
+      "tests/test_sprint_3_5_reuse_audit.py",
+      "tests/test_autonomous_dt.py",
+      "tests/test_dt_runtime.py",
+      "tests/test_runtime_bootstrap.py",
+      "tests/test_runtime_guardian.py"
+    ]
+  },
+  "test_correction": {
+    "hotfix": "3.5.5.1",
+    "issue": "La prueba instanciaba GlobalEvidenceAcquisitionService con un argumento posicional.",
+    "solution": "Se usa base_dir como argumento keyword-only.",
+    "production_code_changed": false
+  },
+  "catalog": {
+    "path": "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+    "load_status": "passed",
+    "entries": 0
+  },
+  "observatory": {
+    "status_ok": true,
+    "status": {
+      "schema_version": "1.0",
+      "generated_at": "2026-07-18T20:08:13.766724+00:00",
+      "identity": "Plataforma Mundial de Inteligencia Científica para la Protección Integral de NNA en Entornos Digitales",
+      "sources": {
+        "configured": 0,
+        "active": 0,
+        "items": []
+      },
+      "missions": {
+        "total": 0,
+        "active": 0,
+        "items": []
+      },
+      "knowledge": {
+        "proposed": 0,
+        "approved": 0,
+        "corpus_score": 5.0,
+        "training_ready": false
+      },
+      "coverage": {
+        "regions": {},
+        "domains": {},
+        "note": "La cobertura describe el corpus de NINIA; no clasifica países o regiones."
+      },
+      "ecosystems": {
+        "global_observatory": "ACTIVE",
+        "knowledge_engine": "ACTIVE",
+        "media_center": "CONNECTED",
+        "ami_center": "CONNECTED",
+        "action_lab": "FOUNDATION",
+        "organizational_learning": "FOUNDATION"
+      }
+    },
+    "error": null
+  },
+  "next_action": "Cerrar Sprint 3.5, actualizar Master Memory y generar paquete de resultados."
+}

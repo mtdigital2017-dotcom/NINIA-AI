@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T19:56:27.631000+00:00",
+  "sprint": "3.5",
+  "part": "2",
+  "name": "Regulatory Ingestion Orchestrator",
+  "status": "validated",
+  "source_of_truth": "NINIA_OS",
+  "runtime": {
+    "guardian": "healthy",
+    "memory_qa": true
+  },
+  "implementation": {
+    "file": "engine/services/regulatory_ingestion_service.py",
+    "class": "RegulatoryIngestionService",
+    "strategy": "dependency_injection",
+    "duplicates_created": false,
+    "services_reused": [
+      "HashService",
+      "MetadataExtractor",
+      "KnowledgeContractAdapter",
+      "KnowledgeGraphService",
+      "EvidenceLayerService",
+      "GlobalObservatoryService"
+    ],
+    "public_methods": [
+      "ingest",
+      "ingest_to_json"
+    ]
+  },
+  "pipeline": [
+    "hash",
+    "metadata",
+    "knowledge_adapter",
+    "knowledge_graph_build",
+    "knowledge_graph_validate",
+    "knowledge_graph_persist",
+    "evidence",
+    "global_observatory"
+  ],
+  "qa": {
+    "status": "passed",
+    "command": "python -m pytest -q tests/test_regulatory_ingestion_service.py tests/test_sprint_3_5_reuse_audit.py tests/test_autonomous_dt.py tests/test_dt_runtime.py tests/test_runtime_bootstrap.py tests/test_runtime_guardian.py"
+  },
+  "next_action": "Ejecutar prueba de integración con las firmas reales de los servicios existentes."
+}

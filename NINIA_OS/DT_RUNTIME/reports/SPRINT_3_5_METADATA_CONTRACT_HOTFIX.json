@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:00:53.422847+00:00",
+  "sprint": "3.5",
+  "hotfix": "3.5.3",
+  "status": "validated",
+  "issue": "MetadataExtractor.extract requiere los argumentos path y text.",
+  "solution": "El orquestador ahora lee el contenido del documento y lo incorpora al contexto como text, content, document_text y raw_text.",
+  "contract": {
+    "HashService.sha256_file": {
+      "signature": "(path: 'Path | str') -> 'str'",
+      "parameters": [
+        {
+          "name": "path",
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "required": true,
+          "default": null,
+          "annotation": "Path | str"
+        }
+      ]
+    },
+    "MetadataExtractor.extract": {
+      "signature": "(file_path: 'Path | str', text: 'str') -> 'dict'",
+      "parameters": [
+        {
+          "name": "file_path",
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "required": true,
+          "default": null,
+          "annotation": "Path | str"
+        },
+        {
+          "name": "text",
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "required": true,
+          "default": null,
+          "annotation": "str"
+        }
+      ]
+    },
+    "KnowledgeContractAdapter.build": {
+      "signature": "(raw_object: 'dict[str, Any]', *, source_path: 'Path | str', source_bytes: 'bytes') -> 'dict[str, Any]'",
+      "parameters": [
+        {
+          "name": "raw_object",
+          "kind": "POSITIONAL_OR_KEYWORD",
+          "required": true,
+          "default": null,
+          "annotation": "dict[str, Any]"
+        },
+        {
+          "name": "source_path",
+          "kind": "KEYWORD_ONLY",
+          "required": true,
+          "default": null,
+          "annotation": "Path | str"
+        },
+        {
+          "name": "source_bytes",
+          "kind": "KEYWORD_ONLY",
+          "required": true,
+          "default": null,
+          "annotation": "bytes"
+        }
+      ]
+    },
+    "EvidenceLayerService.build": {
+      "signature": "(*, text: 'str', knowledge_id: 'str', source_path: 'str', language: 'str | None' = None, topics: 'list[str] | None' = None, digital_risks: 'list[str] | None' = None, relation_to_ninia: 'str | None' = None) -> 'dict[str, list[dict[str, Any]]]'",
+      "parameters": [
+        {
+          "name": "text",
+          "kind": "KEYWORD_ONLY",
+          "required": true,
+          "default": null,
+          "annotation": "str"
+        },
+        {
+          "name": "knowledge_id",
+          "kind": "KEYWORD_ONLY",
+          "required": true,
+          "default": null,
+          "annotation": "str"
+        },
+        {
+          "name": "source_path",
+          "kind": "KEYWORD_ONLY",
+          "required": true,
+          "default": null,
+          "annotation": "str"
+        },
+        {
+          "name": "language",
+          "kind": "KEYWORD_ONLY",
+          "required": false,
+          "default": "None",
+          "annotation": "str | None"
+        },
+        {
+          "name": "topics",
+          "kind": "KEYWORD_ONLY",
+          "required": false,
+          "default": "None",
+          "annotation": "list[str] | None"
+        },
+        {
+          "name": "digital_risks",
+          "kind": "KEYWORD_ONLY",
+          "required": false,
+          "default": "None",
+          "annotation": "list[str] | None"
+        },
+        {
+          "name": "relation_to_ninia",
+          "kind": "KEYWORD_ONLY",
+          "required": false,
+          "default": "None",
+          "annotation": "str | None"
+        }
+      ]
+    }
+  },
+  "patch_status": "applied",
+  "base_services": {
+    "sha256": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b",
+    "metadata": {
+      "language": "es",
+      "doi": "",
+      "publication_year": 2026,
+      "authors": []
+    }
+  },
+  "integration": {
+    "completed": false,
+    "error": {
+      "type": "RegulatoryIngestionError",
+      "message": "No fue posible satisfacer la firma de <bound method KnowledgeContractAdapter.build of <engine.services.knowledge_adapter.KnowledgeContractAdapter object at 0x7ac758875910>>. Parámetros requeridos: raw_object, source_bytes"
+    },
+    "output": null,
+    "trace": []
+  },
+  "qa": {
+    "status": "passed",
+    "result": ".....................                                                    [100%]\n21 passed in 0.16s"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.2",
+  "generated_at": "2026-07-18T20:08:17.587001+00:00",
+  "sprint": "3.5",
+  "part": "3",
+  "name": "Real Regulatory Services Integration",
+  "source_of_truth": "NINIA_OS",
+  "status": "validated",
+  "runtime": {
+    "guardian": "healthy",
+    "memory_qa": true
+  },
+  "document": {
+    "path": "data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+    "bytes": 600
+  },
+  "integration": {
+    "completed": false,
+    "error": {
+      "type": "RegulatoryIngestionStageError",
+      "message": "Falló la etapa 'global_observatory_status': No existe el catálogo de fuentes: /content/NINIA_PROJECT/NINIA-AI 3/NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json"
+    },
+    "output": null,
+    "trace": []
+  },
+  "qa": {
+    "status": "passed",
+    "result": "............................                                             [100%]\n28 passed in 0.66s"
+  },
+  "next_action": "Cerrar Sprint 3.5, actualizar Master Memory y generar paquete de resultados.",
+  "catalog": {
+    "path": "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+    "load_status": "passed",
+    "configured_sources": 0
+  },
+  "observatory": {
+    "status": "ACTIVE",
+    "validated": true
+  }
+}

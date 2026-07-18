@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T22:48:37.484646+00:00",
+  "governance": {
+    "automatic_approval": false,
+    "human_review_required": true,
+    "batch_review_allowed": true,
+    "batch_threshold": 90.0,
+    "individual_review_threshold": 70.0
+  },
+  "counts": {
+    "proposed": 0,
+    "approved": 0,
+    "total": 0,
+    "ready_for_batch_review": 0,
+    "individual_human_review": 0,
+    "remain_in_quarantine": 0
+  },
+  "queues": {
+    "ready_for_batch_review": [],
+    "individual_human_review": [],
+    "remain_in_quarantine": []
+  },
+  "coverage": {
+    "labels": {},
+    "sources": {},
+    "languages": {},
+    "years": {}
+  },
+  "duplicates": {
+    "duplicate_groups": {
+      "sha256": {},
+      "source_url_or_doi": {},
+      "title": {}
+    },
+    "duplicate_knowledge_ids": [],
+    "duplicate_object_count": 0
+  },
+  "corpus_score": {
+    "value": 5.0,
+    "scale": "0-100",
+    "components": {
+      "metadata_completeness": 0.0,
+      "traceability": 0.0,
+      "source_diversity": 0.0,
+      "category_balance": 0.0,
+      "temporal_coverage": 0.0,
+      "language_diversity": 0.0,
+      "duplicate_control": 100.0
+    },
+    "weights": {
+      "metadata_completeness": 0.2,
+      "traceability": 0.25,
+      "source_diversity": 0.15,
+      "category_balance": 0.2,
+      "temporal_coverage": 0.1,
+      "language_diversity": 0.05,
+      "duplicate_control": 0.05
+    },
+    "interpretation": "Indicador descriptivo y reproducible del corpus; no representa accuracy del modelo."
+  },
+  "training_gate": {
+    "ready_for_next_official_training": false,
+    "reasons": [
+      "Se requieren al menos 80 Knowledge Objects aprobados; existen 0."
+    ],
+    "approved_objects": 0,
+    "minimum_approved_objects": 80,
+    "minimum_per_label": 10,
+    "underrepresented_labels": {}
+  }
+}

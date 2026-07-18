@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:11:36.496975+00:00",
+  "sprint": "3.5",
+  "part": "4",
+  "name": "Technical Closure, Master Memory and Results Package",
+  "status": "closed",
+  "objective": "ingestión regulatoria real y productos trazables",
+  "runtime": {
+    "guardian": "healthy",
+    "memory_qa": true
+  },
+  "architecture": {
+    "decision": "CREAR_ORQUESTADOR_LIVIANO",
+    "orchestrator": "engine/services/regulatory_ingestion_service.py",
+    "public_class": "RegulatoryIngestionService",
+    "public_methods": [
+      "ingest",
+      "ingest_to_json"
+    ],
+    "dependency_injection": true,
+    "functional_duplication": false
+  },
+  "integration": {
+    "status": "completed",
+    "ingestion_id": "REG-EEF31C098AE6",
+    "source_hash": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b",
+    "completed_stages": [
+      "evidence",
+      "global_observatory_status",
+      "hash",
+      "knowledge_adapter",
+      "knowledge_graph_build",
+      "knowledge_graph_validate",
+      "metadata"
+    ],
+    "output": "data/regulatory_ingestion/outputs/regulatory_ingestion_result.json"
+  },
+  "global_observatory": {
+    "status": "ACTIVE",
+    "catalog": "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+    "configured_sources": 0
+  },
+  "memory": {
+    "path": "NINIA_OS/MASTER_MEMORY.md",
+    "created": true,
+    "update_status": "appended"
+  },
+  "manifest": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_ARTIFACT_MANIFEST.json",
+  "qa": {
+    "status": "passed",
+    "result": ".................................                                        [100%]\n33 passed in 1.27s",
+    "targets": [
+      "tests/test_sprint_3_5_closure.py",
+      "tests/test_global_observatory_catalog_bootstrap.py",
+      "tests/test_regulatory_ingestion_real_services.py",
+      "tests/test_regulatory_ingestion_service.py",
+      "tests/test_sprint_3_5_reuse_audit.py",
+      "tests/test_autonomous_dt.py",
+      "tests/test_dt_runtime.py",
+      "tests/test_runtime_bootstrap.py",
+      "tests/test_runtime_guardian.py"
+    ]
+  },
+  "next_sprint": {
+    "id": "3.6",
+    "title": "Catálogo oficial real y primera adquisición regulatoria",
+    "initial_scope": [
+      "Definir fuentes oficiales reales",
+      "Registrar dominios y URLs",
+      "Ejecutar adquisición controlada",
+      "Aplicar admisión de evidencia",
+      "Generar producto trazable"
+    ]
+  },
+  "package": {
+    "path": "NINIA_OS/DT_RUNTIME/packages/NINIA_SPRINT_3_5_RESULTS.zip",
+    "size_bytes": 19937,
+    "sha256": "c9083d30b80503b4b6ff4c7a1234776fd93db306536e8f13629569c8935ddf38",
+    "members": 15,
+    "validated": true
+  }
+}

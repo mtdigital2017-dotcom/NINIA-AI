@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:03:12.990897+00:00",
+  "sprint": "3.5",
+  "hotfix": "3.5.4",
+  "status": "validated",
+  "source_of_truth": "NINIA_OS",
+  "contracts_resolved": {
+    "KnowledgeContractAdapter.build": {
+      "signature": "(raw_object: 'dict[str, Any]', *, source_path: 'Path | str', source_bytes: 'bytes') -> 'dict[str, Any]'",
+      "resolved_arguments": [
+        "raw_object",
+        "source_path",
+        "source_bytes"
+      ]
+    },
+    "EvidenceLayerService.build": {
+      "signature": "(*, text: 'str', knowledge_id: 'str', source_path: 'str', language: 'str | None' = None, topics: 'list[str] | None' = None, digital_risks: 'list[str] | None' = None, relation_to_ninia: 'str | None' = None) -> 'dict[str, list[dict[str, Any]]]'",
+      "resolved_arguments": [
+        "text",
+        "knowledge_id",
+        "source_path",
+        "language",
+        "topics",
+        "digital_risks",
+        "relation_to_ninia"
+      ]
+    }
+  },
+  "patches": {
+    "binary_context": true,
+    "knowledge_adapter": "applied",
+    "knowledge_id": "applied",
+    "evidence_layer": "applied",
+    "knowledge_id_helper": "applied"
+  },
+  "integration": {
+    "completed": false,
+    "error": {
+      "type": "RegulatoryIngestionStageError",
+      "message": "Falló la etapa 'global_observatory_status': No existe el catálogo de fuentes: /content/NINIA_PROJECT/NINIA-AI 3/NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json"
+    },
+    "output": null,
+    "trace": []
+  },
+  "qa": {
+    "status": "passed",
+    "result": "......................                                                   [100%]\n22 passed in 0.23s"
+  },
+  "next_action": "Resolver el siguiente contrato real detectado por KnowledgeGraphService."
+}

@@ -1,0 +1,2515 @@
+{
+  "generated_at": "2026-07-18T22:49:49.205379+00:00",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 1181,
+      "sha256": "04c9fcecc22b6f9d69d00c10a27502abff9fc4b0e4c0ad2acb12e8e9369ce08d"
+    },
+    {
+      "path": "NINIA_OS/ARCHITECTURE.md",
+      "size_bytes": 732,
+      "sha256": "1911fbdd0a7de5289aaa27ac0dedcc55a0c34cde18fcee621683126a8578525f"
+    },
+    {
+      "path": "NINIA_OS/BACKLOG.md",
+      "size_bytes": 444,
+      "sha256": "29e517c0899d550ba79754583ed32145f627bf6fb765126f8b6d42ec262a7ae0"
+    },
+    {
+      "path": "NINIA_OS/BACKUP_POLICY.md",
+      "size_bytes": 803,
+      "sha256": "40581398f6ebc44a2aa0bcbddc5cdf50d40018300d61feac2062043ee13a215b"
+    },
+    {
+      "path": "NINIA_OS/CHANGELOG.md",
+      "size_bytes": 1861,
+      "sha256": "91e38c4786e33b92b68506e2966e49faaf5074e238d4e83548c7d470f6dd12c4"
+    },
+    {
+      "path": "NINIA_OS/CHECKLISTS.md",
+      "size_bytes": 778,
+      "sha256": "2a37dc397392db8ae61d612df397bb1b77d87b63b0fa6262e390c0b3cbe2a919"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/PLANNER.md",
+      "size_bytes": 332,
+      "sha256": "587085d883ecf4f85f880dcab9c47dba079899062b2e477125f506c322b83fe3"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/PLANNER_INTEGRATION.md",
+      "size_bytes": 465,
+      "sha256": "bcaec4225aab815d2ee442e354ab4f9dd9d2c7c0ac123352158054b16aa51ae4"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/PLANNER_INTEGRATION_QA.md",
+      "size_bytes": 3558,
+      "sha256": "9a49c6657c8f6dbc77083deccb3dbc75c8d8a711f43cdc8fe1d2eb0674663a91"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/PLANNER_QA_COLAB.md",
+      "size_bytes": 204,
+      "sha256": "c75fc13abdf5ab764f1d4d5e48f3509a49e3a1563d699401b9fd3bf94606f5a5"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/planner_decision.json",
+      "size_bytes": 544,
+      "sha256": "5e38706d78b843c9f6db670d61970a56f51b5845601f222977390be926fbffa5"
+    },
+    {
+      "path": "NINIA_OS/COGNITIVE_LAYER/planner_integration_decision.json",
+      "size_bytes": 568,
+      "sha256": "5b19f56d668359f520f13c9c77bc1edbbe7e94eea89b5f02e7bd3022bcc4b280"
+    },
+    {
+      "path": "NINIA_OS/CURRENT_SPRINT.md",
+      "size_bytes": 279,
+      "sha256": "7281f78618aa2bc46212a59be1ac09db108f0854bc4f485e8bf3a2f0550ce265"
+    },
+    {
+      "path": "NINIA_OS/DECISIONS_LOG.md",
+      "size_bytes": 1116,
+      "sha256": "46f6db384b279411aeaff8367347dabd00b74f0a9258d90eee1c251d9f4e4988"
+    },
+    {
+      "path": "NINIA_OS/DT_MEMORY.md",
+      "size_bytes": 1815,
+      "sha256": "28c8bfed1bd2984b1e023cb2fbbc9ef45d19ac9d2b3b5ffe14e881d8e3aa1bf2"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/AUTOMATION.md",
+      "size_bytes": 604,
+      "sha256": "18da37e3a32969a84316d6e93f2a90cf7ba1e1acbeeece7fd218af6ff36d8b64"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/AUTOMATION_QA_REPORT.md",
+      "size_bytes": 3450,
+      "sha256": "214f4c4d2f8c3d93487b680487f9051c1c18db834d7f8c15287276e542a91373"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/AUTOMATION_STATUS.json",
+      "size_bytes": 481,
+      "sha256": "48dd77748da622a937b518951538409e73ac3109df1bf6098e14399db5e63ae6"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/BACKUP_MANAGER.md",
+      "size_bytes": 304,
+      "sha256": "c68975e9c0fd3bd60ae37ff02a522901171cfb4ce9b755dac2f74c4c2fbdbcbb"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/BACKUP_MANAGER_LOCAL_QA_REPORT.md",
+      "size_bytes": 384,
+      "sha256": "bf368a3d77a7d343c6649491e99dcb588b70a506bc28bc30d3b59b2b2222f819"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/BACKUP_MANAGER_QA_COLAB.md",
+      "size_bytes": 291,
+      "sha256": "70c1a0911a48fa5cee4056fe18b8242d9a4331026e212d279db878beff8397f3"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/BACKUP_MANAGER_V1_1_QA_REPORT.md",
+      "size_bytes": 2568,
+      "sha256": "268269c249c2488cdaa92e06a63ccbfd56d9a0c20b014d579e7cae307eae858c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/GUARDIAN_REPORT.json",
+      "size_bytes": 170,
+      "sha256": "74fc89b5bb1f58a663b99b30984f91618eb56f1e725a83ea4e653be96a607e85"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/INSTALLATION_PLAN.md",
+      "size_bytes": 668,
+      "sha256": "ba788e2c0d0586f2b7ace6e79b3ea5603ef27e59f39275d4a16176281f5b3221"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/INSTALLATION_REPORT.md",
+      "size_bytes": 301,
+      "sha256": "02e74d2832b3e8fae2fca45348d92d0bc2b602355281103a1c3dbdf1dbf40c14"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/MEMORY_MANAGER.md",
+      "size_bytes": 54,
+      "sha256": "ede4936e4ce1f88b46825c6983785d306802b7b4fe7695ee32507c7ea07c644e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/MEMORY_MANAGER_LOCAL_QA_REPORT.md",
+      "size_bytes": 1535,
+      "sha256": "67564aacdb5e7da622a366283445a958bc75cce60f61c318213e1f2a29ca02c2"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/MEMORY_MANAGER_QA_COLAB.md",
+      "size_bytes": 246,
+      "sha256": "26cc41ae72153f99e4bf4ea0b17b89107faf92b028a0090e86826f04bb171948"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/PYTHON_COMPATIBILITY_QA_REPORT.md",
+      "size_bytes": 410,
+      "sha256": "725147d607395725e9c00fb0123ce6e5dc765ca5f349964d8141b810630b7732"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/QA_RESULT.md",
+      "size_bytes": 337,
+      "sha256": "e77120d4094d37c52a3e0f164a9306507993f0fbecff12f5d7d9ef22cd0eb48e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/README.md",
+      "size_bytes": 804,
+      "sha256": "d566d748c3125a44040a9b167ab4e2c88a5e05fe3a7c78fc33df9b57e9c38b91"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/RUNTIME_GUARDIAN.md",
+      "size_bytes": 90,
+      "sha256": "388c9b55ff148030095858a997451d84192b59fb1195c28bad606c081818d27c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/RUNTIME_GUARDIAN_LOCAL_QA_REPORT.md",
+      "size_bytes": 1342,
+      "sha256": "a420a92a75cb91e9f5e1d5be8434d4b77ed70fbf5665755a79d74698d9ddf2c8"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/RUNTIME_GUARDIAN_QA_COLAB.md",
+      "size_bytes": 194,
+      "sha256": "723a3fdfccfb0f0e99a5e441d52bddd8c817da7440a125f3f20f9b7eae609c92"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/automation_decision.json",
+      "size_bytes": 707,
+      "sha256": "37ea3eaf5c0b5d7a2bc7ee9937d494b4249409bb50f5eb4f9c16deeae4e8fa2c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/backup_manager_decision.json",
+      "size_bytes": 532,
+      "sha256": "29d61a67df1ea7743a0627268557d46d8e0781b48a8acf834534dbad79b79626"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/current_context.json",
+      "size_bytes": 5063,
+      "sha256": "513108d931b98feda0162df236ade97e5b5e33f665bf88fd559771c78be4148d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/decision_registry.json",
+      "size_bytes": 1121,
+      "sha256": "10a3ee3a7b83657c5133bd026842694e07452b42d39e1ca424a5375377e4eb86"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/01175763f299b8ce.json",
+      "size_bytes": 2178,
+      "sha256": "be8e6ca536c1ee349ddec8cd9d467d8f6733941478ab2abe5e08761b9442e8f3"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/05111e05f9b9f780.json",
+      "size_bytes": 4099,
+      "sha256": "3742a1fcc6041e549e3e94d7288149ec48fe7ade9b23e5e4db513ceba94b3ce5"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/0a43614b5692c583.json",
+      "size_bytes": 4089,
+      "sha256": "d416a71c6da57fd8851ab9894061196669622ce7e19fd1884d65e643cd168000"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/0e8fba63e3d9083c.json",
+      "size_bytes": 4089,
+      "sha256": "c959e15738b9270487bdd2e9629a52078123715712a037266b55442d96231f4d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/119344619bead870.json",
+      "size_bytes": 2178,
+      "sha256": "b9aa06a0cadcf932a95b6c5c69a44a231ab1cb0221d043e031030cb0b195d329"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/130c8591bb8f019b.json",
+      "size_bytes": 4157,
+      "sha256": "637fa51baf7510b571128a9ef2aeb22a8c41f97a60233ab04994e1c7bc79c353"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/17587855dadc2442.json",
+      "size_bytes": 4157,
+      "sha256": "5be4d9c81c06075a200c29662a3ba83583f7df1f372146c940193da726c4084d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/1a1130da58e68539.json",
+      "size_bytes": 4089,
+      "sha256": "8d9b1ef390148c2c644a801e04ffa5948ddfb1bde759e7d07e5f91e5db201c24"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/1cc375f39886ae00.json",
+      "size_bytes": 2178,
+      "sha256": "8ba9f965f2b9376da59eaf6a2870cf396e4349a80ff5b07feaa71069a0d200b5"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/254a35c8eac171c1.json",
+      "size_bytes": 4104,
+      "sha256": "e401153b8f931147766af53f7e106552a09da111c3bb55d4ab8edc2fe827abc0"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/25c41e0c45070d39.json",
+      "size_bytes": 4104,
+      "sha256": "a6814f73f5b798f5159c4fd8b858c6f13ef1063f789dee0ee610837e861b0041"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/28ffb653dec41d61.json",
+      "size_bytes": 4099,
+      "sha256": "7330489ba1ff1fe17e62f022e3030d0e50e28a2adb95310b5f40222b19ff84dc"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/2d8039dad464d2e1.json",
+      "size_bytes": 4089,
+      "sha256": "33ce78ecc45785476d62b5b06b300bfefb4ae600adc375fb9a3fc579ca35a6c2"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3300523f9df03a83.json",
+      "size_bytes": 4009,
+      "sha256": "a85d0cd4717953ffec0a8b0e4152eb5409dbfcd85c9f07ffdd3b60ec2466f4ca"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/34ea760109e03614.json",
+      "size_bytes": 4157,
+      "sha256": "828520d63708c6950c67ec1449fd289c03b83941aa852bddd9e4089a9e0e334f"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/36b87b8545decc40.json",
+      "size_bytes": 2178,
+      "sha256": "274b00b71a7aeccf908e3a83dcc0e09e6097238bf4c36e858b577c75877d9f1e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/372844effe8f648b.json",
+      "size_bytes": 4104,
+      "sha256": "2a470e050d775b999d207de22bf9eccb82e3004be0a4e3f9e0e0547cb7076b61"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3987627ab41bfcf3.json",
+      "size_bytes": 4157,
+      "sha256": "c7810dafbfc9fade2761f315ae21c92e21117575f3a21e88d59b0d0f01f5fda8"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3ab84d729975f66b.json",
+      "size_bytes": 4157,
+      "sha256": "318ba7965330b2db2e8af74453154192c8184b44013b7889627a338466decdb9"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3c0d2974d362c42f.json",
+      "size_bytes": 2178,
+      "sha256": "083c9ac8ed56666d7708c373e3df98219a88a0f5e121aab2207ce3e4b4a1e8a0"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3d07255181b84634.json",
+      "size_bytes": 4089,
+      "sha256": "fa0da3ac0491d038a42c8ab1c809402204a601299cf2c7a9f87a8f618326b316"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3d78c89c75072915.json",
+      "size_bytes": 4099,
+      "sha256": "561059c6c3f351153de46f3ac0bb721a372e1c5f5dd5da952505ff1c4348d108"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3e2c104882dae153.json",
+      "size_bytes": 4009,
+      "sha256": "8aaf04d8f0bae0a1ba19b849ef1276d6d8588fdcc4d32cae1360dd34accef70e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/3e87887e78f811d1.json",
+      "size_bytes": 2178,
+      "sha256": "eabecadb4fc540995f7af4e9ba737b299d05c1f4b3aa375a0db22627fc92dcfe"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/41a9eeb9fe0534a0.json",
+      "size_bytes": 4104,
+      "sha256": "0c2196f852492f0bc10393311f8a3db044844a6e4f64f576ee50732ccebdbad7"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/43b0562be1d66da2.json",
+      "size_bytes": 4104,
+      "sha256": "abfa4e61e13c3979fce719556cc2b8c2e54d32f634d9724b240ca8328112677d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/442d34a610d780b9.json",
+      "size_bytes": 4089,
+      "sha256": "0268e190f156dca295a594ce20677f2e1977ae2fc51f3944b65ec7de4148378c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/473126fbc513b8b0.json",
+      "size_bytes": 4089,
+      "sha256": "db2cac3fed1a05c4095057f492f4c322551f3448258a428bbf81f846680e492b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/47526ee846fa2de6.json",
+      "size_bytes": 2178,
+      "sha256": "693422f8a1524b6faf296c3aeb31298ce526b14b55076af8d6f298115a218d97"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/5286246449df947c.json",
+      "size_bytes": 4099,
+      "sha256": "2ed9fce0996b5364fd8362bc327fda6082cb698b644749302002d57a86114641"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/52e13b9b0efe55a1.json",
+      "size_bytes": 4009,
+      "sha256": "6b3dfe2c6a7f514724fb1fd9f59282368e975f55bef80e037e665ef9605d3f08"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/54fb3978196b2d96.json",
+      "size_bytes": 2178,
+      "sha256": "5a698ec3404b7357f32da0dc886905193aae572f87c60582804d30897bf4afb8"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/55851eabd095884a.json",
+      "size_bytes": 4089,
+      "sha256": "4d6cef705b9d69f9c51f6542fe5c06a4ee900365e1f0f102713da65988ab5c2b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/57aec1b9dd646fcf.json",
+      "size_bytes": 4089,
+      "sha256": "18d0f7ecba0c75de1609c8aeab52e6f27c9e133083e9ecbdfefe2f9548774a83"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/5dde1a3264a07c5d.json",
+      "size_bytes": 4104,
+      "sha256": "41dc5f690f4f192afa3048b7e019d753390880bb33ba6d60dea89f586bbfb70e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/5f33b1f4139b8a30.json",
+      "size_bytes": 2178,
+      "sha256": "a789ce1c671c7bfc550887feb66aeb70f370911be69a1df019b7ea4eb6b855db"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/60053bfd8ba0c277.json",
+      "size_bytes": 2178,
+      "sha256": "e22d503528c66ae4a977bcb5eb277e5b6c70458b10acfbf4033d3f62bb0cf325"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/6079a84d7a3bf8dc.json",
+      "size_bytes": 4009,
+      "sha256": "0ee06807d433a8d7173be7a78646924f1103f01f4661c2f36b7b39af4e8b1652"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/6244553e3a31a593.json",
+      "size_bytes": 2178,
+      "sha256": "79535a47ec6d3cd388870a6a76d8f8195066910d184cb02151b1d4f2a472312b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/676ea825663c4dfa.json",
+      "size_bytes": 4009,
+      "sha256": "a2cb46e3cf919f8a9755954880ddf83465e2c92bf5a84d13f429216952accf70"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/67a12e234a56b1f8.json",
+      "size_bytes": 2178,
+      "sha256": "51e6e2471d31f625377cbe918815480dceaee06a7fc6e7a2820d80019343a9ec"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/68cabfb53efd5ace.json",
+      "size_bytes": 4157,
+      "sha256": "e2e286d3edcc363725b00d47c1f56829f10a82cba86a340f92376c09f07f8c88"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/693adcf558f3cb04.json",
+      "size_bytes": 4089,
+      "sha256": "0eb9c2111d1838b0b54fe2bebd480a4ea9665c65af80109c7618a2eec8dba41c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/6e24310990ee2d6c.json",
+      "size_bytes": 4104,
+      "sha256": "62f2054d8e938e7bc1f2e9e0b76c1047a0b057d08bbf1b4ce2217b73a865c44b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/7026c0fb0a56e8c5.json",
+      "size_bytes": 4089,
+      "sha256": "49c1fbbc8514911ad1d9f521a525c3db3cf37421d482020e80d43441c03f15b9"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/70301cf8ed88b911.json",
+      "size_bytes": 4104,
+      "sha256": "dd404f414b843efb13c68b2292cd0c9a167f69851461f33038e65f1a5951ee4c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/708a12f410df5d58.json",
+      "size_bytes": 2178,
+      "sha256": "146ff2699420bdb3ce54cdbcd9107f264216864ef69d2bc9f99c73b1ad150ec5"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/75132bcfad2ad45e.json",
+      "size_bytes": 4009,
+      "sha256": "e717bf128386d53a8d2638217b2838cc5b04a0a0690052d458515ae401adbc5b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/76411920521115bf.json",
+      "size_bytes": 4089,
+      "sha256": "48a895e69bc6e51adc35c235dcfc5f533c43373ce54b2ebaf3dd9c7bab7527aa"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/7bd1d12f3813f26e.json",
+      "size_bytes": 2178,
+      "sha256": "3ee66e12f2e42b68e64946733c030aac7d3cec2857b391e544e9e0bba80cf498"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/7caccf57fd9c34af.json",
+      "size_bytes": 4157,
+      "sha256": "3e84d96a80720a41603a599d86ab1257435e3752e978789d1abd18e962f443a3"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/800e5712183dc9d4.json",
+      "size_bytes": 4089,
+      "sha256": "70d3c8cf1d647a04a088ff6e8f8bb7e3356bb51908583ad3afd7c1edffde2dc7"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/82203662d030391d.json",
+      "size_bytes": 2178,
+      "sha256": "22a51698fdd0ec0abd9dab97263e9684914cf8cf28aac7f56436acaf8957a1af"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/83ed881be32d92c3.json",
+      "size_bytes": 4099,
+      "sha256": "925299eb2ee9ff4a2ec2527a5c2708eea033076f4e6d98783f6c96a32f34819a"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/845701cdfc7c1c0b.json",
+      "size_bytes": 4089,
+      "sha256": "d7afa453fab0388dc6eb4655ed2255bff2135d2bf60d2fb3c1f7fb7a66771c37"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/859938bf41367e7c.json",
+      "size_bytes": 4009,
+      "sha256": "91fdfa22590a2031f92d383a4048c48d1ea877a988f43996bd04dba676381548"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/85fcf2b11fd3acbe.json",
+      "size_bytes": 4089,
+      "sha256": "e4b69e2baee88372c2940d1c3e5d8b8c39bde6f3dff0bcba28b566ce5e483655"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/86ccd4d4f9920d4c.json",
+      "size_bytes": 2178,
+      "sha256": "93ffc033208002f45e96f2808f9915a95c204c8e26940651707962a2cc67cc6e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8735a90d2b94bd91.json",
+      "size_bytes": 2178,
+      "sha256": "99e1a90357c237c7079fc77cec5a707e068c5af3efaf8307b431d14c0fb35200"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8742ec644ed805ce.json",
+      "size_bytes": 4157,
+      "sha256": "f798f7643d57f268b6f0019154511cadef62ae433f3e40d09e788b861f53566c"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8be185224a6ce71f.json",
+      "size_bytes": 2178,
+      "sha256": "4238ed2b5c612b4ac718f6b377edf54d232c0d917f5a817a098dfef3949124a1"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8cf74afb7dcf6be6.json",
+      "size_bytes": 4104,
+      "sha256": "2fc2353ee0e0232dc933be9629b36bfa8544c66bf4e590c4c1b75544b153da00"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8d2e79d02a14b94e.json",
+      "size_bytes": 4157,
+      "sha256": "29b61598113955b7a41fd38635b347b8d257ddf703b835648aec07f0883bcf06"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8d73fbcb80ce3abb.json",
+      "size_bytes": 4009,
+      "sha256": "5518b8a59126b9ad2ab09948bd0b3d25b95fa963e9da3ba11e98202e7997f0ba"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/8dabbcbdce0416fa.json",
+      "size_bytes": 4009,
+      "sha256": "4b9d198e95a4e278247dfb97d236d2397203a0517f8ceeb135547a78087e773a"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/901e7d49e70d7297.json",
+      "size_bytes": 4157,
+      "sha256": "d7c43598a768bfc198d691707c45790f85b2a8f74d27796feddc718c5459f769"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/9039811bf2676fe2.json",
+      "size_bytes": 4157,
+      "sha256": "f8da11e61675b0c7c25a167dd408187a83bc2528a3ac8ef54f39a5b0e99e1349"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/9202b66a7fe13b87.json",
+      "size_bytes": 2178,
+      "sha256": "21d6c874ec4273510e04013bf5e45dd84f84deaa98ead47f78a2d7163e274d3e"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/9460037ac3873247.json",
+      "size_bytes": 4104,
+      "sha256": "862ea1fa65031382c7f894914d2c15a0579ba53740e95d4348621051c6e0af2b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/9487f4276077b34f.json",
+      "size_bytes": 2178,
+      "sha256": "45b4ac3e357c63847b4a22c760ddb954b4fe1aabbc37697187386461992b0885"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/a2fda6cd2f325dc1.json",
+      "size_bytes": 2178,
+      "sha256": "08e968c4618c8a4de0785086a4ae85f3a54ba832b926107e478910106f1cbe32"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/aff92eb9185855d1.json",
+      "size_bytes": 4099,
+      "sha256": "3edb6b7159d4ddc900cdcdd3de6fa90eac18b818a5c8537e6bec4ae5dba50b1f"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b037af3f8c259a62.json",
+      "size_bytes": 4009,
+      "sha256": "8cd7ea688c3bec14b5284f1a37d7aca6b84272911db2dba7098ab37d67e38ba0"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b159fc63c1f28dab.json",
+      "size_bytes": 4157,
+      "sha256": "da9717656882f57d07a03005581ee13f50d09cc7061685b71ab96d8cef25cd04"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b2b09c523c4b73d5.json",
+      "size_bytes": 4157,
+      "sha256": "f3724ee5436b67852086e8e0497d4b9669b943997f937440969f19dd89ea1007"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b76b8cdfd1f3c67a.json",
+      "size_bytes": 4099,
+      "sha256": "a57d002c73a038b41ca92c7043e3341df085bd9b34f54c3a804c0d87c7a519f1"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b774381b26f65147.json",
+      "size_bytes": 4009,
+      "sha256": "e883d405f88edbb952f270da0f800edd9410cef0c223cfdeb6fd6b77421af05b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/b8a98d97ae5c8ae2.json",
+      "size_bytes": 4099,
+      "sha256": "459e3798a7708218cf8996b5e519f9411590082e8e6868fde0cb5ce12bdf690a"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/ba9af397bab2ce24.json",
+      "size_bytes": 4104,
+      "sha256": "21f12668bbb15132c2277d8f343e80b58df18da8c3a78d74d805e76f167018d3"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/bbfc76e64ff221a0.json",
+      "size_bytes": 2178,
+      "sha256": "b2b767d786bef73e9cff84069ec9261ecde3d25dd6386a919d195db35b45641b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/c258cc5810f119c1.json",
+      "size_bytes": 4099,
+      "sha256": "cbcaaccc919ff093d235ef8524e947824661d0364e25671d3e9a2911a17e7bd6"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/c4dc4a1cdc0058dd.json",
+      "size_bytes": 2178,
+      "sha256": "36e1f02ab8a6fb860fbf202ecad4eb2d9f475db468ccefaf930efe887abbeefe"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/c5e2d83a79dca9db.json",
+      "size_bytes": 4009,
+      "sha256": "f90c144af3b6126b4a038084e4ab173a03cc65ab43fdb2d38deffb3086e40fe8"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/c9c350588c3fb36d.json",
+      "size_bytes": 2178,
+      "sha256": "be85b134c18b95ea5da72210f3c58caaf55ff6743377552306e539aa801b5d4b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/cd826f2221e92d16.json",
+      "size_bytes": 4157,
+      "sha256": "10ad314bc5f8a165794c2da4436a8fdfa75af211b9f3da1931c309352c88ebd9"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/d286d7b926cf5616.json",
+      "size_bytes": 2178,
+      "sha256": "03892043c4956065c7beeadc0c23a8df7333ea0fcd64d88c83de5ca416fdcfac"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/d37e020ad4ac5c3e.json",
+      "size_bytes": 4104,
+      "sha256": "d55e459875e5a747bab4af5a8aaaebed70c3c37f21c375435c838d044bf68ed4"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/da0229b8dc2c0ca4.json",
+      "size_bytes": 2178,
+      "sha256": "3475a6eb6bc6a71a7ce5472f5a3c51dde8914e42914903a403fd83d7e9eb2a52"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/dc53eafc5f782ae8.json",
+      "size_bytes": 4099,
+      "sha256": "93291e145632683905075ca69293c3b82767ee49b2cf9a6719728af454f70add"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/e5436d71db89f5cb.json",
+      "size_bytes": 4009,
+      "sha256": "87be6b0542b22834a080ab1de945f5d48c8516cbcd4106623aef0e8929c294a2"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/e7d203bf3886a452.json",
+      "size_bytes": 4099,
+      "sha256": "6db6618ee9d3914482ce9edee78070e4fdf9e2c3d27931e777c0a12107367c49"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/e8479b60e20484f7.json",
+      "size_bytes": 4099,
+      "sha256": "17ddf6f375af4264acd5c05e98f77e4059657f6539aa403041caee56d7a64ea0"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/ea596693822bcbfb.json",
+      "size_bytes": 4099,
+      "sha256": "e3d6acd7cf00d3320e5fbda3947a48d10aedc007c6bfac6208d29ef5f1d341b5"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/eb13c53ca6fca723.json",
+      "size_bytes": 2178,
+      "sha256": "b10c365d4e7226bc6d7c2171f6e6032d51b943b8a4adca01f9aeeab510330ac4"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/ed0d43f3245e76b9.json",
+      "size_bytes": 4104,
+      "sha256": "7c23d9c0de1da1c5f60375f87afef721a4a2ad9c6da561e064e314e33f65e641"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/ed7feb2c5f275242.json",
+      "size_bytes": 4104,
+      "sha256": "380f779254a188c8d35ba7323f555afade4983664220586cf877106029321531"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/eee6930529685360.json",
+      "size_bytes": 2178,
+      "sha256": "789b498b10aa443d9d97386b79153d8110d201236d1fe0448f0c52801580cef8"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/ef094d3bfe2903cb.json",
+      "size_bytes": 2178,
+      "sha256": "831bf24734a3c3f27038d6c659ab49c1a35bc575b68cb416493df1f61a2b1c02"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/f089428b9f101201.json",
+      "size_bytes": 4099,
+      "sha256": "ee454b704772d4316389d48d1a524f424e67a7bf48e70602e65dc87307be09f7"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/f138025ce70e38ef.json",
+      "size_bytes": 4009,
+      "sha256": "3a4a61d30d86af4303290687138aa1854c6c60d915fc06c2c4c6a14d335aae4f"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/f402e14bf2558f3a.json",
+      "size_bytes": 4104,
+      "sha256": "4ca53fa6aede8646ba86ee2b6017ef5003af2308034192229e96707c2ad680e0"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/f48612b9e630d182.json",
+      "size_bytes": 4099,
+      "sha256": "c25354e181d82a0725c1c105a404bdb5b4a0c103fd82867116207b48416aa402"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/fa0661a8e2168bad.json",
+      "size_bytes": 2178,
+      "sha256": "19fed92c9a27c712be1c493f0a3f16eafbae44385dde21fe86dc5eaa7aafbbda"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/fbe794c8a38f9041.json",
+      "size_bytes": 4009,
+      "sha256": "9bfb4fb71c5791d6033e7701235bb536b27b9a2b1aa7cf26504e85ec35742ec1"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/executive_traces/fbff1ea1c63471b0.json",
+      "size_bytes": 4157,
+      "sha256": "30f91cc6406ef25cc8d4a2680c492dfa59ba66a5dc247236a68f57a51faa444d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/last_decision_plan.json",
+      "size_bytes": 665,
+      "sha256": "e8182928a3aa349f1102e2f2d5437960afad63f29cabb01a6d687498e484a2ac"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/learning_profile.json",
+      "size_bytes": 700,
+      "sha256": "da2be2337f5015c33ea29137907392cbf07c6849e8473bffd19bca12c6f86b61"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/memory_manager_decision.json",
+      "size_bytes": 353,
+      "sha256": "f7120819a02242c66b076497d004c7690b03c9cd1dbbaee3b8e18232d2d632a3"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/module_registry.json",
+      "size_bytes": 884,
+      "sha256": "a16fd5428f6c4655fad12fb43ec2f89fdeffb626a6b64a6547783ef75be17903"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/project_state.json",
+      "size_bytes": 1494,
+      "sha256": "2d5fee11b7ec2c02323e5852c446f90040fa3ef33965008f92b2ba20ca16f566"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_ARTIFACT_MANIFEST.json",
+      "size_bytes": 3157,
+      "sha256": "ba8ef04f9d769b2af377f3a77778d32c6df8e60a6dc655b400b3978e62cd931b"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CLOSURE.json",
+      "size_bytes": 2673,
+      "sha256": "5fbe6e58dcbbe9020418e85bb6ce74e8288e974ee01c80cb152fd02a140d8474"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CONTRACTS_HOTFIX_3_5_4.json",
+      "size_bytes": 1780,
+      "sha256": "911022962ae0ef90c02ee4835a4b1a01a228f54286733f09f4cf40451a0b8415"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_GLOBAL_OBSERVATORY_HOTFIX_3_5_5.json",
+      "size_bytes": 2253,
+      "sha256": "47f7262a350844e6e82d33224173fc7d87f2b2442b64a999791c0a75a3fddf6d"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_INSTALLATION.json",
+      "size_bytes": 1466,
+      "sha256": "bbf5ba4245baa79092e4ec48d6e8bd9d289b79fdedc5914e2b6ba67c9a8c6ada"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_METADATA_CONTRACT_HOTFIX.json",
+      "size_bytes": 4338,
+      "sha256": "eca13012c4e833520a74b418d8cccd21f4075724184180745df0326e1acbaddd"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_2_IMPLEMENTATION.json",
+      "size_bytes": 1357,
+      "sha256": "21dac7f09f37efc603c004fa4db5d6d3c4c9881732b313d2bddbe276252af4fb"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_3_REAL_INTEGRATION.json",
+      "size_bytes": 1247,
+      "sha256": "a106813429b64d4520f7a4f57bf1a9dd87254ba05330287fddfe5728ea970e35"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PRE_GIT_AUDIT.json",
+      "size_bytes": 1663,
+      "sha256": "6c909d9cdd1983833c28b5d478e7deb8e97866e78f34ee6376cbdc0bdac4ad09"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/runtime_guardian_decision.json",
+      "size_bytes": 336,
+      "sha256": "8eea8e3f77afa3160a1ffcfe414a636c2f938d630b3e96f181f7d4a57380e844"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/runtime_rules.json",
+      "size_bytes": 479,
+      "sha256": "bfc34bc85a2a11d90cfb038b60dbaa08d089ccc851255b408ff0fb183c26e24d"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/knowledge/corpus_audit/batch_review_queue.json",
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/knowledge/corpus_audit/corpus_audit_report.json",
+      "size_bytes": 1822,
+      "sha256": "43e1b177ac4c2fae9777c7bdd2a72bd1b9973c43590eec86b529ca53dedfddcf"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/knowledge/corpus_audit/corpus_gap_report.json",
+      "size_bytes": 640,
+      "sha256": "64f403572f5b1b36a8bd043b78fdbde6189f139c74bf75afb5c034d445b10d2f"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/knowledge/corpus_audit/individual_review_queue.json",
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/operations/observatory_latest.json",
+      "size_bytes": 844,
+      "sha256": "598f8074d59c9765a464686458f76dda53cfc98a7e2b39a7156c38a3d1c21078"
+    },
+    {
+      "path": "NINIA_OS/KNOWLEDGE/KNOWLEDGE_CONTRACT_REAL_FLOW_QA.md",
+      "size_bytes": 4507,
+      "sha256": "33249cc0cc36205e12a4b0c12cdbc8754d2fb020d8bdb05e6f09e8931e8f8d07"
+    },
+    {
+      "path": "NINIA_OS/KNOWLEDGE/knowledge_contract_decision.json",
+      "size_bytes": 478,
+      "sha256": "6949d6252a3121e0511b33c26ce1e56d1705156a76aa7d5e75d9e13ddfd14af1"
+    },
+    {
+      "path": "NINIA_OS/KNOWLEDGE/knowledge_object_v1.schema.json",
+      "size_bytes": 2861,
+      "sha256": "a3ab2244e99f087be7c2b52b0fc2f926ee5d3342ab4e88d34a2aa55716a31b44"
+    },
+    {
+      "path": "NINIA_OS/LEARNING_LOG.md",
+      "size_bytes": 767,
+      "sha256": "5862e8947089107877de2b8b3468400ec03e29a4eb5fdece4c073ff60def060d"
+    },
+    {
+      "path": "NINIA_OS/MASTER_MEMORY.md",
+      "size_bytes": 2842,
+      "sha256": "d4e93be83d73c7ee7bea55b970450cbf82996238bf0146581f32e99684e7b903"
+    },
+    {
+      "path": "NINIA_OS/NINIA_MASTER_MEMORY.md",
+      "size_bytes": 38538,
+      "sha256": "e3133f4e4f242fdc7b62093c498e6475ea6eec70e3316333baa25bf60e5f9443"
+    },
+    {
+      "path": "NINIA_OS/PLANS/017ac906964a_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "11b1e8e0c9d3f27f3cd6130e530485d9da79a155d885406d8cfda4946f337a22"
+    },
+    {
+      "path": "NINIA_OS/PLANS/01ccd854e4c7_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "bfc07ed652f41f34f599a99d7a6070a2a65f072600af5673c4c5df75e28b82e1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0304a0e0eaa3_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "4aaa20d6b357a6d8b1055e4f050b363ced57acf83e02caef0b0c1cc788c6556d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/032baf1d5726_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "4d32c79b6ae9b39974430749011d564285f9def123fea0d7797bd545679f5fce"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0779581356c2_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "296da4a5048011aa9fc4a2dba633eb21d70d5b29fb8f6b4f67582c431dd6dae3"
+    },
+    {
+      "path": "NINIA_OS/PLANS/078245a21da3_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "b26518a14f29f3481879db73e7c68e93246ebe28a4959875a6bd96070ca4687f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/07977191a18e_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "593f7c5be8779ba6a3790e3faf80db3374fc53d6716e00e7d023e1086086d7cd"
+    },
+    {
+      "path": "NINIA_OS/PLANS/099f50a32e1d_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "025b2d05f09196f5a4d626bd155468002adc928cb27894e98fb8d1f920c713b5"
+    },
+    {
+      "path": "NINIA_OS/PLANS/09e73b423b57_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "59d2011765d8f3c6e052a3288ccb38900afb353e86cab1872dacb1b669155557"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0ad6c72cf3ac_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "370265f757c66e56b822e62ae84695dda532fa34fc0ee69b0d542eb5fcfbc4e1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0b61613f5362_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "d1cb296dceeac12cb2f6ad76ad3fe501955f0fc8d651c662409c361f1e81f252"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0c556c6fdbc0_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "7d9634d419b20fc9db84d7675ba4345784f9cf261086cf99835459fb9477f040"
+    },
+    {
+      "path": "NINIA_OS/PLANS/0ed35285405e_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "5b99ba79e18d59389c5bea7ac40c78d6221b0b3695f960de3e9160460cb73fcb"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1132aee488e4_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "e8465902341bbe2dc251e6e0b8827a8b5f163bcb84f8c8098e7b9f8e0ca9dc6d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/11e03b364d40_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "a2bb2579e8f7163d11752181cfbba3690cf3a6a0bb01a6ea56394a06469aade5"
+    },
+    {
+      "path": "NINIA_OS/PLANS/12160c8cab56_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "b4528bbef77265c2bcc57aeb53e212d5d83b22a308b6257eb0c331d94b9ad881"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1221e1410e59_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "3699e4658201d6a1ab6b0ced6d5c705f37e6e8fce87739db01764507a6e01623"
+    },
+    {
+      "path": "NINIA_OS/PLANS/13b88c379a6c_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "ca11920bf0de0e0ddfcc126bce774a23eba1e8f0a1f681a70dcd78b9370cb086"
+    },
+    {
+      "path": "NINIA_OS/PLANS/17fa69ac4048_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "38c4af12d4a3948aaf12ca6cf3ff720ebae554cf913258021feeb5fe4898f278"
+    },
+    {
+      "path": "NINIA_OS/PLANS/193b9371e4ad_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "ec6aa439e0cda5de2e11e1272a9c3c6936c4f3a3026dfb1050f0c2724d725135"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1a1d67e89582_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "2bb2c70cff3ce5bdaee46d1a89b1c65e13caddf4f9b2072d044719f448fba2e0"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1a5344a273a2_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "c85f2db9663536a8a13f020ee3361d209fa2386ce5f870af393c16af7c0c69d5"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1d94d6279be2_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "0e49177db30149b09a1bc958d9c0e11f7113fc2a6c861a3940067ed72455d422"
+    },
+    {
+      "path": "NINIA_OS/PLANS/1fd511cdc587_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "c9bacef9a68f72a6143129e195d9e125d2096caad6c0cab00c7836bb0d873d8f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/21513a4c818d_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "7d40bb3a885bd7f1f751a7008aadcbae18ea676136fb4aa77ca5c0098544b748"
+    },
+    {
+      "path": "NINIA_OS/PLANS/25c4d484ff80_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "c752d50555f2a41cfcd4cf3cb83b01c2a65b0bfe60047bdd63d2632a79ab4550"
+    },
+    {
+      "path": "NINIA_OS/PLANS/282309ac107a_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "6a5a5f343bb26792f07f39802ae07cb5547c11c8f58b18169d238be34c562b52"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2c4edc44ab72_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "abdea9dcbba36aa09fb98a5caab6a719f34e364de53cc0a14a8d92ef36414c4d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2c690df98f7f_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "dd1e2296c7149975e1e97627e3ca8a2cab67c192f42ff28ca3a667d3b8bc6c2f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2cce48089af5_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "5d2969ce111695e08a982ef69c78a46046a7f240d962cd23872bd4caf611549b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2d34b7264b93_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "60e5891e8826883b255c9998e327c60ed84e0ec2506f33aecaf4f3a2a947b4c7"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2d788b65a87b_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "447182fe106d71a16afce393868500e984f1a16a38728454b76163e18f19b3c0"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2e821935b28f_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "ba4be9218fdd829b326e16a4874d87d91f05ad11b2c99b0a59188326b71e9c37"
+    },
+    {
+      "path": "NINIA_OS/PLANS/2f19e1579000_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "85bd65fffd6674e7d747f6e04a40ab6e342c1b19d2a942852960c041b541b71d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/3024bb8b868e_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "6f33ef123169fce77258b4f4dcd2e7d1243992fae3c5dee7c9cf7b8157bab28d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/30c48c8010d5_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "f9804d2aff8425854dea3b135aa9dc6528008f4ff987735aa621274985a8ba2f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/35929d8562d6_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "463f9a748eb69e3fd5c034b4595e57525b022942556d162c82a612398685d740"
+    },
+    {
+      "path": "NINIA_OS/PLANS/36445fdf035a_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "227cd06de12c648e925e885d9b9151469cdf82b6ed2e90f0f33f997f77c958c7"
+    },
+    {
+      "path": "NINIA_OS/PLANS/387a4a711343_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "07ea828ab7763ed6200c01b874187dd1b739974e5e8f2e2af41ac5131bffb371"
+    },
+    {
+      "path": "NINIA_OS/PLANS/387d60762a90_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "48403cbf8f7d5c307d1c46de8d78b7d9745826573e15f121cec87c1e21d4d3c1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/389bec449115_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "3030b96201e4d36bc0f91b171110678247dab15b229d438fc2fe22099dd60d81"
+    },
+    {
+      "path": "NINIA_OS/PLANS/3f4e068b70b7_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "701783de53c64203c3693b6d106482816d63e01fc756960d40af92251238c3cf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/3f5dfa585a23_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "6471e2dddd689ddcf17f6766ba2664566d33d24857676e1d327e4de9f0692ab1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4044b0687761_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "6fd65782635ff996747639537ea74a61110ba828a4f8858c3f0782e153172fd9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/44189b5f75d6_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "b1f071041e9256577d0a384069f8778f08a3c991586d5a9692f3038853db6093"
+    },
+    {
+      "path": "NINIA_OS/PLANS/45064d6c113f_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "353901b43241e88a86ccf653fc553f2c3b28869a4f2bde95a847821a29aa643a"
+    },
+    {
+      "path": "NINIA_OS/PLANS/45ef0a060f8d_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "ec22d65e376d92c8683fe4aa233538c5c3ec2c3ed455be15227cb47e80bc0e59"
+    },
+    {
+      "path": "NINIA_OS/PLANS/47e61aa69beb_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "10b0f37aacda50d39440b2e1ad0a9a19e3bafb3770ca376a540fda35105b276c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/49ec807e547f_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "c87e4419e2984f1833850fbc606493780da38057049b43235f71d1073c75264b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4afb8b9c80c3_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "6a637fb72d107bbbf2336fc755b2a4358b8066ea385ab38e011757bc15681381"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4c30445c2ac6_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "02452a7a0481da0ff68785da833388839edc70ee10671d7846927995e55f7642"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4cb9c6be2a07_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "21c321e53f2839ffcb8bd309e82298e1c16e074ddc5074a0cb2f8655faaade5b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4e39ffe1359c_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "b567aa383cfff8b3a23fe09ac2aaa5031863466bbc9aed4fdc92f7ad6ba22ff0"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4e505fc8af4a_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "da1a9c720458a5889a562a8b5a9f969c4947e2a423d987b33c896c809da75dfc"
+    },
+    {
+      "path": "NINIA_OS/PLANS/4ff42d98d0dd_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "79b7fbaa8bc275d4ae6ca9c08908c734c2f0c0adfe1a0c221de75c63adcf6f64"
+    },
+    {
+      "path": "NINIA_OS/PLANS/52f1cd3d188e_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "a4fe20c78637a981ee4dbbbfb073c8073410b31cbc5d5c94e3e58099a0b0665b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/541621d19854_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "d2afb8aa70ba9ede604d038374a52e03ae45e5c10b1d323a52e485e0adf1de67"
+    },
+    {
+      "path": "NINIA_OS/PLANS/5eceebd4618f_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "7008d18c1d68e387ce1d878f3181be94ebc339bc556c7c46d9acf592fb2c0f30"
+    },
+    {
+      "path": "NINIA_OS/PLANS/61af72d67d1c_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "55b8148504fe61730be598f9daeadea73f8d2f728b12035ad40a1d92ca8324a6"
+    },
+    {
+      "path": "NINIA_OS/PLANS/667c92369cdc_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "654d1847345d60a1d38a977da45614efd7a71813a93aa2e6f3fe279f8d404e0c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/68d18d49e222_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "b5e09128b30463b9a2fff874d64110fc08db2e0bcebfd3ee2c4b5257643d952b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/69a1e9fcec3e_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "887d94e03214a062f399aba4575e49194e9275f16a33a3e29d0bf55abca6587c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/69b3ed958058_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "fc7e1560f6d61b24e05e54e7ce829165b344a238276d8c1b887c506ac4292a40"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6a5e482416f3_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "196eb86795af4e61bec5289fa4644041bfde00946a94e47e11b3dc90aa5519eb"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6d70560ef924_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "d9ad3f9bcf315b36bcd1760c3d36258da4a63a12d50e209f0658c26197653542"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6d73a7a33dbd_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "a0169d9103ff889bd4a74351119cc730ca80fed69000afd65efc3d2b98eeeb54"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6e3acd1171f8_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "8b0f2078d3b367b193abc681ff854627f0e2bde5e15be4b4013a675a448f5084"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6e82c6977be2_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "7969cc1d2b49638beb55242a7c7ca6cf866cc20ff7b2994f11261cb3eebb6f05"
+    },
+    {
+      "path": "NINIA_OS/PLANS/6f5e07024388_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "56c9b5eb9d0b0874fb192ca7bd7a2f9dc2d17bdfe91697b2a95af184f723801f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7227d283ce6e_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "3bac5258e315ab679e0a9efbb1ef673b4caeb9b39b166f1347a6de3bb9cb6fec"
+    },
+    {
+      "path": "NINIA_OS/PLANS/727f217c5bc2_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "8475121d683acef206e00b78de4baa399500e64424b99d066a7ce2a34e68b90d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/72cbdbe23ebe_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "bc10375b953fe1ab97b9a6b8b0cec3fd2a16407145d81a4d1c562fc8b5c1ed5c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/746fecd18500_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "b4677df24e1b7e1edabd31c2583be4bf0afcff937aa0a8eeb36e434036e580a6"
+    },
+    {
+      "path": "NINIA_OS/PLANS/76f5c5990b70_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "84a5eb969b7f1ed21e899d3e16fc6f4f1e5e467afe75fd653c6b653f4ebf79d5"
+    },
+    {
+      "path": "NINIA_OS/PLANS/79593be9e506_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "3ca11357d44dcba73cfbdb9a8f174afc5bf33f47c6bea717bf4dee3603329582"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7bb895b1daaf_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "25d6f36110eb2c44b1c4aff96c3e5f886f9b01a2ba3da432b5959321764098df"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7d083e1da679_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "85132fa926192544cb07d37aba9f4c339376091743934eff452ef544edad15b9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7e0ec7064f34_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "010edc2e68084832466d8f2320767c9ea65285632b467149818a5fa6aba52bd0"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7e7e8d8117dc_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "c5993a4b55887c56d02a2d1d10476015793a231f6135114c28cff34cb85afa72"
+    },
+    {
+      "path": "NINIA_OS/PLANS/7e9e8b12bdc3_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "6df0574a594c589a6a5a9dccf50d5c871b3707566f384cf8c074f16642d73735"
+    },
+    {
+      "path": "NINIA_OS/PLANS/80838be85d0c_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "f531d1642aa61e1a1d54e3ad3f437f139b1f9dfdd9d8cab4e52c5efebfbd9ea9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/80c3c1891c5d_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "af43fe967c385bbaf1cfe7f0b38322ecf7712c5ccf341c50ded9111082cf02a7"
+    },
+    {
+      "path": "NINIA_OS/PLANS/817a9c879959_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "e2a66b3f95d17f6d4810bc39af215323125d5ca8825ac87f4e9acef577123613"
+    },
+    {
+      "path": "NINIA_OS/PLANS/818faa1281bb_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "39df23594c4e12a40f56fb2abc98d99d9295f306f342ba40c6f28d81319c4942"
+    },
+    {
+      "path": "NINIA_OS/PLANS/823cfa382697_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "ec6eabc974fb11a1e45ccc2f0b11b343d6fec2a34026ef998a18686f8867364d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/82c8b87dadee_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "55bdcc04efdea8c8934d2ba3c40ab0ac4f2d3c2ed7a08b76dfbde89314fd8f19"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8311b17235ab_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "7d97b83b05a77ff41705acbb868ed940fec783cae29b8ee473d42836596c1c23"
+    },
+    {
+      "path": "NINIA_OS/PLANS/831b0e2e4269_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "a0be692dd546a59ad828f96fa4f35639082774419e5293cdb81d5695a46b737d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/84a0ebad8431_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "969bc0f861c1046363abf8325d3746d899b894061fca5b1f20ae1a207240ad41"
+    },
+    {
+      "path": "NINIA_OS/PLANS/872867a25c89_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "26df25181ea0aa1ab6fa4dfeb18ba285c787367b2b0029aefbf7a45f3bdb3939"
+    },
+    {
+      "path": "NINIA_OS/PLANS/87aac75b9152_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "be5ed99e8db0a72a7c185c583e97c887f094451639cdd227b788cff85000b3a9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/882798eae92d_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "c89a7380ebac4df9b933c7021def5ee4ce9a921aba59d3600515ebfeef3b373e"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8a34bee36fe9_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "46b23172655e60355c95bd500bbae3f47cd836ce3a86b6aee86226b17fb50309"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8b6c6fe65dc1_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "b9bfb48f39774863728adb7149b55c3075da50f51982f0b02ade4f835127c59c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8d0da7ebf22d_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "72e8f29978bfa627d695af11ed31d7bf7842842354d3a3d206e8f6f58b0969e1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8fb1e91f39ff_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "b37082915d48763ef567b0c418e3cda61c25af4300adb82141f2ace9c73bdaac"
+    },
+    {
+      "path": "NINIA_OS/PLANS/8fc457f7a6c0_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "1db8d5ce1fe6106c93283261ea456ac48f9eb4e7bf82646ea2aa8965ef096e42"
+    },
+    {
+      "path": "NINIA_OS/PLANS/9055c4bfcd1b_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "77dd7130b06e80f152abdd7d81ea72d4f90c3a37792d5a107e1249ed61f313d0"
+    },
+    {
+      "path": "NINIA_OS/PLANS/935402b65215_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "1e65eb1e559d71c6aaa2578107c9b0b03a1018cf5e9d6da20b02650d3b54341d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/95f9c9f5bb79_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "f7f0fae43cf4a463d9f1c2489759b27cb3a7d2e430bd980378979097bcbdd5a2"
+    },
+    {
+      "path": "NINIA_OS/PLANS/968de14eac52_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "c9423695344c98f8c7f729012901b239ad49c5db7ff8c877815d65853a0ea89e"
+    },
+    {
+      "path": "NINIA_OS/PLANS/96b65a39fe3b_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "65b82e6733962699338ac86b27c869853364637fb8518f36a233c26627c7dcaf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/984245acdd1a_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "f1f3e31a33098b073fdb8ffed3b1b535fb45325e36957ab2939d842b2186b9bf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/9c6183795d35_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "f0055d8d4408483d404c1b86c55f78a4c9a33edaca960b57b4dfd9458f83261e"
+    },
+    {
+      "path": "NINIA_OS/PLANS/9ebc370bc178_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "52b2ab30efc5fb74955672904ab0eb090782dd33bcfd38a23b43049b28824a5b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/a17b50531765_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "aafabc07baaecdc4a27dd7928acb10a7141849be1be24d2b5a2e09d8ff79fe60"
+    },
+    {
+      "path": "NINIA_OS/PLANS/ac45dd68640b_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "dfe435118f54a5277cf9459d7cee83117a88d77b5adabe1dbb5733739f591456"
+    },
+    {
+      "path": "NINIA_OS/PLANS/ac593fd8ebf1_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "4f62225ffa1c261de70a85cdde0bbda23f3fdfbd9ed4974ce5ab6835175d3a41"
+    },
+    {
+      "path": "NINIA_OS/PLANS/ad2f92a3bd5a_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "2ff033f54046ad9b0eba482d8a06dd5738b5697e782fd111e4d19c09c02fad1c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/af13f8ec3923_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "1c1a30bfa8e3444ecb2d1eff353e20de1c12ca9a2f440d960132d5373968ea52"
+    },
+    {
+      "path": "NINIA_OS/PLANS/afeed9d8d1c0_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "102be9f1cc01a928aefe593cbb81c1e9e84e6a4f5bb193ac30b1a369e3d13894"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b2d93bceafe4_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "58a1bdeef8f85a836701f6fb7b3ad655b54eab6171e4ce0b83f06cf91637856e"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b31e108fb848_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "b18cf3f409e08f74357a6e26c8ae7ce8963d951e799199f5cc3faef749afa7a5"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b347845193e0_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "8d215fea85c236ab964bd9a4952d89758b9ae6038b0ca5aab05cae8eea4e8e13"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b4c56ff1d626_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "8aef73b05c776d7e5adc03b3992a2570c14185132cb7b736c8e975a2a476de61"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b5839367b8e4_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "c5c4a989f3b4299ed888f44c834b4bff526f003cf59b40a04350b5115b28f783"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b6633062d670_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "4b2175e2d6f0ff5fc7db30711dcc0adbdc05cd1189439fbab7055e9b9992e5b9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b75d6a5a1e93_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "825ba69e0aa38b75ec5a9e103e755cf1693153bda4031fcfcabdb0eb3a7dad0a"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b916a331c778_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "0c26a7f2be1c60df8f1aba348345c0f6622279cbc94549c752604ce8c2e15da3"
+    },
+    {
+      "path": "NINIA_OS/PLANS/b994194ce6db_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "12a0f5d17d31d3941046e25c23d9e2a2333ac6c5ba2d00f055e60dd05fee0a23"
+    },
+    {
+      "path": "NINIA_OS/PLANS/bb8d3cd72cd6_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "9d8599d9be70d5ca94c15a31169188bcf9db905079f53d65f5917ac35a7ad7ad"
+    },
+    {
+      "path": "NINIA_OS/PLANS/bbf10e1e211b_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "bd28ec35309d87826876a42308b9a3b5c81727867ff5cd18d5be60e528799ea1"
+    },
+    {
+      "path": "NINIA_OS/PLANS/be08d058d0a6_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "be11e93dd42a345187908e20258371d316cd36ca9636a63aad943a0b027da4cf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/bea00a49123e_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "af43e2fe3e59b475e54c984f36b8bedfb8bba6ef650180d0159e33bdf73fd4cf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/c12522d06138_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "80edc4058086dfd992d00c7d09072a80c785d96be0ec7da442c1d35616fdcc87"
+    },
+    {
+      "path": "NINIA_OS/PLANS/c21880bc0920_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "adbe9f2d6efba10420e9b3c276e1b61b9650a581b75b38e1267bc2c2b8aecb02"
+    },
+    {
+      "path": "NINIA_OS/PLANS/c4511161ed6a_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "41693583d90defb6dc5ba05b49e4ba78c8a2f3ae26861edda2076c6410454def"
+    },
+    {
+      "path": "NINIA_OS/PLANS/c4aab7272480_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "4094d9ffd211e0c6dec57924617362dd84bb8a4506d00303c50a721d6fec4a89"
+    },
+    {
+      "path": "NINIA_OS/PLANS/cb2210cda629_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "9002bf7cce1382b2c130af84a1fb34b2108ba69199dd0eeea755c81083a78f3b"
+    },
+    {
+      "path": "NINIA_OS/PLANS/cc077eee4519_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "5142865dc6c8ed1762e108dd10473fc29812beaa6a08369e95aae2a7f9c8614a"
+    },
+    {
+      "path": "NINIA_OS/PLANS/cc2d24b8fc33_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "5508f8465cfb8057f7ecfe825797f573c6b6a838959102ee2095ca249c2b2445"
+    },
+    {
+      "path": "NINIA_OS/PLANS/cdaee99c1ba7_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "bb7f4341d70ddb123e8f314d18fd1db0575adfe24cb9243ec65d84fb7fb78a7c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d0ba82939ec1_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "cfc0a1b024443234d402c00f66110573706a620b422ab3d1320183930894fc16"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d103bc917602_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "328aa8deaad91ea5a6f89be11f52a79b997e19a6d900d2fb332b26d3dfbf3668"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d1f28bd8ffb4_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "c59735d9586a86c553bd0021d92b98e251e261abdd4651b3225a7ff9671f5255"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d2e805080979_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "8b4fd6ce44c28e97dc2a97c3d79c0ad7d52d7ed0e669ccc4b5c28096a65005a2"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d2f3c1b92e1c_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "ef3115c16b307a653e02d4124cc859ad86ca3bbebb89ec383bce954f2aa83382"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d2feb213bb68_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "25e9c4cd2bebf834613616d1c8d872ba48fbf6f12051b5f54c28d8a78216b77f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d409fc87b113_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "de752a594db182862d029ebced28e6a689b11a7468497377d0e6aae469b63cad"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d5e539ae67c8_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "7f1fa6e00789ac375aa5913190b36693349911d3f55442134d04c86461842f84"
+    },
+    {
+      "path": "NINIA_OS/PLANS/d951ce25fa35_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "e8a0f01a525720d9e234ac2ede9acec35777746e6df08f8d9e9fb9bf76694c43"
+    },
+    {
+      "path": "NINIA_OS/PLANS/db4a37f082e6_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "ce3b1cb178c37fffe7e5af697de58a4d7d6321864720675dbfd94e82cd60bd69"
+    },
+    {
+      "path": "NINIA_OS/PLANS/df88d9f5e143_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "70048acca2089c758e634c263ac70d670ff4e88b23f99690e196488694dfe49d"
+    },
+    {
+      "path": "NINIA_OS/PLANS/dfc50dd3377a_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "f562cdc2c95fbded141e79779265a5be895ea9654748669828bca41050dd2fe2"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e0220528b35c_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "eb1147306608f4c6eeba73684d18d9d760c711fd529afd18441e7d8c56edd4ed"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e20ed5b095fa_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "90d70145f1cdfa34de6c2d2c4ed1012a143847b7be7d9c842e1b1745069735bc"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e21451fe339b_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "d0ccae9299763a4546758aaba6fbd1acccfaf847fbb5a0dc31076340fdfb627c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e35b47a99dc4_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "2187910dee83121486b3e3b1509869d1eddbe4b0487e83970e72ff37ca4ec34c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e3b333e4a2b7_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "b705415269ea58e3573fd9ad14d8b52f8ba075226a0a5df3001e8658edea1bca"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e460428a3d0e_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "f976f512f0ffa812d0ff4917c1b1abbfccfe0c219bb9919d7dbbaeb23353f057"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e7d97f1be596_implementar-un-m-dulo-python-y-validar-qa.json",
+      "size_bytes": 2897,
+      "sha256": "27230e4d2b4f0132a6eee719939c2e6412f4e7f563a30b7ddb9b6f0530bf7dcf"
+    },
+    {
+      "path": "NINIA_OS/PLANS/e9919d3851f4_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "cc154398963e5a4d2a38d94416a1bc61be88cb13b1b20a9461ffff2dd82ccf70"
+    },
+    {
+      "path": "NINIA_OS/PLANS/eb05dfbf8ca8_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "e045ef49a91fca958da14f6a9cb0cbcee06a5440fb3fdc80ada19a83fec71e1f"
+    },
+    {
+      "path": "NINIA_OS/PLANS/ee01a481f98b_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "01afea4e56c5d182b0bf81f5eca5b73c1df65e4704a0bd13a93dad56e50d878c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/efc353e6c718_implementar-una-api-en-python-con-pruebas.json",
+      "size_bytes": 2873,
+      "sha256": "fec5f722cff4f039c507358c0346ef4d3cee3c3fbef3da9a5272d2fa8ee0ab70"
+    },
+    {
+      "path": "NINIA_OS/PLANS/f1616fae0476_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "9ca1db80cd72cd112560e1343c4381eb973a1465338da83f6ba662840ad884dd"
+    },
+    {
+      "path": "NINIA_OS/PLANS/f2f594da96d6_aprobar-evidencia-e-incorporar-como-aprobado.json",
+      "size_bytes": 1057,
+      "sha256": "62f7a59f231a000b4ac9b324e26fd18ad793e96793bd4003175bc10d9dff42da"
+    },
+    {
+      "path": "NINIA_OS/PLANS/f738852a45d2_validar-arquitectura.json",
+      "size_bytes": 2836,
+      "sha256": "bd4764240a54666177e8bea970b78deccccbe4354822f06b54c5c3d8453ecaae"
+    },
+    {
+      "path": "NINIA_OS/PLANS/f90e1ab5d7e3_implementar-un-m-dulo-python.json",
+      "size_bytes": 2841,
+      "sha256": "91cd6c8aaa7307ece6e6e2801757760d90d9c0a570f2cee15ac1ee918bd9e523"
+    },
+    {
+      "path": "NINIA_OS/PLANS/f9bc284602c9_dise-ar-e-implementar-un-componente.json",
+      "size_bytes": 2879,
+      "sha256": "55f92ed1dd9dbb2cee74bd1cda498ba482c674850ea7e18bf8027edd2ce2ab8c"
+    },
+    {
+      "path": "NINIA_OS/PLANS/fae2de21d511_preparar-un-plan-de-pruebas.json",
+      "size_bytes": 2804,
+      "sha256": "a09d63d3853fd8587cf6a3a671337e29cc5301d46299b24a4b8f9a44f1432d88"
+    },
+    {
+      "path": "NINIA_OS/PLANS/fb8c700434d0_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "8a6934170811c86c195a6008752f4dcd05fb086755b3182d620a7a50b9339ceb"
+    },
+    {
+      "path": "NINIA_OS/PLANS/fd9886a6d8ba_dise-ar-e-implementar-un-componente-python.json",
+      "size_bytes": 2877,
+      "sha256": "da0603e043a831196cbcdd2161409989770c62cec2fe0110a51f9788d12781b9"
+    },
+    {
+      "path": "NINIA_OS/PLANS/fdcd827482fc_aprobar-evidencia-autom-ticamente.json",
+      "size_bytes": 1017,
+      "sha256": "ef917dbad9ee7c68898755ed28f9b65dbf121293e6a2309dd68a9ee88d2958ca"
+    },
+    {
+      "path": "NINIA_OS/PLANS/fe1e3b96fa63_implementar-una-api-python-y-validar-qa.json",
+      "size_bytes": 2874,
+      "sha256": "a5b5f64c29d8deb20e83812cb0be8fd5b3f04dac3e1aa1f2e387dd2fbf470a3b"
+    },
+    {
+      "path": "NINIA_OS/PROJECT_MANIFEST.json",
+      "size_bytes": 7608,
+      "sha256": "16ea14df7e31d58c45755ea1e80e2cffbb3ddb0dfc3431a9161dc2689f2b0a70"
+    },
+    {
+      "path": "NINIA_OS/PROJECT_STATE.json",
+      "size_bytes": 3025,
+      "sha256": "09ce001d2c5fdb4dae67480a9aeb18ca16c6220353c8c3ef3459848960d5c5dc"
+    },
+    {
+      "path": "NINIA_OS/PROJECT_STATE.md",
+      "size_bytes": 861,
+      "sha256": "3bf725f42a4df6a9be6c87b010d716f1011f41337f8ad6f77f3c8ee22223a92c"
+    },
+    {
+      "path": "NINIA_OS/README.md",
+      "size_bytes": 781,
+      "sha256": "de438f8fbca279482b4939ff35700a60626966c1224ae7552babe95636baaec0"
+    },
+    {
+      "path": "NINIA_OS/ROADMAP.md",
+      "size_bytes": 1249,
+      "sha256": "1358f21341f673a1c36452ad6d16f0f00e8b7ca68d19bb9338cb0c1d4d268426"
+    },
+    {
+      "path": "NINIA_OS/SPRINT_REPORT.md",
+      "size_bytes": 719,
+      "sha256": "2a449c94d48080e01c0e7e9881334828932ca0027bfc0eb642c6406e1aa2ba4e"
+    },
+    {
+      "path": "QA_RESULT.txt",
+      "size_bytes": 1222,
+      "sha256": "612ac1c99e2211c5ed7e191914605b6daf857f644179f07dd63f6e42ece15f39"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 425,
+      "sha256": "8d8e7b9ed9a3c0cd515723397bc5147181292bff08364a7b7ce27cedaf2ee96b"
+    },
+    {
+      "path": "api/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "api/main.py",
+      "size_bytes": 14507,
+      "sha256": "73b752a28f329a540424754010d4f8a2879f12a606db0a9897cbbeb8ae624ef0"
+    },
+    {
+      "path": "cognitive/__init__.py",
+      "size_bytes": 45,
+      "sha256": "041ed6f99b058afb6131f2ef6118fedaed1f65caed6d13c4733ce18659fb3ca3"
+    },
+    {
+      "path": "cognitive/planner.py",
+      "size_bytes": 7670,
+      "sha256": "704b0700a64d485d85418e4decac94f0963a3848dc99eb20aa168c5d146df15c"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2010_UNESCO_Media_Literacy_and_New_Humanism.pdf",
+      "size_bytes": 1026404,
+      "sha256": "f2c36c6fa709b30114c7638934248bf7755ea4aa2d87930319dff19fe647556e"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2012_UNESCO_Pedagogies_of_Media_and_Information_Literacies.pdf",
+      "size_bytes": 4886429,
+      "sha256": "485033b67c355e7bee4de76be3706d58227da59675b5514881e5e623cbbdbda4"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2016_ITU_Guidelines_for_Children_on_Child_Online_Protection.pdf",
+      "size_bytes": 5727756,
+      "sha256": "64fc227840f1ed3d533e7c1a11e0bc3b25b1798d3363ffe80d056091530819dc"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2020_ITU_Guidelines_for_Parents_Guardians_and_Educators_on_Child_Online_Protection.pdf",
+      "size_bytes": 2203592,
+      "sha256": "4edd36ed834fafe45a8459a50254a5442b653652525dafc382693b9d6efbf03e"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2020_ITU_Guidelines_for_Policy_Makers_on_Child_Online_Protection.pdf",
+      "size_bytes": 2860321,
+      "sha256": "f2d915e8c42a176888cfc9ac073227d6f59b9c30d86691b09ab81f47b3749ead"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2021_OECD_Children_in_the_Digital_Environment_Revised_Typology_of_Risks.pdf",
+      "size_bytes": 2507799,
+      "sha256": "51f4d67aa609bd89d2e84f04516b6a47571a0fad4e5c6cbd1515973498f01134"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2022_OECD_Companion_Document_to_the_OECD_Recommendation_on_Children_in_the_Digital_Environment.pdf",
+      "size_bytes": 2144911,
+      "sha256": "ca4210dff0e559cbd8033a08a685c50534e1dc84920d6d85add27d28512e6f2a"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2023_EUROPEAN_UNION_The_Digital_Services_Act_Explained_for_Children.pdf",
+      "size_bytes": 1271195,
+      "sha256": "67ba49de6815e43b008fc061bc758c056fea1178c6dca16ca4302391ef8667c6"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2023_UNESCO_Global_Framework_for_Media_and_Information_Literacy_Cities.pdf",
+      "size_bytes": 614333,
+      "sha256": "0a6777fa1ffdb30d57f9f3d44bead213a33c335197ec38ef13c8932ef629cc22"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2023_UNESCO_Media_and_Information_Literacy_of_Young_People.pdf",
+      "size_bytes": 6689498,
+      "sha256": "6b770faf1edc2350a41a13a02a52af85270ab4d5d822b66aef91b6708b690608"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2023_WHO_Online_Mental_Health_Content_for_Young_People.pdf",
+      "size_bytes": 306729,
+      "sha256": "7fb68bb6b1f7a132878d9071ffea7abadaa20bec7922dc75c200951e5fd18aa9"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2024_OECD_Towards_Digital_Safety_by_Design_for_Children.pdf",
+      "size_bytes": 11653186,
+      "sha256": "bfbd5ba41943e6d1b9ee04b27f7309f64714c81ffff8aa6c1a29ba0698bf8d1c"
+    },
+    {
+      "path": "data/official_sources/sprint_2_5/2025_OECD_How_s_Life_for_Children_in_the_Digital_Age.pdf",
+      "size_bytes": 6302755,
+      "sha256": "19a5edcba0d9ab04d44244c90fe036eaaa356a5b9aa6ea32490411029f02eb9e"
+    },
+    {
+      "path": "data/quarantine/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+      "size_bytes": 600,
+      "sha256": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b"
+    },
+    {
+      "path": "data/regulatory_ingestion/outputs/regulatory_ingestion_result.json",
+      "size_bytes": 7870,
+      "sha256": "0bd517303e6b3dc4b6dc32ff3a3f352ab2d17f177ecdcf5b1dc63e4fd3e3c7c6"
+    },
+    {
+      "path": "data/source_catalog/official_sources.json",
+      "size_bytes": 2495,
+      "sha256": "23fced25e62fa7479b4d70074e385577696a2ce7bad28a50aae09e5c6bfb58cd"
+    },
+    {
+      "path": "data/uploads/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "datasets/v0.1.0-real/benchmark.jsonl",
+      "size_bytes": 71601,
+      "sha256": "ee51e88cfa86a2f6c29c4c3ebb072d85d605e77ba945bd8178c0273c411f59e1"
+    },
+    {
+      "path": "datasets/v0.1.0-real/manifest.json",
+      "size_bytes": 1746,
+      "sha256": "96a60ab0bce7e6b4b7f354d4ebe8a7575de93235111ca1f5a7b228331cd68b23"
+    },
+    {
+      "path": "datasets/v0.1.0-real/rag_chunks.jsonl",
+      "size_bytes": 712830,
+      "sha256": "fed0f4d4b175ccd58a87999aa17829f4c89e6705c010b142cf92cc6092e56932"
+    },
+    {
+      "path": "datasets/v0.1.0-real/statistics.json",
+      "size_bytes": 609,
+      "sha256": "ef17128ce22ab3993750187b8dc7ea4bf967ad90c21ff6dfab861d52d50d200b"
+    },
+    {
+      "path": "datasets/v0.1.0-real/test.jsonl",
+      "size_bytes": 71601,
+      "sha256": "ee51e88cfa86a2f6c29c4c3ebb072d85d605e77ba945bd8178c0273c411f59e1"
+    },
+    {
+      "path": "datasets/v0.1.0-real/train.jsonl",
+      "size_bytes": 571713,
+      "sha256": "328d35bf81a6c849a372e1b286f5dfa4872e0592cb9977dc9baf830f08d93d12"
+    },
+    {
+      "path": "datasets/v0.1.0-real/validation.jsonl",
+      "size_bytes": 69516,
+      "sha256": "0436efae5446c95ec54b623916b98d06b34b3015f56dd40d11c3f6b2a373071a"
+    },
+    {
+      "path": "docs/API_CONTRACT.md",
+      "size_bytes": 388,
+      "sha256": "c82f3b2cc69ed521aec142cc5a791c508a0d2f6747f93d4b24559bbbb9fd58f6"
+    },
+    {
+      "path": "docs/API_EVIDENCE_ADMISSION.md",
+      "size_bytes": 424,
+      "sha256": "cec9f599f0366111630db1a39c99042a0ffb6f0628eb864cd6bee04227830168"
+    },
+    {
+      "path": "dt_runtime/__init__.py",
+      "size_bytes": 219,
+      "sha256": "290f43167067cb9c8c6b6506c86bad17dfe0ae2720b0e01abbc911e22991df84"
+    },
+    {
+      "path": "dt_runtime/backup_manager.py",
+      "size_bytes": 7641,
+      "sha256": "9d657d0b50edf725eda48bae85deeb4841f185235d60907a636f3ec42aa34b50"
+    },
+    {
+      "path": "dt_runtime/bootstrap.py",
+      "size_bytes": 2097,
+      "sha256": "8c7f217d36f14b6882fd93ee12cecde682724040d1e11924b162a264491f69d4"
+    },
+    {
+      "path": "dt_runtime/context_builder.py",
+      "size_bytes": 1104,
+      "sha256": "c95cbca520951fe0899189fa29bda5311009a75ad96d79ef47f18fcefa95038f"
+    },
+    {
+      "path": "dt_runtime/decision_engine.py",
+      "size_bytes": 5590,
+      "sha256": "8eda8c20fc9f599fc846c4da020b33c751593d55a96e8961bd294f16d390fe08"
+    },
+    {
+      "path": "dt_runtime/documentation_manager.py",
+      "size_bytes": 1484,
+      "sha256": "5f362b394848176dce38a3479b02805faefc9efe19b1c5f29c9cf8a13f6597b0"
+    },
+    {
+      "path": "dt_runtime/dt_guardian.py",
+      "size_bytes": 1235,
+      "sha256": "db6220d1630a408aad257d376060455525a0c9b4bc06306fc13b1a7cc6d410b7"
+    },
+    {
+      "path": "dt_runtime/executive_controller.py",
+      "size_bytes": 3340,
+      "sha256": "49f63310345d9906c8529f9abdf1963d925c9551ec474b7c3caf83941f4f0c0c"
+    },
+    {
+      "path": "dt_runtime/learning_advisor.py",
+      "size_bytes": 604,
+      "sha256": "4d8f0c0828ada961fd5688bffc154278145736186a5bef2eb775d906db09a3ae"
+    },
+    {
+      "path": "dt_runtime/memory_curator.py",
+      "size_bytes": 1039,
+      "sha256": "bc2fcc73274dbf204798ce908a2b065b564aa278fdb378e7a7d316350e5355a1"
+    },
+    {
+      "path": "dt_runtime/memory_manager.py",
+      "size_bytes": 4814,
+      "sha256": "cef7a5632028723051f7cd6c2d0f625b987b84deb13a911babc542132019c673"
+    },
+    {
+      "path": "dt_runtime/orchestrator.py",
+      "size_bytes": 1264,
+      "sha256": "45943040294320e23e8fc89ead47815d5e7d03c01d36595bfe70aa1cd0e87046"
+    },
+    {
+      "path": "dt_runtime/project_manifest.py",
+      "size_bytes": 2421,
+      "sha256": "77d49f866932472ec603cc5dbe3e82e952f475fb188d7e3aeba756dbcbaa186a"
+    },
+    {
+      "path": "dt_runtime/qa_architect.py",
+      "size_bytes": 1017,
+      "sha256": "a275fef77a362d98d16e25ab6022ab57d9a9e2143ee5e01f768afde759c7a381"
+    },
+    {
+      "path": "dt_runtime/runtime_guardian.py",
+      "size_bytes": 5748,
+      "sha256": "9fbc5cc0c2b241f5a830afc3c2399602d4fbfc6223c34932af95cf4d86e8fc8a"
+    },
+    {
+      "path": "engine/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "engine/evidence_admission.py",
+      "size_bytes": 17028,
+      "sha256": "ca75057f3e2a1a5ce5105529eae83497961b33696b59e806c195bdc1492d8d75"
+    },
+    {
+      "path": "engine/ninia_engine.py",
+      "size_bytes": 9852,
+      "sha256": "53da12270ae238138de5ddb68a61d67b81e5f40116692cd02c9fe897e4d7a62d"
+    },
+    {
+      "path": "engine/services/__init__.py",
+      "size_bytes": 47,
+      "sha256": "a4ece17a12744af1c182390329baae55421bca31ac4fbcd2bb0512d517d5cec7"
+    },
+    {
+      "path": "engine/services/ai_trainer.py",
+      "size_bytes": 16146,
+      "sha256": "3584b6ce727dd09400f2159d91f3f76841510bd3d1398abd3be705f23e673594"
+    },
+    {
+      "path": "engine/services/corpus_audit.py",
+      "size_bytes": 16424,
+      "sha256": "05f4c440b5bbb79aa68947d1e0bbe5a637b7458a5abf6f0ec897eec33fa9a4c4"
+    },
+    {
+      "path": "engine/services/doi_extractor.py",
+      "size_bytes": 399,
+      "sha256": "ea05da6dd97f69538286fee1227ab7edf238460e6082843899af6969b5a50f00"
+    },
+    {
+      "path": "engine/services/evidence_dataset.py",
+      "size_bytes": 14894,
+      "sha256": "70681057d07528cddff003aa80f28b91d75b1be64a860b340d59a2d80dec168e"
+    },
+    {
+      "path": "engine/services/evidence_layer.py",
+      "size_bytes": 5785,
+      "sha256": "c5a90d9e6f195d802d5746f9b97a66564c8a2b75422cb0859ade2e194dcc649d"
+    },
+    {
+      "path": "engine/services/global_evidence_acquisition.py",
+      "size_bytes": 18227,
+      "sha256": "6861ef86989bccf458addb64b12267eadf30e793a9e982b1eb6eba28162b3731"
+    },
+    {
+      "path": "engine/services/global_observatory.py",
+      "size_bytes": 11033,
+      "sha256": "f31327208dfe84b4ff61b0e8cc3c3ab8c94ff7cf638a61ac99bd8d60708e635a"
+    },
+    {
+      "path": "engine/services/hash_service.py",
+      "size_bytes": 466,
+      "sha256": "400d4067b8b73f9d1a04f0cb7cb83c384d80b58b82c4466e7e2b6f22be3e4e6e"
+    },
+    {
+      "path": "engine/services/knowledge_adapter.py",
+      "size_bytes": 692,
+      "sha256": "120c2f0a418a4a3ef0e43cb4d825eeaafaa80f82f7aabbcb5b8d512cafe5efae"
+    },
+    {
+      "path": "engine/services/knowledge_graph.py",
+      "size_bytes": 15635,
+      "sha256": "682ec82b387d0f23b835d3006073e4247541b79e1eeac311aade67bc14d9a0cc"
+    },
+    {
+      "path": "engine/services/language_detector.py",
+      "size_bytes": 982,
+      "sha256": "2c7a9fa687317b50d864a3d0cddc57c612233110a40ab43233409d787bbaf8ae"
+    },
+    {
+      "path": "engine/services/metadata_extractor.py",
+      "size_bytes": 1652,
+      "sha256": "360049a03756c3f3a7dd13ee5c73497dcb98dcbfdcb4a20fbe2c9c079519cfdd"
+    },
+    {
+      "path": "engine/services/operational_knowledge_factory.py",
+      "size_bytes": 9101,
+      "sha256": "1d7a4786f4f138393f043d26f176280b52d06f8dc50f9c28b5ba2466cd0e6581"
+    },
+    {
+      "path": "engine/services/regulatory_ingestion_service.py",
+      "size_bytes": 18120,
+      "sha256": "635ad00d57c837e7885220ada071699e1938cb39b73dcf7303b2b4cfc8fcbb7a"
+    },
+    {
+      "path": "engine/services/scientific_validation.py",
+      "size_bytes": 10968,
+      "sha256": "8c995603c7e5298b66ab919ebe2345a6afdb9be4aeb8df16d0c7abb6b8a964f0"
+    },
+    {
+      "path": "knowledge/approved/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "knowledge/approved/07e10f52-6b4c-4dab-b7bf-c558c67b8426.json",
+      "size_bytes": 44618,
+      "sha256": "3068ae9131ccca9a862dbf0ff5b732693308c7774f79f2dcea64eda6c4f23486"
+    },
+    {
+      "path": "knowledge/approved/3629c408-8ec4-4365-b195-743700575021.json",
+      "size_bytes": 229818,
+      "sha256": "d6926de3c2b0a06ba37184ac17483c2e8cce8c14d5fb8b12197f9c86294f13dc"
+    },
+    {
+      "path": "knowledge/approved/3cb1596d-a03f-4ac1-834c-a5b5ebb81814.json",
+      "size_bytes": 278139,
+      "sha256": "57c7fe80d8e9faabf7a21449ea735abb0dd3cb10bebc59114b9fccd04dd47366"
+    },
+    {
+      "path": "knowledge/approved/5a749f1a-2fb2-4c62-9c6a-f6b543a1756f.json",
+      "size_bytes": 161131,
+      "sha256": "616fd67212fefe970f1a421a7211d59dacb7c835696a3707903a6152ed8400c9"
+    },
+    {
+      "path": "knowledge/approved/7e9764cd-1cd8-460c-95c9-7cf6ed9f5928.json",
+      "size_bytes": 56695,
+      "sha256": "3bfcb1c880d891b8ac5a7e390bc3b60b7ee2ed4541504d3e62bb6ce75d295af3"
+    },
+    {
+      "path": "knowledge/approved/845bf412-47ad-4fab-9abb-0d736da86aae.json",
+      "size_bytes": 165486,
+      "sha256": "f66bb49419658e32af4cb85a289243116c7d1924c9675b2ebd396b1ee9b62b2f"
+    },
+    {
+      "path": "knowledge/approved/b1b787c0-42d3-4336-b964-0ddaa9b49cd6.json",
+      "size_bytes": 121312,
+      "sha256": "2b788323543db59842805662bab1d22f3582f468d44362c61ce424f2cf6cac52"
+    },
+    {
+      "path": "knowledge/approved/b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9.json",
+      "size_bytes": 234882,
+      "sha256": "58fc1ec6e6337957cbf6e53e5bdde513012b9c08987eaca1d8186c5185595cd7"
+    },
+    {
+      "path": "knowledge/approved/baf9ce7e-6035-4167-b1c9-01ab6a60eb47.json",
+      "size_bytes": 160476,
+      "sha256": "b0157bc5b10f2898474606a809cf47993a2368e9208a90926efb62f39c32b24b"
+    },
+    {
+      "path": "knowledge/approved/cbe59aef-ea56-4046-9d1d-84943d9778d1.json",
+      "size_bytes": 383445,
+      "sha256": "5fe72974566cfb1b5df9570236200d2448f0758e415dce4a46f913adc017082f"
+    },
+    {
+      "path": "knowledge/approved/d8c7aa40-581a-40ad-b085-4850a1afdaea.json",
+      "size_bytes": 109359,
+      "sha256": "675d809ebb49d630841fd4db8d89c7b5b7c851140cc3c9c0ff5c69139fc04144"
+    },
+    {
+      "path": "knowledge/approved/fae7b3b6-d9d7-486f-885b-c71002aab572.json",
+      "size_bytes": 612220,
+      "sha256": "fb6f15b7c54da3a238400bd1c796886e24a37f65954dfb42e930f2e4e40cfa69"
+    },
+    {
+      "path": "knowledge/approved/fd6e9391-18ab-436f-bad3-6d2ebdfb459b.json",
+      "size_bytes": 150417,
+      "sha256": "bda43369cdedea681a6d194126e73c026a48c687041efaf7ad316027dd883277"
+    },
+    {
+      "path": "knowledge/contract.py",
+      "size_bytes": 9494,
+      "sha256": "0f7ccb007f3758b750e12c73c8a16c466c769193578becce4e13ebb682379efd"
+    },
+    {
+      "path": "knowledge/corpus_audit/batch_review_queue.json",
+      "size_bytes": 9477,
+      "sha256": "4898257ad2ba8ab469b4eaad315bc8b35d74dab4c451e71d8836c0b220df4b49"
+    },
+    {
+      "path": "knowledge/corpus_audit/corpus_audit_report.json",
+      "size_bytes": 15316,
+      "sha256": "de281d48c9346d41c612035dae89f137c30efddff44c5ee2049aacbcd6834996"
+    },
+    {
+      "path": "knowledge/corpus_audit/corpus_gap_report.json",
+      "size_bytes": 1426,
+      "sha256": "b55bb2d69c8d28e29af6086574af8443ad2885f010e06447d4ac8bb798732197"
+    },
+    {
+      "path": "knowledge/corpus_audit/individual_review_queue.json",
+      "size_bytes": 1730,
+      "sha256": "74b558bba80380bbbe9d5c17f2ccac0312ffff5cc31eddb754df6eeb8d53f94e"
+    },
+    {
+      "path": "knowledge/in_validation/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "knowledge/proposed/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "knowledge/proposed/07e10f52-6b4c-4dab-b7bf-c558c67b8426.json",
+      "size_bytes": 44635,
+      "sha256": "238c5885fc6fb6ee1647160e7de30695b53b4cad136312abd55cc8c198be2ddb"
+    },
+    {
+      "path": "knowledge/proposed/3629c408-8ec4-4365-b195-743700575021.json",
+      "size_bytes": 229835,
+      "sha256": "42449f15ca666659ea817cbce1a2d015a10bb388e9a7996bed9d42dbff5f9515"
+    },
+    {
+      "path": "knowledge/proposed/3cb1596d-a03f-4ac1-834c-a5b5ebb81814.json",
+      "size_bytes": 278155,
+      "sha256": "d2925f14e516369be558a205ec9c4625b22cd6045ad947321a696fb0473b0272"
+    },
+    {
+      "path": "knowledge/proposed/5a749f1a-2fb2-4c62-9c6a-f6b543a1756f.json",
+      "size_bytes": 161148,
+      "sha256": "58e79c25d9b94581dc9f7f59dde0c625183a1ed43a7c99514522be646a586166"
+    },
+    {
+      "path": "knowledge/proposed/7e9764cd-1cd8-460c-95c9-7cf6ed9f5928.json",
+      "size_bytes": 56713,
+      "sha256": "6f2f635c9f5a783d4ec4d4abe777622094e0474c863645d675366d9b14457eb2"
+    },
+    {
+      "path": "knowledge/proposed/845bf412-47ad-4fab-9abb-0d736da86aae.json",
+      "size_bytes": 165503,
+      "sha256": "642d0ab5674dd8f61cb1243bfbd1f6d6aedcb3ed0a912c56dcebb4753227c1e8"
+    },
+    {
+      "path": "knowledge/proposed/b1b787c0-42d3-4336-b964-0ddaa9b49cd6.json",
+      "size_bytes": 121331,
+      "sha256": "7905a72d98e29259343c9530fb121979f21d11dfd843565a75cad8e21a95abeb"
+    },
+    {
+      "path": "knowledge/proposed/b666cc1f-bffc-4e7e-9e1b-4a51d41f0ca9.json",
+      "size_bytes": 234901,
+      "sha256": "c073916bbac2914d3c767754678f43dab1326763120d35f2624186238ba244ae"
+    },
+    {
+      "path": "knowledge/proposed/baf9ce7e-6035-4167-b1c9-01ab6a60eb47.json",
+      "size_bytes": 160494,
+      "sha256": "24fbdce3195feeaabc7ae12b8f3ac9d62597ce474f54e4180b46f1cfd9408542"
+    },
+    {
+      "path": "knowledge/proposed/cbe59aef-ea56-4046-9d1d-84943d9778d1.json",
+      "size_bytes": 383462,
+      "sha256": "ec3553c5897416ed210e9dd37a1b93f500908f1986035563968ebe6fe46ee56d"
+    },
+    {
+      "path": "knowledge/proposed/d8c7aa40-581a-40ad-b085-4850a1afdaea.json",
+      "size_bytes": 109377,
+      "sha256": "9fc71cce491dc547f5293740d919fcc305582bc0dc8722343396b1cebf08d9ea"
+    },
+    {
+      "path": "knowledge/proposed/fae7b3b6-d9d7-486f-885b-c71002aab572.json",
+      "size_bytes": 612239,
+      "sha256": "222143e2c57b696a4d14239d3667adaa6a9afa82ace1da2777b8f9cc797aa282"
+    },
+    {
+      "path": "knowledge/proposed/fd6e9391-18ab-436f-bad3-6d2ebdfb459b.json",
+      "size_bytes": 150434,
+      "sha256": "ec627617461628b2f429d895a4238245e296dd7abd798cd56a4f5229874a0146"
+    },
+    {
+      "path": "knowledge/quarantine/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "knowledge/rejected/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "models/v0.1.0-real/metrics.json",
+      "size_bytes": 21713,
+      "sha256": "c5b1db83c8fa2a5902da50a5fcf968c31ad8909fda98b7793ba6d9142e7c7aed"
+    },
+    {
+      "path": "models/v0.1.0-real/model.json",
+      "size_bytes": 143411,
+      "sha256": "b1766ed8c60266009a4c016e9cbddd5143641d6fec3c145c8b2a366616ae0898"
+    },
+    {
+      "path": "models/v0.1.0-real/training_manifest.json",
+      "size_bytes": 838,
+      "sha256": "63a336dd882659a7e8837b65ff66ff29ddb250230b6cd2f624091aa36059727c"
+    },
+    {
+      "path": "models/v0.1.0-real/training_report.json",
+      "size_bytes": 21822,
+      "sha256": "0d7471c7cececc60931644c9e164f9067797c9806b68cbc2e372c2958f7a90d3"
+    },
+    {
+      "path": "operations/missions/MIS-D4DFFBEEF0DF.json",
+      "size_bytes": 794,
+      "sha256": "0460729ebea29946fe15b9285e986c93bc56d1ddda0d864c7aaeaac6e59be8b0"
+    },
+    {
+      "path": "operations/observatory_latest.json",
+      "size_bytes": 5030,
+      "sha256": "ffd51f3a9641c0fa5963e36d0a6b704c10cffa0539159ffd20768f8d08418820"
+    },
+    {
+      "path": "pipelines/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "reports/corpus_audit/sprint_3_1/batch_review_queue.json",
+      "size_bytes": 9917,
+      "sha256": "214767960c6a0658e05f5653d633429e1666887d2d2ba67056e775440d0f518f"
+    },
+    {
+      "path": "reports/corpus_audit/sprint_3_1/corpus_audit_report.json",
+      "size_bytes": 15836,
+      "sha256": "dcb72670250e30c1fc7dacfb83e1002ccbf133cd0749172c9058006fb49406bf"
+    },
+    {
+      "path": "reports/corpus_audit/sprint_3_1/corpus_gap_report.json",
+      "size_bytes": 1426,
+      "sha256": "e5d8c5d0d0dc828a4d1ea6222608a829736288ed26389e3f408697dd1d734e7d"
+    },
+    {
+      "path": "reports/corpus_audit/sprint_3_1/individual_review_queue.json",
+      "size_bytes": 1810,
+      "sha256": "4b493f0d0211d28cc76c6ff92699625c03c48e45d3bf2f12813b5715e9486fbb"
+    },
+    {
+      "path": "reports/training_baseline_v0_1/HUMAN_VALIDATION_DECISIONS.json",
+      "size_bytes": 5200,
+      "sha256": "162036e3ba67480520a4c5b6e297d746450aac58fc2517612dc68427a4c92ff3"
+    },
+    {
+      "path": "reports/training_baseline_v0_1/MODEL_VALIDATION_SUMMARY.json",
+      "size_bytes": 134185,
+      "sha256": "39d821ff1cc57891089f4984f92599c4cf34ec33faa01c59fd00bb8634655277"
+    },
+    {
+      "path": "reports/training_baseline_v0_1/STRICT_DOCUMENT_LEVEL_METRICS.json",
+      "size_bytes": 103448,
+      "sha256": "3a2f476bda1b9db868909b7b67b26f35df2ea695e54250896493f5fc81b39b32"
+    },
+    {
+      "path": "reports/training_baseline_v0_1/VALIDATION_QUEUE.csv",
+      "size_bytes": 5173,
+      "sha256": "7f8710ee74aef8df857f04d2596747a3acc05c87f2cfc46622761efbc3348168"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 69,
+      "sha256": "cdc848ebd12a938246d577c88205cd62b7db3e47c651c212ea6c01a2bd621972"
+    },
+    {
+      "path": "runtime_results/data/acquisition/manifests/20260714T160054Z_global_evidence_acquisition.json",
+      "size_bytes": 930,
+      "sha256": "c062db73de8712f1ec65a7035c1cdb04ca523137f2ef371453aebcb8c15938a9"
+    },
+    {
+      "path": "runtime_results/knowledge/corpus_audit/batch_review_queue.json",
+      "size_bytes": 9917,
+      "sha256": "7e464a0e5a5adffd2d569c1e354a8c21a2985510f0696408416519241bc72aaf"
+    },
+    {
+      "path": "runtime_results/knowledge/corpus_audit/corpus_audit_report.json",
+      "size_bytes": 15836,
+      "sha256": "06a355bd61c3bed27d283959901baafc3a1004277b748f952ced459373c63ec7"
+    },
+    {
+      "path": "runtime_results/knowledge/corpus_audit/corpus_gap_report.json",
+      "size_bytes": 1426,
+      "sha256": "b70dd05cea3521fa42da21c69663bff1ee88990204510a1a93febb064263bd18"
+    },
+    {
+      "path": "runtime_results/knowledge/corpus_audit/individual_review_queue.json",
+      "size_bytes": 1810,
+      "sha256": "1b046e8a8d7d713cb9167c95fde0af3e9931c8eff1ec57e2573876dc43298509"
+    },
+    {
+      "path": "runtime_results/operations/latest.json",
+      "size_bytes": 18759,
+      "sha256": "06d8657488b74fe5cbcb503f005b4894800a42390b768ef27811d94200df19a4"
+    },
+    {
+      "path": "runtime_results/operations/runs/20260714T160049854125Z.json",
+      "size_bytes": 18759,
+      "sha256": "06d8657488b74fe5cbcb503f005b4894800a42390b768ef27811d94200df19a4"
+    },
+    {
+      "path": "scripts/ninia_dt.py",
+      "size_bytes": 1184,
+      "sha256": "f79a663bd942e9328c4213ba3d9edbc6fb96d894384116f280b3174a4bcef5e2"
+    },
+    {
+      "path": "scripts/run_api.sh",
+      "size_bytes": 50,
+      "sha256": "86ba4d8422025cb92b17ef64cd09a2c7125c2757767c2d4bc3ebf69f74476b6c"
+    },
+    {
+      "path": "scripts/run_tests.sh",
+      "size_bytes": 30,
+      "sha256": "0c155763db7802c135f6dc4ee7c89735b6147ee51922fc2de3182ac5edd2863e"
+    },
+    {
+      "path": "tests/test_ai_trainer_service.py",
+      "size_bytes": 3969,
+      "sha256": "d15868855f4cbec6a7bf3eff4fece18df7827ad0655ea94db6a2a34b6451c512"
+    },
+    {
+      "path": "tests/test_backup_manager.py",
+      "size_bytes": 2387,
+      "sha256": "c34b5ce1f08ee640b3c7d38617e03b8baa3c82d9ec8718258850eb1ac3542176"
+    },
+    {
+      "path": "tests/test_corpus_audit_service.py",
+      "size_bytes": 5858,
+      "sha256": "a651c71e2d56d31e6b7bb082db36082a497b85faefa443a512cabdd711d02e31"
+    },
+    {
+      "path": "tests/test_dt_runtime.py",
+      "size_bytes": 1111,
+      "sha256": "361d94aa8f718948ea4b1a53af2e4250244971881d38b0697a9e3a0aeb234166"
+    },
+    {
+      "path": "tests/test_engine.py",
+      "size_bytes": 576,
+      "sha256": "a375c35861316970bb548f45786d25b3e549c03856cd8eedde682c7caee3695b"
+    },
+    {
+      "path": "tests/test_evidence_admission.py",
+      "size_bytes": 2874,
+      "sha256": "1ee0f6e311f9315cde31e5659fd0d5d29f21b9b778d8ac65d04bba44aa782c1b"
+    },
+    {
+      "path": "tests/test_evidence_cell_v1.py",
+      "size_bytes": 1817,
+      "sha256": "129ad21de25ea7c319764f5652cc0bb28b78a87a8282ff6f01d1a065f9fee10a"
+    },
+    {
+      "path": "tests/test_evidence_dataset_service.py",
+      "size_bytes": 3691,
+      "sha256": "4dea7af3c15aa796dac3fb74ffa392d8eeb5dad03344ccc3da47cb60a4e752fb"
+    },
+    {
+      "path": "tests/test_evidence_layer_v1.py",
+      "size_bytes": 3586,
+      "sha256": "7680aa20c048b64b36276b1d08b45feb73d7ead3d073a0a561339833c4b7d3a7"
+    },
+    {
+      "path": "tests/test_executive_controller.py",
+      "size_bytes": 1601,
+      "sha256": "14905773028b6d67027f2df0c10a0a4b14af5bbefc7c927eacdf8033a93f6d94"
+    },
+    {
+      "path": "tests/test_existing_document_processing.py",
+      "size_bytes": 730,
+      "sha256": "ae81005d939e6e329bba5a2a851fd367580430e94db2aeb97af525bd281054f9"
+    },
+    {
+      "path": "tests/test_global_evidence_acquisition.py",
+      "size_bytes": 3471,
+      "sha256": "c2e858aa977df8e8d6e0f3cf4c6005e35dc7c9d4093690861a5570b308c6a14e"
+    },
+    {
+      "path": "tests/test_global_observatory_catalog_bootstrap.py",
+      "size_bytes": 2043,
+      "sha256": "621d2505f3176b84dd14d440cba4fa99e045c5f59aaa33a3f4108e35c0d58a64"
+    },
+    {
+      "path": "tests/test_global_observatory_service.py",
+      "size_bytes": 2878,
+      "sha256": "1f807870752a52b8d4009f7eb9c169ff0f4fbbf5d8d74073fdd9810c6ef7a768"
+    },
+    {
+      "path": "tests/test_knowledge_contract.py",
+      "size_bytes": 1608,
+      "sha256": "c9e70cc002a523b9879c9c0b2bb7014baa69074331a45b3fc480bfa1b90a73f1"
+    },
+    {
+      "path": "tests/test_knowledge_contract_integration.py",
+      "size_bytes": 2143,
+      "sha256": "8573a79fb2314ea6b92f58315d41b53fa08092db284d42dbe88243f9834b4895"
+    },
+    {
+      "path": "tests/test_knowledge_graph_service.py",
+      "size_bytes": 4371,
+      "sha256": "a70b651711d3f24e3523346e20046fa07fe766dfd2e9b8e02230f3d558a2cfd0"
+    },
+    {
+      "path": "tests/test_memory_manager.py",
+      "size_bytes": 1029,
+      "sha256": "301b3b7889aa4901eeb12c2f3ca07620d4e6f7e427095790b7a5b78691b831e4"
+    },
+    {
+      "path": "tests/test_operational_knowledge_factory.py",
+      "size_bytes": 2802,
+      "sha256": "764a150a0474ac39818b0156e36317afb9236dcee947de50efbbfe157ad47403"
+    },
+    {
+      "path": "tests/test_planner.py",
+      "size_bytes": 1983,
+      "sha256": "b4f07b1f69d787f231b9cfa8330517be953928986e5733c60774969740ae1787"
+    },
+    {
+      "path": "tests/test_planner_integration.py",
+      "size_bytes": 1394,
+      "sha256": "6245b710363df341bcb127cc27ae1b21ecb718e6dd31a805be5ca4cee3ae0b9a"
+    },
+    {
+      "path": "tests/test_regulatory_ingestion_real_services.py",
+      "size_bytes": 3559,
+      "sha256": "784f74125a6878c07133d790d836ecfb68ca1b8831078497fcafee532178dbfd"
+    },
+    {
+      "path": "tests/test_regulatory_ingestion_service.py",
+      "size_bytes": 5355,
+      "sha256": "1ea3b697aec3218ab89dce1217af8610e4407dc1e3e4315ccafab8f739da5495"
+    },
+    {
+      "path": "tests/test_runtime_api.py",
+      "size_bytes": 871,
+      "sha256": "a3bc26fd165bbfc03d20c6c3a4485837d7c17827a8a8ce68ff8ac8519261ac0d"
+    },
+    {
+      "path": "tests/test_runtime_bootstrap.py",
+      "size_bytes": 699,
+      "sha256": "a66efd3c1836bc1379cbb2f0a7a4ea25390196da30065462d292cb3b036deb19"
+    },
+    {
+      "path": "tests/test_runtime_guardian.py",
+      "size_bytes": 1335,
+      "sha256": "03bdad482ceebc10e870d06d007db7ab9fe34474e817dd867624dce88baec064"
+    },
+    {
+      "path": "tests/test_scientific_validation_service.py",
+      "size_bytes": 4202,
+      "sha256": "dc4b68a89b444888d5f86e0937cd0022eb4d179b6ddc2baa170d5345e9efa4c8"
+    },
+    {
+      "path": "tests/test_sprint_2_4_api_integration.py",
+      "size_bytes": 788,
+      "sha256": "cc8fff2443eed19de9ace01d1a78395adc76787907268a85594ac10b4f87aaea"
+    },
+    {
+      "path": "tests/test_sprint_3_5_closure.py",
+      "size_bytes": 2999,
+      "sha256": "4ae4ddc5efbedd6f5a3b66755c401c7e4b71b888ca98d791664b6d2bba75e222"
+    },
+    {
+      "path": "tests/test_unified_evidence_intake.py",
+      "size_bytes": 2791,
+      "sha256": "fb8f02dc60748d7b1e8176b446ec30f0b9cd4cb66191ee400db12563671eb205"
+    }
+  ]
+}

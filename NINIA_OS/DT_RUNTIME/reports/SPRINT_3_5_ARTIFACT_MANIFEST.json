@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T20:11:36.484956+00:00",
+  "sprint": "3.5",
+  "status": "closed",
+  "objective": "ingestión regulatoria real y productos trazables",
+  "integration": {
+    "ingestion_id": "REG-EEF31C098AE6",
+    "status": "completed",
+    "source_hash": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b",
+    "completed_stages": [
+      "evidence",
+      "global_observatory_status",
+      "hash",
+      "knowledge_adapter",
+      "knowledge_graph_build",
+      "knowledge_graph_validate",
+      "metadata"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "engine/services/regulatory_ingestion_service.py",
+      "size_bytes": 18120,
+      "sha256": "635ad00d57c837e7885220ada071699e1938cb39b73dcf7303b2b4cfc8fcbb7a"
+    },
+    {
+      "path": "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/regulatory_ingestion/outputs/regulatory_ingestion_result.json",
+      "size_bytes": 7870,
+      "sha256": "0bd517303e6b3dc4b6dc32ff3a3f352ab2d17f177ecdcf5b1dc63e4fd3e3c7c6"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_2_IMPLEMENTATION.json",
+      "size_bytes": 1357,
+      "sha256": "21dac7f09f37efc603c004fa4db5d6d3c4c9881732b313d2bddbe276252af4fb"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_3_REAL_INTEGRATION.json",
+      "size_bytes": 1247,
+      "sha256": "a106813429b64d4520f7a4f57bf1a9dd87254ba05330287fddfe5728ea970e35"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_METADATA_CONTRACT_HOTFIX.json",
+      "size_bytes": 4338,
+      "sha256": "eca13012c4e833520a74b418d8cccd21f4075724184180745df0326e1acbaddd"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CONTRACTS_HOTFIX_3_5_4.json",
+      "size_bytes": 1780,
+      "sha256": "911022962ae0ef90c02ee4835a4b1a01a228f54286733f09f4cf40451a0b8415"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_GLOBAL_OBSERVATORY_HOTFIX_3_5_5.json",
+      "size_bytes": 2253,
+      "sha256": "47f7262a350844e6e82d33224173fc7d87f2b2442b64a999791c0a75a3fddf6d"
+    },
+    {
+      "path": "NINIA_OS/MASTER_MEMORY.md",
+      "size_bytes": 2842,
+      "sha256": "d4e93be83d73c7ee7bea55b970450cbf82996238bf0146581f32e99684e7b903"
+    },
+    {
+      "path": "tests/test_regulatory_ingestion_service.py",
+      "size_bytes": 5355,
+      "sha256": "1ea3b697aec3218ab89dce1217af8610e4407dc1e3e4315ccafab8f739da5495"
+    },
+    {
+      "path": "tests/test_regulatory_ingestion_real_services.py",
+      "size_bytes": 3559,
+      "sha256": "784f74125a6878c07133d790d836ecfb68ca1b8831078497fcafee532178dbfd"
+    },
+    {
+      "path": "tests/test_global_observatory_catalog_bootstrap.py",
+      "size_bytes": 2043,
+      "sha256": "621d2505f3176b84dd14d440cba4fa99e045c5f59aaa33a3f4108e35c0d58a64"
+    },
+    {
+      "path": "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CLOSURE.json",
+      "size_bytes": 2432,
+      "sha256": "bbc2d1e01effaa81cd10cdb5437a1a1381139dd1495452d424bf6efe6997a7f3"
+    }
+  ]
+}

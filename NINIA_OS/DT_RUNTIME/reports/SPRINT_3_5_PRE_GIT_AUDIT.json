@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T22:49:48.818182+00:00",
+  "project": "NINIA",
+  "sprint": "3.5",
+  "audited_artifact": "NINIA_SPRINT_3_5_GITHUB_READY.zip",
+  "decision": "APPROVED_WITH_CLEANUP",
+  "original_zip": {
+    "valid": true,
+    "members": 3657,
+    "size_bytes": 121962360
+  },
+  "findings": {
+    "critical": [],
+    "high": [
+      {
+        "code": "REPO_METADATA_INCLUDED",
+        "detail": "El ZIP original incluía la carpeta .git.",
+        "action": "Excluida del Release Candidate."
+      },
+      {
+        "code": "LOCAL_VIRTUAL_ENV_INCLUDED",
+        "detail": "El ZIP original incluía .venv con binarios locales de macOS.",
+        "action": "Excluida del Release Candidate."
+      }
+    ],
+    "medium": [
+      {
+        "code": "FULL_SUITE_TIMEOUT",
+        "detail": "La suite completa de 102 pruebas no finalizó dentro de 300 segundos.",
+        "action": "Se aprobaron las 21 pruebas específicas del Sprint 3.5."
+      }
+    ],
+    "low": [
+      {
+        "code": "SECRET_SCAN_FALSE_POSITIVE",
+        "detail": "Dos coincidencias 'sk-to-children...' son texto documental, no claves reales."
+      }
+    ]
+  },
+  "qa": {
+    "sprint_3_5_targeted_tests": {
+      "status": "PASS",
+      "passed": 21,
+      "duration_seconds": 0.67
+    },
+    "test_collection": {
+      "status": "PASS",
+      "tests_collected": 102
+    },
+    "zip_integrity": "PASS",
+    "secret_scan": "PASS_NO_CONFIRMED_SECRETS"
+  },
+  "release": {
+    "status": "APPROVED_FOR_GITHUB",
+    "name": "NINIA_SPRINT_3_5_GITHUB_RC1_CLEAN.zip",
+    "excluded_top_level": [
+      ".git",
+      ".venv"
+    ],
+    "files_copied": 501
+  }
+}

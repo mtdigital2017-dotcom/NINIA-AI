@@ -1,0 +1,219 @@
+{
+  "ingestion_id": "REG-EEF31C098AE6",
+  "generated_at": "2026-07-18T20:06:10.562171+00:00",
+  "status": "completed",
+  "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+  "source_hash": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b",
+  "mission_id": null,
+  "metadata": {
+    "language": "es",
+    "doi": "",
+    "publication_year": 2026,
+    "authors": []
+  },
+  "knowledge_contract": {
+    "schema_version": "1.0",
+    "knowledge_id": "b900c0838685a324",
+    "title": "documento_regulatorio_prueba",
+    "summary": null,
+    "content": "REPÚBLICA DE COLOMBIA\n\nDOCUMENTO REGULATORIO DE PRUEBA PARA NINIA\n\nResolución 9999 de 2026\n\nPor medio de la cual se establecen lineamientos de protección\nde niños, niñas y adolescentes en entornos digitales.\n\nArtículo 1. Objeto.\nEstablecer lineamientos de prevención, pedagogía y protección\nde derechos de niños, niñas y adolescentes.\n\nArtículo 2. Principios.\nLas actuaciones deberán garantizar interés superior,\ncorresponsabilidad, protección integral y trazabilidad.\n\nAutor institucional: Autoridad Reguladora de Prueba.\nFecha de publicación: 18 de julio de 2026.\nIdioma: español.\n",
+    "document_type": null,
+    "source": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+    "source_url_or_doi": null,
+    "authors": [],
+    "publication_year": null,
+    "language": null,
+    "topics": [],
+    "entities": [],
+    "evidence_level": null,
+    "evidence_status": "PROPUESTO",
+    "relation_to_ninia": null,
+    "specialty": null,
+    "evidence_fragments": [],
+    "typed_relations": [],
+    "provenance": {
+      "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+      "sha256": "3bfe3177b19abcbe42d7bbb1f8210078b55b3557fecb657cdf1d5d9ac440337b",
+      "ingestion_method": "normalized"
+    },
+    "created_at": "2026-07-18T20:06:10.579381+00:00",
+    "updated_at": null
+  },
+  "knowledge_graph": {
+    "graph_version": "1.0",
+    "generated_at": "2026-07-18T20:06:10.579625+00:00",
+    "source_policy": "APPROVED_KNOWLEDGE_ONLY",
+    "statistics": {
+      "knowledge_objects": 0,
+      "nodes": 0,
+      "edges": 0
+    },
+    "nodes": [],
+    "edges": [],
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "checked_at": "2026-07-18T20:06:10.579650+00:00"
+    }
+  },
+  "evidence": {
+    "evidence_fragments": [
+      {
+        "fragment_id": "34d8a37489df6e5e4564",
+        "position": 1,
+        "text": "REPÚBLICA DE COLOMBIA DOCUMENTO REGULATORIO DE PRUEBA PARA NINIA Resolución 9999 de 2026",
+        "language": "es",
+        "evidence_type": "DOCUMENT_EXCERPT",
+        "source_locator": {
+          "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+          "page": null,
+          "section": null
+        },
+        "confidence": 1.0,
+        "validation_status": "PROPUESTO"
+      },
+      {
+        "fragment_id": "d1f05191db1ac8c103f7",
+        "position": 2,
+        "text": "Por medio de la cual se establecen lineamientos de protección de niños, niñas y adolescentes en entornos digitales.",
+        "language": "es",
+        "evidence_type": "DOCUMENT_EXCERPT",
+        "source_locator": {
+          "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+          "page": null,
+          "section": null
+        },
+        "confidence": 1.0,
+        "validation_status": "PROPUESTO"
+      },
+      {
+        "fragment_id": "b4ed01d138b8b15286c0",
+        "position": 3,
+        "text": "Artículo 1. Objeto. Establecer lineamientos de prevención, pedagogía y protección de derechos de niños, niñas y adolescentes.",
+        "language": "es",
+        "evidence_type": "DOCUMENT_EXCERPT",
+        "source_locator": {
+          "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+          "page": null,
+          "section": null
+        },
+        "confidence": 1.0,
+        "validation_status": "PROPUESTO"
+      },
+      {
+        "fragment_id": "684fe59ebc12cbd9f056",
+        "position": 4,
+        "text": "Artículo 2. Principios. Las actuaciones deberán garantizar interés superior, corresponsabilidad, protección integral y trazabilidad.",
+        "language": "es",
+        "evidence_type": "DOCUMENT_EXCERPT",
+        "source_locator": {
+          "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+          "page": null,
+          "section": null
+        },
+        "confidence": 1.0,
+        "validation_status": "PROPUESTO"
+      },
+      {
+        "fragment_id": "9c7a33ea7b53e2e8fd51",
+        "position": 5,
+        "text": "Autor institucional: Autoridad Reguladora de Prueba. Fecha de publicación: 18 de julio de 2026. Idioma: español.",
+        "language": "es",
+        "evidence_type": "DOCUMENT_EXCERPT",
+        "source_locator": {
+          "source_path": "/content/NINIA_PROJECT/NINIA-AI 3/data/regulatory_ingestion/documento_regulatorio_prueba.txt",
+          "page": null,
+          "section": null
+        },
+        "confidence": 1.0,
+        "validation_status": "PROPUESTO"
+      }
+    ],
+    "typed_relations": []
+  },
+  "observatory": {
+    "schema_version": "1.0",
+    "generated_at": "2026-07-18T20:06:10.606554+00:00",
+    "identity": "Plataforma Mundial de Inteligencia Científica para la Protección Integral de NNA en Entornos Digitales",
+    "sources": {
+      "configured": 0,
+      "active": 0,
+      "items": []
+    },
+    "missions": {
+      "total": 0,
+      "active": 0,
+      "items": []
+    },
+    "knowledge": {
+      "proposed": 0,
+      "approved": 0,
+      "corpus_score": 5.0,
+      "training_ready": false
+    },
+    "coverage": {
+      "regions": {},
+      "domains": {},
+      "note": "La cobertura describe el corpus de NINIA; no clasifica países o regiones."
+    },
+    "ecosystems": {
+      "global_observatory": "ACTIVE",
+      "knowledge_engine": "ACTIVE",
+      "media_center": "CONNECTED",
+      "ami_center": "CONNECTED",
+      "action_lab": "FOUNDATION",
+      "organizational_learning": "FOUNDATION"
+    }
+  },
+  "trace": [
+    {
+      "stage": "hash",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.562303+00:00",
+      "finished_at": "2026-07-18T20:06:10.562592+00:00",
+      "result_type": "str"
+    },
+    {
+      "stage": "metadata",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.562620+00:00",
+      "finished_at": "2026-07-18T20:06:10.579026+00:00",
+      "result_type": "dict"
+    },
+    {
+      "stage": "knowledge_adapter",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.579098+00:00",
+      "finished_at": "2026-07-18T20:06:10.579423+00:00",
+      "result_type": "dict"
+    },
+    {
+      "stage": "knowledge_graph_build",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.579464+00:00",
+      "finished_at": "2026-07-18T20:06:10.586620+00:00",
+      "result_type": "dict"
+    },
+    {
+      "stage": "knowledge_graph_validate",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.586663+00:00",
+      "finished_at": "2026-07-18T20:06:10.596872+00:00",
+      "result_type": "dict"
+    },
+    {
+      "stage": "evidence",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.596907+00:00",
+      "finished_at": "2026-07-18T20:06:10.597404+00:00",
+      "result_type": "dict"
+    },
+    {
+      "stage": "global_observatory_status",
+      "status": "completed",
+      "started_at": "2026-07-18T20:06:10.597421+00:00",
+      "finished_at": "2026-07-18T20:06:10.607834+00:00",
+      "result_type": "dict"
+    }
+  ]
+}

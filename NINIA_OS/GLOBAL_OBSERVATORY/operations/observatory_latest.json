@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-18T22:48:37.486022+00:00",
+  "identity": "Plataforma Mundial de Inteligencia Científica para la Protección Integral de NNA en Entornos Digitales",
+  "sources": {
+    "configured": 0,
+    "active": 0,
+    "items": []
+  },
+  "missions": {
+    "total": 0,
+    "active": 0,
+    "items": []
+  },
+  "knowledge": {
+    "proposed": 0,
+    "approved": 0,
+    "corpus_score": 5.0,
+    "training_ready": false
+  },
+  "coverage": {
+    "regions": {},
+    "domains": {},
+    "note": "La cobertura describe el corpus de NINIA; no clasifica países o regiones."
+  },
+  "ecosystems": {
+    "global_observatory": "ACTIVE",
+    "knowledge_engine": "ACTIVE",
+    "media_center": "CONNECTED",
+    "ami_center": "CONNECTED",
+    "action_lab": "FOUNDATION",
+    "organizational_learning": "FOUNDATION"
+  }
+}

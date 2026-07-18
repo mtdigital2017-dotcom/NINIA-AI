@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-18T22:48:37.484646+00:00",
+  "training_gate": {
+    "ready_for_next_official_training": false,
+    "reasons": [
+      "Se requieren al menos 80 Knowledge Objects aprobados; existen 0."
+    ],
+    "approved_objects": 0,
+    "minimum_approved_objects": 80,
+    "minimum_per_label": 10,
+    "underrepresented_labels": {}
+  },
+  "coverage": {
+    "labels": {},
+    "sources": {},
+    "languages": {},
+    "years": {}
+  },
+  "duplicates": {
+    "duplicate_groups": {
+      "sha256": {},
+      "source_url_or_doi": {},
+      "title": {}
+    },
+    "duplicate_knowledge_ids": [],
+    "duplicate_object_count": 0
+  }
+}

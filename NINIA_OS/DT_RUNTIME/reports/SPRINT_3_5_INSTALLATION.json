@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "installed_at": "2026-07-18T22:18:57.614916+00:00",
+  "sprint": "3.5",
+  "status": "validated",
+  "installer_zip": "NINIA_SPRINT_3_5_GITHUB_INSTALLER.zip",
+  "repository_zip": "NINIA-AI 3.zip",
+  "installed_files": [
+    "engine/services/regulatory_ingestion_service.py",
+    "NINIA_OS/MASTER_MEMORY.md",
+    "NINIA_OS/GLOBAL_OBSERVATORY/data/source_catalog/official_sources.json",
+    "data/regulatory_ingestion/outputs/regulatory_ingestion_result.json",
+    "tests/test_regulatory_ingestion_service.py",
+    "tests/test_regulatory_ingestion_real_services.py",
+    "tests/test_global_observatory_catalog_bootstrap.py",
+    "tests/test_sprint_3_5_closure.py",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_2_IMPLEMENTATION.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_PART_3_REAL_INTEGRATION.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_METADATA_CONTRACT_HOTFIX.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CONTRACTS_HOTFIX_3_5_4.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_GLOBAL_OBSERVATORY_HOTFIX_3_5_5.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_ARTIFACT_MANIFEST.json",
+    "NINIA_OS/DT_RUNTIME/reports/SPRINT_3_5_CLOSURE.json",
+    "data/regulatory_ingestion/documento_regulatorio_prueba.txt"
+  ],
+  "backed_up_files": [],
+  "qa": {
+    "returncode": 0,
+    "stdout": ".....................                                                    [100%]\n21 passed in 0.71s",
+    "stderr": ""
+  }
+}

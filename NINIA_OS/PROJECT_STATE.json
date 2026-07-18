@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T03:11:21.196618+00:00",
+  "updated_at": "2026-07-14T22:45:42.085855+00:00",
   "current_phase": "GLOBAL_OPERATION",
   "last_completed_sprint": "3.4",
   "last_completed_component": "Global Observatory & Mission-Centric Platform v1",
@@ -81,47 +81,5 @@
     "Action Lab",
     "Intelligence Hub",
     "Organizational Learning"
-  ],
-  "last_validated_hotfix": "3.4.1",
-  "last_validated_component": "Frontend Navigation Stability",
-  "production_status": "PENDING_HOTFIX_INSTALLATION",
-  "frontend_navigation": {
-    "status": "VALIDATED_IN_COLAB",
-    "mutation_observer_navigation_removed": true,
-    "hashchange_navigation": true,
-    "request_animation_frame_scheduling": true,
-    "api_contracts_preserved": true
-  },
-  "methodology": {
-    "required_flow": [
-      "DESARROLLO",
-      "COLAB",
-      "QA",
-      "DT_APPROVAL",
-      "RESULTS_ZIP",
-      "INSTALLER_GIT",
-      "COMMIT",
-      "VERCEL",
-      "PRODUCTION_QA",
-      "MASTER_MEMORY"
-    ],
-    "manual_code_changes_allowed": false,
-    "installer_before_colab_allowed": false
-  },
-  "official_backend_local_path": {
-    "platform": "macOS",
-    "path": "~/Library/Mobile Documents/com~apple~CloudDocs/Desktop/NINIA-AI 2",
-    "validated_in_colab": true,
-    "github_desktop_aligned": true,
-    "zip_detection_by_content": true,
-    "frontend_unchanged": true
-  },
-  "merge_resolution": {
-    "status": "RESOLVED_AUTOMATICALLY",
-    "sprint": "3.4.2",
-    "timestamp": "2026-07-16T18:00:20",
-    "strategy": "remote_then_local_deep_merge",
-    "force_push": false,
-    "github_desktop": true
-  }
+  ]
 }
