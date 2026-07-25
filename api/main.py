@@ -122,7 +122,7 @@ class OperationalRunRequest(BaseModel):
     source_ids: list[str] = []
     max_documents_per_source: int = 3
     max_total_documents: int = 10
-    train_if_ready: bool = True
+    train_if_ready: bool = False
 
 
 class ObservatoryMissionRequest(BaseModel):
