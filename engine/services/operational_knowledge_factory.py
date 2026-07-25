@@ -288,6 +288,7 @@ class OperationalKnowledgeFactory:
                 "approved": approved,
             },
             "models_registered": models,
+            "corpus_audit": project_state.get("corpus_audit") or {},
             "official_model": official_model,
             "baseline_model_version": baseline_version,
             "baseline_metrics": baseline_metrics,

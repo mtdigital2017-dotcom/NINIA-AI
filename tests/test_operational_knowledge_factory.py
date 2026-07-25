@@ -104,6 +104,12 @@ def test_status_exposes_official_baseline(tmp_path: Path):
                     "strict_document_accuracy": 0.27307692307692305,
                     "strict_document_macro_f1": 0.1257236227824463,
                 },
+                "corpus_audit": {
+                    "proposed": 13,
+                    "approved": 13,
+                    "corpus_score": 71.77,
+                    "ready_for_next_official_training": False,
+                },
             }
         ),
         encoding="utf-8",
@@ -129,3 +135,9 @@ def test_status_exposes_official_baseline(tmp_path: Path):
     assert status["baseline_metrics"]["strict_document_accuracy"] == (
         0.27307692307692305
     )
+    assert status["corpus_audit"] == {
+        "proposed": 13,
+        "approved": 13,
+        "corpus_score": 71.77,
+        "ready_for_next_official_training": False,
+    }
