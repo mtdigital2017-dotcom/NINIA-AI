@@ -1,0 +1,68 @@
+{
+  "artifact": "NINIA_3_9S_RUNTIME_CONTRACT_LOCAL_STAGING",
+  "created_at": "2026-07-24T02:22:10.559321+00:00",
+  "candidate_version": "3.9S_LOCAL_STAGING_CANDIDATE",
+  "base_runtime_before_replacement": "3.6X / 3.6X-OPS",
+  "primary_vigente_until_local_install": "3.6X / 3.6X-OPS",
+  "models_directory": "models/ninia_3_9s",
+  "models": [
+    {
+      "target_focus": "causal_problem_vectors::riesgo comercial/publicitario alimentario",
+      "source_model_file": "models_39p_release_candidate_NO_RELEASE/model_39m_complete_candidate__causal_problem_vectors__riesgo_comercial_publicitario_alimentario.joblib",
+      "staged_model_file": "models/ninia_3_9s/model_39m_complete_candidate__causal_problem_vectors__riesgo_comercial_publicitario_alimentario.joblib",
+      "source_sha256": "ab2a86c2152984c838a8c94af91f75a2bcfb0c75a4b1c04a883959dd874aded2",
+      "staged_sha256": "ab2a86c2152984c838a8c94af91f75a2bcfb0c75a4b1c04a883959dd874aded2",
+      "checksum_match": true,
+      "threshold_guard": 0.43,
+      "staged": true
+    },
+    {
+      "target_focus": "corrective_pedagogical_responses::protección infantil sobre etiquetado alimentario en televisión",
+      "source_model_file": "models_39p_release_candidate_NO_RELEASE/model_39m_complete_candidate__corrective_pedagogical_responses__proteccion_infantil_sobre_etiquetado_alimentario_en_television.joblib",
+      "staged_model_file": "models/ninia_3_9s/model_39m_complete_candidate__corrective_pedagogical_responses__proteccion_infantil_sobre_etiquetado_alimentario_en_television.joblib",
+      "source_sha256": "175b622b8a9a44df1be1cc5968ffb107f27bd49b860b1a64b582a7255376fdce",
+      "staged_sha256": "175b622b8a9a44df1be1cc5968ffb107f27bd49b860b1a64b582a7255376fdce",
+      "checksum_match": true,
+      "threshold_guard": 0.5,
+      "staged": true
+    },
+    {
+      "target_focus": "preventive_design_responses::age assurance",
+      "source_model_file": "models_39p_release_candidate_NO_RELEASE/model_39m_complete_candidate__preventive_design_responses__age_assurance.joblib",
+      "staged_model_file": "models/ninia_3_9s/model_39m_complete_candidate__preventive_design_responses__age_assurance.joblib",
+      "source_sha256": "c98ee207cebdbf4584b827fba85d5c254e961e79c6808f08fbaf7fc890915712",
+      "staged_sha256": "c98ee207cebdbf4584b827fba85d5c254e961e79c6808f08fbaf7fc890915712",
+      "checksum_match": true,
+      "threshold_guard": 0.49,
+      "staged": true
+    }
+  ],
+  "threshold_guard": {
+    "causal_problem_vectors::riesgo comercial/publicitario alimentario": 0.43,
+    "corrective_pedagogical_responses::protección infantil sobre etiquetado alimentario en televisión": 0.5,
+    "preventive_design_responses::age assurance": 0.49
+  },
+  "metrics_reference": {
+    "calibrated_holdout_macro_f1_39n_r1": 0.9761051373954599,
+    "calibrated_holdout_floor_f1_39n_r1": 0.8888888888888888,
+    "models_loaded": 3,
+    "model_errors_count": 0,
+    "source_blockers_unresolved_after_39o": 0
+  },
+  "activation_policy": {
+    "auto_classify_enabled": false,
+    "fast_review_default": true,
+    "observatory_payload_enabled": true,
+    "media_center_payload_enabled": true,
+    "public_policy_input_payload_enabled": true,
+    "ami_generation_payload_enabled": true
+  },
+  "git_policy": {
+    "git_commands_executed_by_colab": false,
+    "commit_allowed_after_local_diff_review": true,
+    "push_allowed_after_dt_authorization": true,
+    "deploy_allowed_after_dt_authorization": true,
+    "release_allowed_after_dt_authorization": true
+  },
+  "candidate_status": "LOCAL_STAGING_READY_NOT_RELEASED"
+}
