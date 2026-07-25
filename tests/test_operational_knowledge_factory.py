@@ -89,3 +89,43 @@ def test_factory_persists_auditable_manifest(tmp_path: Path):
     assert saved["run_id"] == result["run_id"]
     assert saved["governance"]["human_review_required"] is True
     assert saved["training"]["status"] == "NOT_REQUESTED"
+
+
+
+def test_status_exposes_official_baseline(tmp_path: Path):
+    state_dir = tmp_path / "NINIA_OS"
+    state_dir.mkdir(parents=True)
+    (state_dir / "PROJECT_STATE.json").write_text(
+        json.dumps(
+            {
+                "baseline_model_version": "0.1.0-real",
+                "baseline_dataset_version": "0.1.0-real",
+                "baseline_metrics": {
+                    "strict_document_accuracy": 0.27307692307692305,
+                    "strict_document_macro_f1": 0.1257236227824463,
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    service = OperationalKnowledgeFactory(
+        tmp_path,
+        acquisition_service=FakeAcquisition(),
+        validation_service=FakeValidation(),
+        corpus_audit_service=FakeAudit(ready=False),
+    )
+
+    status = service.status()
+
+    assert status["baseline_model_version"] == "0.1.0-real"
+    assert status["official_model"] == {
+        "version": "0.1.0-real",
+        "dataset_version": "0.1.0-real",
+        "strict_accuracy": 0.27307692307692305,
+        "strict_macro_f1": 0.1257236227824463,
+        "status": "official_baseline",
+    }
+    assert status["baseline_metrics"]["strict_document_accuracy"] == (
+        0.27307692307692305
+    )

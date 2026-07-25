@@ -251,6 +251,36 @@ class OperationalKnowledgeFactory:
             except Exception:
                 models = 0
 
+        project_state_path = self.base_dir / "NINIA_OS" / "PROJECT_STATE.json"
+        project_state: dict[str, Any] = {}
+        if project_state_path.exists():
+            try:
+                project_state = json.loads(
+                    project_state_path.read_text(encoding="utf-8")
+                )
+            except (OSError, json.JSONDecodeError):
+                project_state = {}
+
+        baseline_version = project_state.get("baseline_model_version")
+        baseline_dataset_version = project_state.get(
+            "baseline_dataset_version"
+        )
+        baseline_metrics = project_state.get("baseline_metrics") or {}
+
+        official_model = None
+        if baseline_version:
+            official_model = {
+                "version": baseline_version,
+                "dataset_version": baseline_dataset_version,
+                "strict_accuracy": baseline_metrics.get(
+                    "strict_document_accuracy"
+                ),
+                "strict_macro_f1": baseline_metrics.get(
+                    "strict_document_macro_f1"
+                ),
+                "status": "official_baseline",
+            }
+
         return {
             "status": "ok",
             "knowledge": {
@@ -258,5 +288,8 @@ class OperationalKnowledgeFactory:
                 "approved": approved,
             },
             "models_registered": models,
+            "official_model": official_model,
+            "baseline_model_version": baseline_version,
+            "baseline_metrics": baseline_metrics,
             "latest_run": latest,
         }
