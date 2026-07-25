@@ -1,0 +1,28 @@
+{
+  "version": "3.9S-R1",
+  "status": "LOCAL_STAGING_READY_NOT_RELEASED",
+  "auto_classify_enabled": false,
+  "models": [
+    {
+      "id": "causal_problem_vectors__riesgo_comercial_publicitario_alimentario",
+      "target_focus": "causal_problem_vectors::riesgo comercial/publicitario alimentario",
+      "path": "models/ninia_3_9s/model_39m_complete_candidate__causal_problem_vectors__riesgo_comercial_publicitario_alimentario.joblib",
+      "threshold_guard": 0.43,
+      "enabled": true
+    },
+    {
+      "id": "corrective_pedagogical_responses__proteccion_infantil_etiquetado_tv",
+      "target_focus": "corrective_pedagogical_responses::protección infantil sobre etiquetado alimentario en televisión",
+      "path": "models/ninia_3_9s/model_39m_complete_candidate__corrective_pedagogical_responses__proteccion_infantil_sobre_etiquetado_alimentario_en_television.joblib",
+      "threshold_guard": 0.5,
+      "enabled": true
+    },
+    {
+      "id": "preventive_design_responses__age_assurance",
+      "target_focus": "preventive_design_responses::age assurance",
+      "path": "models/ninia_3_9s/model_39m_complete_candidate__preventive_design_responses__age_assurance.joblib",
+      "threshold_guard": 0.49,
+      "enabled": true
+    }
+  ]
+}
